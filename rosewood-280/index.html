@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Penthouse 280 at Rosewood | 2823 Providence Rd, Charlotte NC | The Agency</title>
+<meta name="description" content="Penthouse 280 at Rosewood — 3 bed, 3.5 bath, 2,588 sq ft on one level. $1,925,000. Offered by Ryan Palmer, The Agency Charlotte.">
+<meta property="og:title" content="Penthouse 280 at Rosewood">
+<meta property="og:description" content="3 bed | 3.5 bath | 2,588 sq ft on one level | $1,925,000 — 2823 Providence Rd, Charlotte NC">
+<meta property="og:image" content="images/01-dining-juliet-balcony-steeple-view.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --red:#ED2127;
+    --iron:#000000;
+    --plaster:#F7F8F6;
+    --canvas:#FFFFFF;
+    --charcoal:#231F20;
+    --gray:#6b6b6b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Roboto',Helvetica,Arial,sans-serif;color:var(--charcoal);background:var(--canvas);line-height:1.6;}
+  h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,serif;}
+  a{color:inherit;text-decoration:none;}
+  img{display:block;max-width:100%;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+
+  /* NAV */
+  nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;
+      padding:16px 24px;background:rgba(255,255,255,0.0);transition:background .3s, box-shadow .3s, padding .3s;}
+  nav.scrolled{background:rgba(255,255,255,0.97);box-shadow:0 2px 12px rgba(0,0,0,0.06);padding:10px 24px;backdrop-filter:blur(6px);}
+  .nav-brand{display:flex;align-items:center;gap:10px;font-family:'Playfair Display',serif;font-weight:600;font-size:15px;letter-spacing:.5px;color:#fff;transition:color .3s;}
+  nav.scrolled .nav-brand{color:var(--iron);}
+  .nav-brand img{height:26px;width:26px;border-radius:3px;}
+  .nav-cta{background:var(--red);color:#fff;padding:10px 20px;border-radius:2px;font-size:13px;font-weight:500;letter-spacing:.5px;text-transform:uppercase;white-space:nowrap;}
+  .nav-cta:hover{background:#c91c21;}
+
+  /* HERO */
+  .hero{position:relative;height:100vh;min-height:560px;display:flex;align-items:flex-end;color:#fff;overflow:hidden;}
+  .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}
+  .hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(0,0,0,.05) 35%,rgba(0,0,0,.75) 100%);z-index:1;}
+  .hero-content{position:relative;z-index:2;padding:0 24px 64px;width:100%;}
+  .hero-badge{display:inline-block;background:var(--red);padding:6px 14px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:500;margin-bottom:18px;}
+  .hero h1{font-size:clamp(34px,6vw,64px);font-weight:600;line-height:1.05;margin-bottom:10px;}
+  .hero .addr{font-size:clamp(15px,2vw,19px);font-weight:300;letter-spacing:.3px;margin-bottom:22px;opacity:.92;}
+  .hero .price{font-size:clamp(22px,3vw,30px);font-weight:500;}
+  .hero-scroll{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);z-index:2;font-size:11px;letter-spacing:2px;text-transform:uppercase;opacity:.8;}
+
+  /* QUICK FACTS */
+  .facts{background:var(--iron);color:#fff;}
+  .facts-row{display:flex;flex-wrap:wrap;justify-content:center;gap:0;}
+  .fact{flex:1 1 150px;text-align:center;padding:28px 16px;border-right:1px solid rgba(255,255,255,.12);}
+  .fact:last-child{border-right:none;}
+  .fact .num{font-family:'Playfair Display',serif;font-size:26px;font-weight:600;color:var(--red);display:block;margin-bottom:4px;}
+  .fact .lbl{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;opacity:.75;}
+
+  /* SECTION GENERIC */
+  section{padding:76px 0;}
+  .section-plaster{background:var(--plaster);}
+  .eyebrow{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--red);font-weight:500;margin-bottom:14px;display:block;}
+  .intro h2{font-size:clamp(26px,3.5vw,38px);font-weight:600;max-width:760px;margin-bottom:26px;line-height:1.25;}
+  .intro p{font-size:16.5px;color:#444;max-width:720px;margin-bottom:16px;}
+  .intro p:last-child{margin-bottom:0;}
+
+  /* GALLERY */
+  .gallery-head{margin-bottom:34px;}
+  .gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;}
+  .gallery-grid figure{position:relative;overflow:hidden;cursor:pointer;background:#eee;aspect-ratio:4/3;}
+  .gallery-grid figure.tall{grid-row:span 2;aspect-ratio:auto;height:100%;}
+  .gallery-grid img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
+  .gallery-grid figure:hover img{transform:scale(1.06);}
+  .gallery-grid figcaption{position:absolute;left:0;right:0;bottom:0;padding:10px 12px 8px;font-size:12px;color:#fff;
+    background:linear-gradient(0deg,rgba(0,0,0,.65),rgba(0,0,0,0));opacity:0;transition:opacity .3s;}
+  .gallery-grid figure:hover figcaption{opacity:1;}
+  @media(max-width:860px){.gallery-grid{grid-template-columns:repeat(2,1fr);}.gallery-grid figure.tall{grid-row:span 1;aspect-ratio:4/3;}}
+
+  .view-more{display:block;text-align:center;margin-top:30px;}
+  .btn-outline{display:inline-block;border:1px solid var(--iron);padding:12px 28px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:500;}
+  .btn-outline:hover{background:var(--iron);color:#fff;}
+
+  /* AMENITIES */
+  .amen-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 36px;margin-top:38px;}
+  .amen-item{display:flex;gap:14px;align-items:flex-start;}
+  .amen-ico{font-size:22px;line-height:1;margin-top:2px;}
+  .amen-item h4{font-size:15.5px;font-weight:700;margin-bottom:4px;font-family:'Roboto',sans-serif;}
+  .amen-item p{font-size:13.5px;color:#555;}
+  @media(max-width:760px){.amen-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:480px){.amen-grid{grid-template-columns:1fr;}}
+
+  .dues-callout{margin-top:46px;background:#fff;border-left:4px solid var(--red);padding:22px 26px;max-width:640px;}
+  .dues-callout .big{font-family:'Playfair Display',serif;font-size:26px;font-weight:600;}
+  .dues-callout p{font-size:14px;color:#555;margin-top:6px;}
+
+  /* DOCS */
+  .docs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:34px;}
+  .doc-card{border:1px solid #e3e3e1;padding:22px 18px;text-align:center;transition:box-shadow .25s,border-color .25s;}
+  .doc-card:hover{box-shadow:0 8px 24px rgba(0,0,0,.08);border-color:#ddd;}
+  .doc-card .ico{font-size:28px;margin-bottom:10px;}
+  .doc-card .name{font-size:13.5px;font-weight:500;margin-bottom:12px;min-height:36px;}
+  .doc-card .dl{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--red);font-weight:700;}
+  @media(max-width:760px){.docs-grid{grid-template-columns:1fr 1fr;}}
+
+  /* LOCATION */
+  .loc-row{display:flex;gap:50px;flex-wrap:wrap;margin-top:34px;}
+  .loc-col{flex:1 1 260px;}
+  .loc-col h4{font-size:14px;letter-spacing:.5px;text-transform:uppercase;margin-bottom:14px;color:var(--red);font-weight:700;}
+  .loc-col ul{list-style:none;}
+  .loc-col li{font-size:14.5px;padding:7px 0;border-bottom:1px solid #eee;display:flex;justify-content:space-between;}
+  .loc-col li span.d{color:#888;font-size:13px;}
+
+  /* AGENT */
+  .agent-card{display:flex;gap:34px;align-items:center;background:var(--iron);color:#fff;padding:46px;border-radius:2px;flex-wrap:wrap;}
+  .agent-card img.headshot{width:140px;height:140px;object-fit:cover;border-radius:50%;border:3px solid var(--red);flex-shrink:0;}
+  .agent-info{flex:1 1 280px;}
+  .agent-info h3{font-size:24px;font-weight:600;margin-bottom:4px;}
+  .agent-info .title{font-size:13px;color:#ccc;margin-bottom:16px;letter-spacing:.3px;}
+  .agent-actions{display:flex;gap:12px;flex-wrap:wrap;}
+  .btn-red{background:var(--red);color:#fff;padding:13px 26px;font-size:12.5px;letter-spacing:1px;text-transform:uppercase;font-weight:500;border-radius:2px;}
+  .btn-red:hover{background:#c91c21;}
+  .btn-white-outline{border:1px solid #fff;color:#fff;padding:13px 26px;font-size:12.5px;letter-spacing:1px;text-transform:uppercase;font-weight:500;border-radius:2px;}
+  .btn-white-outline:hover{background:#fff;color:var(--iron);}
+
+  footer{background:#141414;color:#999;padding:40px 0 60px;}
+  footer .wrap{display:flex;flex-direction:column;gap:14px;}
+  footer .disclaimer{font-size:10.5px;line-height:1.6;color:#777;max-width:900px;}
+  footer .mls{font-size:11.5px;color:#888;}
+
+  /* LIGHTBOX */
+  .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.94);z-index:200;display:none;align-items:center;justify-content:center;flex-direction:column;}
+  .lightbox.open{display:flex;}
+  .lightbox img{max-width:92vw;max-height:82vh;object-fit:contain;}
+  .lightbox .cap{color:#ddd;font-size:13.5px;margin-top:16px;text-align:center;max-width:640px;padding:0 20px;}
+  .lightbox .close{position:absolute;top:22px;right:28px;color:#fff;font-size:30px;cursor:pointer;}
+  .lightbox .nav-arrow{position:absolute;top:50%;transform:translateY(-50%);color:#fff;font-size:38px;cursor:pointer;padding:10px 18px;user-select:none;}
+  .lightbox .prev{left:6px;}
+  .lightbox .next{right:6px;}
+
+  @media(max-width:600px){
+    section{padding:52px 0;}
+    .agent-card{padding:30px 22px;justify-content:center;text-align:center;}
+    .agent-info{text-align:center;}
+    .agent-actions{justify-content:center;}
+  }
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="#top" class="nav-brand"><img src="images/agency-logo-mark.svg" alt="The Agency">Rosewood &middot; Penthouse 280</a>
+  <a href="tel:5089542159" class="nav-cta">Call Ryan</a>
+</nav>
+
+<div id="top" class="hero">
+  <img src="images/full/01-dining-juliet-balcony-steeple-view.jpg" alt="Dining area Juliet balcony, eye level with the church steeple">
+  <div class="hero-content">
+    <span class="hero-badge">Coming Soon &middot; Active Friday</span>
+    <h1>Penthouse 280</h1>
+    <div class="addr">2823 Providence Rd, Unit 280 &middot; Rosewood &middot; Charlotte, NC 28211</div>
+    <div class="price">$1,925,000 &nbsp;&middot;&nbsp; 3 Bed &nbsp;&middot;&nbsp; 3.5 Bath &nbsp;&middot;&nbsp; 2,588 Sq Ft</div>
+  </div>
+  <div class="hero-scroll">Scroll</div>
+</div>
+
+<div class="facts">
+  <div class="wrap facts-row">
+    <div class="fact"><span class="num">3</span><span class="lbl">Bedrooms</span></div>
+    <div class="fact"><span class="num">3.5</span><span class="lbl">Bathrooms</span></div>
+    <div class="fact"><span class="num">2,588</span><span class="lbl">Sq Ft, One Level</span></div>
+    <div class="fact"><span class="num">8th</span><span class="lbl">Floor, Top Corner</span></div>
+    <div class="fact"><span class="num">2</span><span class="lbl">Garage Spaces</span></div>
+  </div>
+</div>
+
+<section class="intro">
+  <div class="wrap">
+    <span class="eyebrow">The Penthouse</span>
+    <h2>Eye level with a church steeple, floating over the treetops, with the sunset all to yourself.</h2>
+    <p>This building opened in 2008. The developer went under before the top-floor corner was finished, and it sat as a concrete shell for years. When it finally came together in 2014, it got the Wolf + Sub-Zero kitchen, site-finished hardwoods and 12-foot ceilings &mdash; so the newest-feeling home in the building is the one at the very top.</p>
+    <p>Nearly 2,600 square feet on a single level, tall French windows pulling light from two directions, a gas fireplace for the cold nights, and two private balconies &mdash; one for sunrise coffee, one for sunset wine. The primary suite sits at the far end of its own wing, with a walk-in closet and a spa-style bath.</p>
+    <p>Downstairs is 8.5 acres of gardens under old oaks, a saltwater pool, tennis and pickleball, and a concierge who knows your name. Two deeded garage spaces and a private storage unit come with the unit.</p>
+  </div>
+</section>
+
+<section class="section-plaster">
+  <div class="wrap">
+    <div class="gallery-head">
+      <span class="eyebrow">Photo Tour</span>
+      <h2 class="serif" style="font-size:clamp(24px,3vw,32px);font-weight:600;">Every Room, Every Angle</h2>
+    </div>
+    <div class="gallery-grid" id="gallery"></div>
+    <div class="view-more"><a href="#" class="btn-outline" id="viewAllBtn">View All 48 Photos</a></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Building &amp; HOA</span>
+    <h2 class="serif" style="font-size:clamp(24px,3vw,32px);font-weight:600;max-width:640px;">Lock the door and go whenever you want.</h2>
+    <div class="amen-grid">
+      <div class="amen-item"><div class="amen-ico">🛜</div><div><h4>Bulk Internet &amp; Cable</h4><p>Spectrum internet and cable included in dues at the building rate.</p></div></div>
+      <div class="amen-item"><div class="amen-ico">👋</div><div><h4>24/7 Concierge</h4><p>Staffed concierge announces guests and signs for packages, including Amazon Hub lockers.</p></div></div>
+      <div class="amen-item"><div class="amen-ico">🔒</div><div><h4>Security &amp; Gated Garage</h4><p>Round-the-clock security with a gated, deeded parking garage.</p></div></div>
+      <div class="amen-item"><div class="amen-ico">🏊</div><div><h4>Resort Amenities</h4><p>Saltwater pool, tennis, pickleball, fitness center, club room and a lobby coffee bar.</p></div></div>
+      <div class="amen-item"><div class="amen-ico">🌳</div><div><h4>8.5 Acres of Gardens</h4><p>Grounds kept like a resort under old oaks; window washing handled annually by the building.</p></div></div>
+      <div class="amen-item"><div class="amen-ico">🎉</div><div><h4>A Real Social Calendar</h4><p>Resident events throughout the year &mdash; the last pool party drew 100+ neighbors and a food truck.</p></div></div>
+    </div>
+    <div class="dues-callout">
+      <div class="big">$1,300 / month HOA</div>
+      <p>Covers internet/cable, concierge, security, master insurance, grounds and amenities. About 30% of every dollar goes to reserves, with no special assessments pending.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-plaster">
+  <div class="wrap">
+    <span class="eyebrow">Documents</span>
+    <h2 class="serif" style="font-size:clamp(22px,3vw,28px);font-weight:600;">Floor Plan &amp; Details</h2>
+    <div class="docs-grid">
+      <a class="doc-card" href="docs/Rosewood-280-Brochure.pdf" target="_blank"><div class="ico">📄</div><div class="name">Full Brochure</div><div class="dl">Download PDF</div></a>
+      <a class="doc-card" href="docs/Rosewood-280-Floor-Plan-Flyer.pdf" target="_blank"><div class="ico">📐</div><div class="name">Floor Plan</div><div class="dl">Download PDF</div></a>
+      <a class="doc-card" href="docs/Rosewood-280-Features-Upgrades.pdf" target="_blank"><div class="ico">✨</div><div class="name">Features &amp; Upgrades</div><div class="dl">Download PDF</div></a>
+      <a class="doc-card" href="docs/Rosewood-280-Amenities.pdf" target="_blank"><div class="ico">🏛️</div><div class="name">Amenities &amp; HOA</div><div class="dl">Download PDF</div></a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Location</span>
+    <h2 class="serif" style="font-size:clamp(22px,3vw,28px);font-weight:600;">Between SouthPark &amp; Uptown</h2>
+    <div class="loc-row">
+      <div class="loc-col">
+        <h4>Distance</h4>
+        <ul>
+          <li>SouthPark <span class="d">~2 miles</span></li>
+          <li>Uptown Charlotte <span class="d">~4 miles</span></li>
+          <li>Charlotte Douglas Airport <span class="d">~14 miles</span></li>
+        </ul>
+      </div>
+      <div class="loc-col">
+        <h4>Nearby</h4>
+        <ul>
+          <li>Phillips Place &amp; SouthPark Mall</li>
+          <li>Freedom Park &amp; greenway access</li>
+          <li>Dilworth &amp; Myers Park dining</li>
+        </ul>
+      </div>
+      <div class="loc-col">
+        <h4>At a Glance</h4>
+        <ul>
+          <li>Built <span class="d">2008 / completed 2014</span></li>
+          <li>HLA <span class="d">2,588 sq ft, one level</span></li>
+          <li>Parking <span class="d">2 deeded garage spaces</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-plaster">
+  <div class="wrap">
+    <div class="agent-card">
+      <img class="headshot" src="images/ryan-headshot.jpg" alt="Ryan Palmer">
+      <div class="agent-info">
+        <h3>Ryan Palmer</h3>
+        <div class="title">Founding Partner, Luxury Division &middot; The Agency Charlotte &amp; Lake Norman</div>
+        <div class="agent-actions">
+          <a href="tel:5089542159" class="btn-red">Call (508) 954-2159</a>
+          <a href="mailto:ryan.palmer@theagencyre.com?subject=Penthouse%20280%20at%20Rosewood" class="btn-white-outline">Email Ryan</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="mls">MLS# 4426720 &middot; Listed by Ryan Palmer, The Agency Charlotte &middot; Courtesy of The Agency &ndash; Charlotte</div>
+    <div class="disclaimer">AN INDEPENDENTLY OWNED AND OPERATED FRANCHISEE OF THE AGENCY REAL ESTATE FRANCHISING, LLC. Information deemed reliable but not guaranteed. Square footage, room dimensions and HOA figures are approximate and should be independently verified. Equal Housing Opportunity.</div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <span class="close" id="lbClose">&times;</span>
+  <span class="nav-arrow prev" id="lbPrev">&#8249;</span>
+  <img id="lbImg" src="" alt="">
+  <span class="nav-arrow next" id="lbNext">&#8250;</span>
+  <div class="cap" id="lbCap"></div>
+</div>
+
+<script>
+const PHOTOS = [
+  ["01-dining-juliet-balcony-steeple-view.jpg","From the dining area's Juliet balcony, eye level with the church steeple above the tree canopy"],
+  ["02-aerial-front.jpg","Rosewood at Providence, aerial view of the front entrance"],
+  ["03-kitchen-island.jpg","Kitchen with Wolf and Sub-Zero appliances and a large center island under 12-foot ceilings"],
+  ["04-great-room.jpg","Great room with tall French windows on two sides and site-finished hardwoods"],
+  ["05-primary-bedroom.jpg","Primary suite at the far end of the bedroom wing"],
+  ["06-great-room-chandelier.jpg","Great room open to the dining area and balcony"],
+  ["07-great-room-fireplace.jpg","Gas fireplace in the great room"],
+  ["08-great-room-seating-wide.jpg","Great room seating around the gas fireplace, with the dining area beyond"],
+  ["09-great-room-toward-dining.jpg","Great room flows into the dining area and kitchen"],
+  ["10-dining-area.jpg","Dining area opens through French doors to the Juliet balcony"],
+  ["11-dining-french-doors-wide.jpg","Dining area with French doors to the Juliet balcony, kitchen beyond"],
+  ["12-dining-chandelier.jpg","Dining area chandelier and tall windows"],
+  ["13-kitchen-wolf-range.jpg","Wolf range in the kitchen"],
+  ["14-kitchen-subzero-wine.jpg","Sub-Zero wine storage in the kitchen"],
+  ["15-kitchen-island-windows.jpg","Kitchen island with natural light from two directions"],
+  ["16-kitchen-wolf-subzero-wide.jpg","Kitchen wide view with Wolf and Sub-Zero appliances"],
+  ["17-foyer-entry.jpg","Foyer entry"],
+  ["18-french-doors-bedroom-wing.jpg","French doors leading to the bedroom wing"],
+  ["19-primary-bedroom-windows.jpg","Primary bedroom with tall windows"],
+  ["20-primary-bedroom-sitting.jpg","Primary bedroom sitting area"],
+  ["21-primary-walk-in-closet.jpg","Primary suite walk-in closet"],
+  ["22-primary-balcony-view.jpg","View from the primary suite's private balcony"],
+  ["23-primary-bath-shower-tub.jpg","Primary bath with soaking tub and separate shower"],
+  ["24-primary-bath-vanity-shower.jpg","Primary bath vanity and shower"],
+  ["25-bedroom-2.jpg","Second bedroom"],
+  ["26-bath-2.jpg","Second full bath"],
+  ["27-bedroom-3.jpg","Third bedroom"],
+  ["28-bath-3.jpg","Third full bath"],
+  ["29-laundry-room.jpg","Laundry room"],
+  ["30-powder-room.jpg","Powder room"],
+  ["31-balcony-sunset-steeple.jpg","Sunset from the balcony, church steeple on the horizon"],
+  ["32-balcony-sunset-west.jpg","West-facing balcony at sunset"],
+  ["33-balcony-seating-tower.jpg","Balcony seating area with tower view"],
+  ["34-tower-sunset.jpg","The building's corner tower at sunset"],
+  ["35-aerial-building-steeple.jpg","Aerial view of the building with the steeple beyond"],
+  ["36-corner-tower-elevation.jpg","Rosewood's corner tower from above; Penthouse 280 is the top floor"],
+  ["37-aerial-sunset-skyline.jpg","Aerial sunset view toward the Uptown skyline"],
+  ["38-aerial-sunset-steeple.jpg","Aerial sunset view with the church steeple"],
+  ["39-entrance-porte-cochere.jpg","Building entrance and porte-cochere"],
+  ["40-fountain-garden.jpg","Garden fountain on the grounds"],
+  ["41-lobby-staircase.jpg","Lobby staircase"],
+  ["42-club-room.jpg","Resident club room"],
+  ["43-coffee-bar.jpg","Lobby coffee bar"],
+  ["44-aerial-pool.jpg","Aerial view of the saltwater pool"],
+  ["45-pool.jpg","Saltwater pool"],
+  ["46-tennis-pickleball.jpg","Tennis and pickleball courts"],
+  ["47-elevator.jpg","Private elevator access"],
+  ["48-private-storage-unit.jpg","Private storage unit included with the unit"]
+];
+
+const INITIAL_COUNT = 12;
+const grid = document.getElementById('gallery');
+let expanded = false;
+
+function renderGrid(){
+  grid.innerHTML = '';
+  const count = expanded ? PHOTOS.length : INITIAL_COUNT;
+  for(let i=0;i<count;i++){
+    const [file,cap] = PHOTOS[i];
+    const fig = document.createElement('figure');
+    if(i===0) fig.classList.add('tall');
+    fig.innerHTML = `<img src="images/${file}" alt="${cap}"><figcaption>${cap}</figcaption>`;
+    fig.addEventListener('click', ()=>openLightbox(i));
+    grid.appendChild(fig);
+  }
+}
+renderGrid();
+
+document.getElementById('viewAllBtn').addEventListener('click', (e)=>{
+  e.preventDefault();
+  expanded = true;
+  renderGrid();
+  e.target.style.display='none';
+});
+
+// Lightbox
+const lb = document.getElementById('lightbox');
+const lbImg = document.getElementById('lbImg');
+const lbCap = document.getElementById('lbCap');
+let currentIdx = 0;
+
+function openLightbox(idx){
+  currentIdx = idx;
+  showLightbox();
+  lb.classList.add('open');
+}
+function showLightbox(){
+  const [file,cap] = PHOTOS[currentIdx];
+  lbImg.src = 'images/full/' + file;
+  lbImg.alt = cap;
+  lbCap.textContent = cap;
+}
+document.getElementById('lbClose').addEventListener('click', ()=>lb.classList.remove('open'));
+lb.addEventListener('click', (e)=>{ if(e.target===lb) lb.classList.remove('open'); });
+document.getElementById('lbNext').addEventListener('click', (e)=>{e.stopPropagation(); currentIdx=(currentIdx+1)%PHOTOS.length; showLightbox();});
+document.getElementById('lbPrev').addEventListener('click', (e)=>{e.stopPropagation(); currentIdx=(currentIdx-1+PHOTOS.length)%PHOTOS.length; showLightbox();});
+document.addEventListener('keydown', (e)=>{
+  if(!lb.classList.contains('open')) return;
+  if(e.key==='Escape') lb.classList.remove('open');
+  if(e.key==='ArrowRight') document.getElementById('lbNext').click();
+  if(e.key==='ArrowLeft') document.getElementById('lbPrev').click();
+});
+
+// Nav scroll state
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', ()=>{
+  if(window.scrollY > 60) nav.classList.add('scrolled');
+  else nav.classList.remove('scrolled');
+});
+</script>
+
+</body>
+</html>

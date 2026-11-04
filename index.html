@@ -51,6 +51,11 @@ footer{max-width:560px;margin:0 auto;padding:0 16px 40px;font-size:11.5px;line-h
 .alt3 h3{font-family:var(--serif);font-weight:300;font-size:24px;margin-top:14px;line-height:1.2}
 .alt3 p{color:rgba(255,255,255,.65);font-size:14px;margin-top:6px}
 .alt3 .go{display:block;margin-top:12px;font-family:var(--cond);letter-spacing:.2em;font-size:12px;color:#fff}
+.card h2 .price{display:block;font-family:var(--sans);font-weight:400;font-size:15px;color:var(--ink);margin-top:4px;letter-spacing:.01em}
+.mini .price{color:var(--ink);font-weight:400;font-size:15px;margin-top:2px}
+.tag{display:inline-block;font-family:var(--cond);font-weight:500;letter-spacing:.2em;text-transform:uppercase;font-size:10.5px;color:#fff;background:var(--red);padding:3px 7px;margin-bottom:5px}
+.tag.soft{background:var(--ink)}
+.mini.uc img{filter:saturate(.85)}
 </style>
 </head>
 <body>
@@ -65,22 +70,64 @@ footer{max-width:560px;margin:0 auto;padding:0 16px 40px;font-size:11.5px;line-h
   <div class="label eyebrow">Featured Homes</div>
 
   <a class="card" href="https://3321auburnave.com/">
-    <div class="img"><img src="hub/auburn.jpg" alt="3321 Auburn Avenue"></div>
-    <div class="txt"><h2>3321 Auburn Avenue</h2><span class="go">VIEW →</span><span class="where">Sedgefield, Charlotte</span>
+    <div class="img"><img src="hub/auburn.jpg" alt="3321 Auburn Avenue" loading="lazy"></div>
+    <div class="txt"><h2><span class="tag soft">Coming Soon</span><br>3321 Auburn Avenue<span class="price">$2,750,000</span></h2><span class="go">VIEW →</span><span class="where">Sedgefield, Charlotte</span>
       <p class="line">A modern KEEN home with a Josh.ai smart home, built in from day one.</p></div>
   </a>
 
   <a class="card" href="https://penthouse280.com/">
-    <div class="img"><img src="hub/rosewood.jpg" alt="Penthouse 280 at Rosewood"></div>
-    <div class="txt"><h2>Penthouse 280</h2><span class="go">VIEW →</span><span class="where">Rosewood at Providence, Charlotte</span>
+    <div class="img"><img src="hub/rosewood.jpg" alt="2823 Providence Road, Unit 280" loading="lazy"></div>
+    <div class="txt"><h2>Penthouse 280<span class="price">$1,925,000</span></h2><span class="go">VIEW →</span><span class="where">Rosewood at Providence, Charlotte</span>
       <p class="line">Top floor, top corner. Two balconies and the sunset to yourself.</p></div>
   </a>
 
   <div class="label eyebrow more">More Listings</div>
 
+  <a class="mini" href="https://www.realtyryan.com/home-search/listings/4433009">
+    <img src="hub/mls-CAR4433009.jpg" alt="4420 Castleton Road" loading="lazy">
+    <div><h3>4420 Castleton Road</h3><p class="price">$1,725,000</p><p>Cotswold · Charlotte · 4 bed · 5 bath · 3,674 sq ft</p><span class="go">DETAILS →</span></div>
+  </a>
+
+  <a class="mini" href="https://www.realtyryan.com/home-search/listings/4433005">
+    <img src="hub/mls-CAR4433005.jpg" alt="4424 Castleton Road" loading="lazy">
+    <div><h3>4424 Castleton Road</h3><p class="price">$1,725,000</p><p>Cotswold · Charlotte · 4 bed · 6 bath · 3,741 sq ft</p><span class="go">DETAILS →</span></div>
+  </a>
+
   <a class="mini" href="https://www.realtyryan.com/home-search/listings/4406145">
-    <img src="hub/fifth-poplar.jpg" alt="Fifth &amp; Poplar pool, Uptown Charlotte">
-    <div><h3>300 W 5th St, Unit 419</h3><p>Fifth &amp; Poplar · Uptown · 1 bed · 758 sq ft · $279,900</p><span class="go">DETAILS →</span></div>
+    <img src="hub/fifth-poplar.jpg" alt="300 W 5th Street, Unit 419" loading="lazy">
+    <div><h3>300 W 5th Street, Unit 419</h3><p class="price">$279,900</p><p>Fifth &amp; Poplar · Uptown · 1 bed · 1 bath · 758 sq ft</p><span class="go">DETAILS →</span></div>
+  </a>
+
+  <div class="label eyebrow more">Under Contract</div>
+
+  <a class="mini uc" href="https://www.realtyryan.com/home-search/listings/4366791">
+    <img src="hub/mls-CAR4366791.jpg" alt="14515 NC Hwy 73" loading="lazy">
+    <div><span class="tag">Under Contract</span><h3>14515 NC Hwy 73</h3><p class="price">$3,490,000</p><p>Huntersville · Land</p><span class="go">DETAILS →</span></div>
+  </a>
+
+  <a class="mini uc" href="https://www.realtyryan.com/home-search/listings/4435763">
+    <img src="hub/mls-CAR4435763.jpg" alt="3320 Mayfield Avenue" loading="lazy">
+    <div><span class="tag">Under Contract</span><h3>3320 Mayfield Avenue</h3><p class="price">$3,200,000</p><p>Sedgefield · Charlotte · 5 bed · 5 bath · 4,716 sq ft</p><span class="go">DETAILS →</span></div>
+  </a>
+
+  <a class="mini uc" href="https://www.realtyryan.com/home-search/listings/4379528">
+    <img src="hub/mls-CAR4379528.jpg" alt="1800 Chestnut Lane" loading="lazy">
+    <div><span class="tag">Under Contract</span><h3>1800 Chestnut Lane</h3><p class="price">$1,150,000</p><p>Matthews · 3 bed · 4 bath · 4,133 sq ft</p><span class="go">DETAILS →</span></div>
+  </a>
+
+  <a class="mini uc" href="https://www.realtyryan.com/home-search/listings/4420198">
+    <img src="hub/mls-CAR4420198.jpg" alt="4320 Tournette Drive" loading="lazy">
+    <div><span class="tag">Under Contract</span><h3>4320 Tournette Drive</h3><p class="price">$899,000</p><p>Ridgecrest · Indian Land · 5 bed · 4 bath · 3,541 sq ft</p><span class="go">DETAILS →</span></div>
+  </a>
+
+  <a class="mini uc" href="https://www.realtyryan.com/home-search/listings/4423443">
+    <img src="hub/mls-CAR4423443.jpg" alt="4230 Tournette Drive" loading="lazy">
+    <div><span class="tag">Under Contract</span><h3>4230 Tournette Drive</h3><p class="price">$799,000</p><p>Ridgecrest · Indian Land · 5 bed · 5 bath · 3,894 sq ft</p><span class="go">DETAILS →</span></div>
+  </a>
+
+  <a class="mini uc" href="https://www.realtyryan.com/home-search/listings/4431947">
+    <img src="hub/mls-CAR4431947.jpg" alt="4805 Murrayhill Road" loading="lazy">
+    <div><span class="tag">Under Contract</span><h3>4805 Murrayhill Road</h3><p class="price">$450,000</p><p>Selwyn Park · Charlotte · 3 bed · 1 bath · 976 sq ft</p><span class="go">DETAILS →</span></div>
   </a>
 
   <a class="alt3" href="https://alt3smarthomes.com/">

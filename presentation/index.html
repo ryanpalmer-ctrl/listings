@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Ryan Palmer × The Agency — Seller Presentation</title>
+<meta name="description" content="Ryan Palmer &times; The Agency Charlotte &amp; Lake Norman &mdash; how we price, market, and sell your home.">
+<meta property="og:title" content="Ryan Palmer × The Agency — Seller Presentation">
+<meta property="og:description" content="How we price, market, and sell your home.">
+<meta property="og:image" content="https://realtyryanhomes.com/presentation/m/dbe522e1f2.jpg">
+<meta property="og:url" content="https://realtyryanhomes.com/presentation/">
+<meta name="theme-color" content="#000000">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--red:#ED2127;--iron:#000;--char:#231F20;--cream:#F5F1E9;--plaster:#F7F8F6;--canvas:#fff;
+ --serif:"Playfair Display","Didot","Bodoni 72",Georgia,serif;
+ --cond:"Avenir Next Condensed","Arial Narrow",sans-serif;
+ --body:"Avenir Next",-apple-system,"Helvetica Neue",sans-serif}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-snap-type:y mandatory;overflow-x:clip;overscroll-behavior-x:none}
+body{font-family:var(--body);background:var(--iron);color:var(--char);overflow-x:clip;overscroll-behavior-x:none;touch-action:pan-y pinch-zoom}
+img,video{display:block;max-width:100%}
+#bar{position:fixed;top:0;left:0;height:3px;background:var(--red);width:0;z-index:50;transition:width .15s linear}
+.s{min-height:100svh;position:relative;display:flex;flex-direction:column;justify-content:center;
+ padding:9svh 6vw;scroll-snap-align:start;scroll-snap-stop:always}
+
+.s-cream{background:var(--cream)}.s-white{background:var(--canvas)}.s-plaster{background:var(--plaster)}
+.s-red{background:var(--red);color:#fff}.s-iron{background:var(--iron);color:#fff}
+.kick{font-family:var(--cond);font-weight:600;font-size:clamp(11px,1.35vw,15px);letter-spacing:.34em;
+ text-transform:uppercase;color:var(--red);margin-bottom:1.8svh}
+.s-red .kick{color:#fff;opacity:.85}.s-iron .kick{color:var(--red)}
+h1,h2{font-family:var(--serif);font-weight:500;line-height:1.04;text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:clamp(44px,7.4vw,108px)}
+h2{font-size:clamp(34px,5.6vw,84px)}
+h2 em,h1 em{font-style:italic}
+.sub{font-size:clamp(15px,1.7vw,21px);line-height:1.55;max-width:34em;margin-top:1.8svh;color:#4c4642}
+.s-red .sub,.s-iron .sub{color:rgba(255,255,255,.82)}
+.rule{width:64px;height:2px;background:var(--red);margin-top:3.2vh}
+.s-red .rule{background:#fff}
+/* hero */
+.hero{padding:0;justify-content:flex-end;color:#fff;background:#000}
+.hero .media,.hero .media video,.hero .media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .scrim{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.74) 0%,rgba(0,0,0,.18) 48%,rgba(0,0,0,.52) 100%)}
+.hero .inner{position:relative;padding:0 6vw 9svh;z-index:2}
+.hero h1{font-size:clamp(52px,9vw,132px);color:#fff}
+.hero .kick{color:#fff;opacity:.9}
+.hero .brandrow{position:absolute;top:5svh;left:6vw;right:6vw;display:flex;justify-content:space-between;align-items:center;z-index:2}
+.hero .brandrow img{height:clamp(34px,4.6vw,52px);width:auto}
+.hero .agybox svg{width:clamp(56px,6.4vw,76px);height:auto;display:block}
+.kb img{animation:kb 26s ease-in-out infinite alternate}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.09)}}
+.scrollcue{position:absolute;bottom:2.6svh;left:50%;transform:translateX(-50%);z-index:3;color:#fff;
+ font-family:var(--cond);letter-spacing:.3em;font-size:11px;opacity:.75;text-transform:uppercase}
+/* stats */
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:3.2vw 3vw;margin-top:5vh}
+.tile{min-width:0;overflow:hidden}
+.tile .n{font-family:var(--cond);font-weight:600;font-size:clamp(36px,4.8vw,64px);line-height:1;color:var(--red);font-variant-numeric:tabular-nums;white-space:nowrap}
+.s-iron .tile .n{color:#fff}
+.mkt .tile.mut .n{color:#a89e93}
+.tile .l{font-family:var(--cond);font-weight:500;letter-spacing:.26em;text-transform:uppercase;font-size:clamp(10px,1.15vw,13px);margin-top:1.2vh;color:#6b645e}
+.s-iron .tile .l{color:rgba(255,255,255,.6)}
+/* about */
+.about{display:grid;grid-template-columns:minmax(200px,2fr) 3fr;gap:5vw;align-items:stretch}
+.about .shot{width:100%;height:100%;max-height:58svh;object-fit:cover;object-position:top}
+.about .atext{display:flex;flex-direction:column;justify-content:center;min-width:0}
+.about .tiles{grid-template-columns:repeat(2,minmax(0,1fr));gap:2.4svh 3vw;margin-top:3svh}
+.about .tile .n{font-size:clamp(30px,3.6vw,48px)}
+.aboutpress{grid-column:1/-1;margin-top:1.2svh}
+.pr-dark{margin-top:0!important;opacity:.95}
+.pr-dark img{height:clamp(17px,2.1vw,26px);filter:grayscale(1);opacity:.85}
+.pressrow img[alt="Stroll"]{height:clamp(24px,3.2vw,40px)}
+@media(max-width:740px){.about{grid-template-columns:1fr}.about .shot{max-width:340px}}
+/* film */
+.filmwrap{position:relative;margin-top:3svh;max-width:1120px}
+.filmwrap video{width:100%;aspect-ratio:2/1;object-fit:cover;background:#000}
+.cap{display:flex;justify-content:space-between;gap:2em;margin-top:1.6vh;font-family:var(--cond);
+ letter-spacing:.22em;text-transform:uppercase;font-size:clamp(10px,1.2vw,13px);color:#6b645e}
+.s-iron .cap{color:rgba(255,255,255,.55)}
+/* sound pill */
+.pill{position:absolute;right:14px;bottom:14px;z-index:5;border:1px solid rgba(255,255,255,.85);
+ background:rgba(0,0,0,.45);color:#fff;font-family:var(--cond);letter-spacing:.22em;font-size:11px;
+ text-transform:uppercase;padding:9px 16px;border-radius:999px;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.pill:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+/* reels */
+.reels{display:flex;gap:3vw;margin-top:2.6svh;justify-content:flex-start;overflow-x:clip;
+ -webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory;padding-bottom:2vh}
+.phone{flex:0 0 auto;width:clamp(170px,18vw,236px);scroll-snap-align:center;position:relative}
+.phone .frame{border-radius:34px;overflow:hidden;border:1px solid rgba(0,0,0,.16);position:relative;
+ box-shadow:0 24px 60px -24px rgba(0,0,0,.45);background:#000}
+.phone video{width:100%;aspect-ratio:9/16;object-fit:cover}
+.phone .notch{position:absolute;top:10px;left:50%;transform:translateX(-50%);width:34%;height:16px;background:#000;border-radius:999px;z-index:3}
+.phone .tag{margin-top:1.4vh;font-family:var(--cond);letter-spacing:.2em;font-size:11px;text-transform:uppercase;color:#6b645e;text-align:center}
+/* gallery slider */
+.galslide{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:3.5svh;max-width:1080px}
+.gtile{position:relative;aspect-ratio:2/3;max-height:54svh;overflow:hidden;background:#e8e4dd}
+.gtile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.2s ease}
+.gtile img.on{opacity:1}
+/* prep */
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:5vh}
+.ba figure{position:relative}
+.ba .lbl{position:absolute;top:10px;left:10px;z-index:2;background:var(--red);color:#fff;font-family:var(--cond);
+ letter-spacing:.24em;font-size:11px;text-transform:uppercase;padding:6px 12px}
+.ba figure:first-child img{filter:saturate(.85)}
+.cardrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:4vh}
+.cardrow.cards4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:860px){.cardrow.cards4{grid-template-columns:1fr 1fr}}
+.card{border:1px solid rgba(0,0,0,.14);padding:26px 24px;background:var(--canvas)}
+.s-iron .card,.s-red .card{background:transparent;border-color:rgba(255,255,255,.28)}
+.card .t{font-family:var(--serif);font-size:clamp(19px,2vw,26px);font-style:italic;margin-bottom:.6em}
+.card p{font-size:clamp(13px,1.4vw,15.5px);line-height:1.55;color:#55504b}
+.s-iron .card p{color:rgba(255,255,255,.72)}
+.card .big{font-family:var(--cond);font-weight:600;font-size:clamp(30px,3.6vw,46px);color:var(--red);line-height:1.05}
+.arc{margin-top:5vh;border-top:1px solid rgba(0,0,0,.18);padding-top:2.6vh}
+.arc .cap span:before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--red);margin-right:9px;vertical-align:middle}
+.quoteline{font-family:var(--serif);font-style:italic;font-size:clamp(15px,1.6vw,20px);line-height:1.5;color:#3c3733;margin-top:2.6svh;max-width:30em}
+/* timeline */
+.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:3vw;margin-top:6vh;position:relative}
+.tl:before{content:"";position:absolute;top:7px;left:2%;right:2%;height:1px;background:rgba(0,0,0,.25)}
+.s-iron .tl:before{background:rgba(255,255,255,.3)}
+.tl .step:before{content:"";display:block;width:15px;height:15px;border-radius:50%;background:var(--red);margin-bottom:2.2vh;position:relative}
+.tl .h{font-family:var(--serif);font-style:italic;font-size:clamp(17px,2.1vw,26px);margin-bottom:.5em}
+.tl p{font-family:var(--cond);letter-spacing:.14em;text-transform:uppercase;font-size:clamp(10px,1.15vw,13px);line-height:2;color:#6b645e}
+.s-iron .tl p{color:rgba(255,255,255,.6)}
+@media(max-width:700px){.tl{grid-template-columns:1fr 1fr;gap:5vw}.tl:before{display:none}}
+/* strips */
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:5vh}
+.strip img{width:100%;aspect-ratio:3/4;object-fit:cover}
+@media(max-width:700px){.strip{grid-template-columns:repeat(2,1fr)}}
+.pressrow{display:grid;grid-template-columns:repeat(6,auto);justify-content:space-between;align-items:center;gap:3vw;margin-top:5vh;opacity:.92}
+@media(max-width:700px){.pressrow{grid-template-columns:repeat(3,auto);row-gap:22px}}
+.pressrow img{height:clamp(17px,2.4vw,30px);width:auto}
+.pressrow img.inv{filter:grayscale(1) invert(1) brightness(2)}
+.pressrow img{min-height:16px}
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-items:center;margin-top:4vh}
+@media(max-width:740px){.split{grid-template-columns:1fr}}
+.split img{width:100%;object-fit:cover}
+/* close */
+.close .contact{margin-top:5vh;font-family:var(--cond);letter-spacing:.2em;text-transform:uppercase;
+ font-size:clamp(12px,1.5vw,16px);line-height:2.3;color:rgba(255,255,255,.92)}
+.close .lockup{height:clamp(44px,6vw,64px);width:auto;margin-top:6vh}
+.fine{margin-top:6vh;font-size:9.5px;line-height:1.8;letter-spacing:.06em;color:rgba(255,255,255,.75);max-width:64em;text-transform:uppercase}
+.foot-agy svg{width:56px;height:auto}
+ul.quiet{list-style:none;margin-top:3.5vh}
+ul.quiet li{font-size:clamp(14px,1.6vw,18px);line-height:2.05;color:#4c4642}
+ul.quiet li:before{content:"";display:inline-block;width:18px;height:2px;background:var(--red);margin-right:14px;vertical-align:middle}
+.s-iron ul.quiet li{color:rgba(255,255,255,.78)}
+/* browser frame */
+.browser{margin-top:5vh;border-radius:12px;overflow:hidden;box-shadow:0 34px 90px -30px rgba(0,0,0,.5);border:1px solid rgba(0,0,0,.12);background:#fff;max-width:980px}
+.browser .chrome{display:flex;align-items:center;gap:7px;padding:10px 14px;background:#eceae6;border-bottom:1px solid rgba(0,0,0,.08)}
+.browser .dot{width:10px;height:10px;border-radius:50%;background:#d6d2cb}
+.browser .dot:first-child{background:var(--red)}
+.browser .url{flex:1;text-align:center;font-family:var(--cond);letter-spacing:.18em;font-size:12px;color:#55504b;background:#fff;border-radius:6px;padding:5px 0}
+.browser>img{width:100%;max-height:56svh;object-fit:cover;object-position:top}
+.webmock{position:relative;max-width:980px;margin-top:5vh}
+.webmock .browser{margin-top:0;width:88%}
+.phoneframe{position:absolute;right:0;bottom:-6%;width:clamp(120px,17%,190px);border-radius:26px;overflow:hidden;
+ border:5px solid #111;box-shadow:0 30px 70px -24px rgba(0,0,0,.55);background:#000}
+.phoneframe img{width:100%;display:block}
+/* print fan */
+.fan{position:relative;height:clamp(300px,54svh,520px);margin-top:6vh;max-width:980px}
+.fan img{position:absolute;top:0;width:clamp(190px,26vw,330px);box-shadow:0 28px 64px -22px rgba(0,0,0,.45);border:1px solid rgba(0,0,0,.08);background:#fff}
+.fan .f0{left:16%;top:14%;transform:rotate(-13deg);width:clamp(150px,19vw,240px);opacity:.95}
+.fan .f1{left:4%;top:7%;transform:rotate(-7deg)}
+.fan .f2{left:31%;top:0;transform:rotate(-1deg);z-index:2}
+.fan .f3{left:58%;top:9%;transform:rotate(6deg)}
+.printgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:2.6svh;max-width:900px}
+.printgrid img{width:100%;aspect-ratio:1/1;object-fit:cover;box-shadow:0 18px 44px -18px rgba(0,0,0,.35);border:1px solid rgba(0,0,0,.08)}
+.printgrid img:nth-child(1){transform:rotate(-1.2deg)}
+.printgrid img:nth-child(3){transform:rotate(1.2deg)}
+.printrow2{display:grid;grid-template-columns:2.2fr 0.8fr;gap:14px;margin-top:14px;max-width:900px;align-items:start}
+.printrow2 img{width:100%;box-shadow:0 18px 44px -18px rgba(0,0,0,.3);border:1px solid rgba(0,0,0,.08)}
+.fanx{height:clamp(340px,60svh,560px)}
+.fanx .fs{position:absolute;left:6%;bottom:0;width:76%;transform:rotate(-2deg);opacity:.92;box-shadow:0 20px 50px -20px rgba(0,0,0,.35)}
+.rv{opacity:0;transition:opacity .8s ease}
+.rv.in{opacity:1}
+.fanx .f0{--rot:-13deg}.fanx .f1{--rot:-7deg}.fanx .f2{--rot:-1deg}.fanx .f3{--rot:6deg}.fanx .fs{--rot:-2deg}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+/* email */
+.emailwrap{display:grid;grid-template-columns:minmax(240px,2fr) 3fr;gap:6vw;align-items:center;margin-top:5vh}
+.newscard{border:1px solid rgba(0,0,0,.13);box-shadow:0 30px 70px -28px rgba(0,0,0,.4);overflow:hidden;max-height:66svh;background:#fff}
+.newscard img{width:100%}
+@media(max-width:740px){.emailwrap{grid-template-columns:1fr}.newscard{max-width:340px}}
+.prepimgs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:5vh}
+.prepimgs img{width:100%;aspect-ratio:2/3;object-fit:cover;max-height:40svh}
+@media(max-width:700px){.prepimgs{grid-template-columns:repeat(3,1fr)}}
+/* results */
+.wins{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:3svh;max-width:980px}
+.wins figure{position:relative}
+.wins img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.wins .chip{position:absolute;top:12px;left:12px;background:var(--red);color:#fff;font-family:var(--cond);font-weight:600;letter-spacing:.22em;font-size:11px;text-transform:uppercase;padding:7px 13px}
+.wins figcaption{font-family:var(--cond);letter-spacing:.2em;font-size:11px;text-transform:uppercase;color:#6b645e;margin-top:9px}
+.wins .statcard{border:1px solid rgba(0,0,0,.14);display:flex;flex-direction:column;justify-content:center;padding:24px;background:var(--canvas)}
+@media(max-width:700px){.wins{grid-template-columns:1fr}}
+/* takeover rows */
+.to{display:grid;grid-template-columns:clamp(160px,16vw,230px) 1fr;gap:2.6vw;align-items:center;margin-top:2.8svh}
+.to img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.tostats{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5vw}
+.tocol .n{font-family:var(--cond);font-weight:600;font-size:clamp(26px,3.1vw,44px);line-height:1;color:#fff;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tocol.was .n{color:rgba(255,255,255,.38);text-decoration:line-through;text-decoration-thickness:3px;text-decoration-color:var(--red)}
+.tocol.now .n{color:var(--red)}
+.tocol .l{font-family:var(--cond);font-weight:500;letter-spacing:.18em;text-transform:uppercase;font-size:clamp(8px,0.9vw,11px);margin-top:0.9vh;color:rgba(255,255,255,.55);line-height:1.7}
+@media(max-width:740px){.to{grid-template-columns:1fr}.tostats{grid-template-columns:repeat(3,1fr)}}
+.slidefit{padding-top:6svh;padding-bottom:6svh}
+/* difference table */
+.diff{margin-top:5vh;max-width:920px}
+.diffhead,.diffrow{display:grid;grid-template-columns:2fr 3fr;gap:4vw;padding:1.9vh 0;border-bottom:1px solid rgba(255,255,255,.16)}
+.diffhead{font-family:var(--cond);font-weight:600;letter-spacing:.28em;text-transform:uppercase;font-size:clamp(10px,1.2vw,13px);border-bottom:1px solid rgba(255,255,255,.4)}
+.diffhead .a{color:rgba(255,255,255,.45)}.diffhead .b{color:var(--red);padding-left:28px}
+.diffrow .a{color:rgba(255,255,255,.45);font-size:clamp(13px,1.5vw,17px)}
+.diffrow .b{color:#fff;font-size:clamp(13px,1.5vw,17px)}
+.diffrow .b:before{content:"";display:inline-block;width:16px;height:2px;background:var(--red);margin-right:12px;vertical-align:middle}
+/* social stat mini row */
+.minitiles{display:flex;gap:5vw;margin-top:2.6svh;flex-wrap:wrap}
+.minitiles .tile .n{font-size:clamp(28px,3.6vw,50px)}
+@media(prefers-reduced-motion:reduce){.kb img{animation:none}html{scroll-behavior:auto}}
+</style>
+<div id="bar"></div>
+<main class="snap"><section class="s hero">
+<div class="media kb"><img src="m/6b55dafde0.jpg" alt=""></div><div class="scrim"></div>
+<div class="brandrow"><img src="m/3cff23f503.png" alt="Realty Ryan"><div class="agybox"><svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M120 0H0v120h120V0Z" fill="#ED2127"/><path d="M26.08 72.518h3.339v9.84h1.296v-9.84h3.341v-.974H26.08v.974Zm16.023 3.664h-5.19v-4.638h-1.296V82.36h1.297v-5.205h5.189v5.205h1.294V71.544h-1.294v4.638Zm8.065-34.287V64.06h1.977V41.895a4.454 4.454 0 0 0-4.45-4.449 4.428 4.428 0 0 0-3.16 1.318l-1.076 1.12-12.517 13.275H14.56l-.566-.034h-.059a5.408 5.408 0 0 0-5.403 5.4v10.057a4.454 4.454 0 0 0 4.45 4.45 4.43 4.43 0 0 0 3.162-1.322l2.454-2.578 13.197-13.997h10.884V53.16h-9.023l11.231-11.912 1.058-1.101a2.454 2.454 0 0 1 1.747-.723 2.476 2.476 0 0 1 2.473 2.474l.003-.002ZM17.166 67.772 14.73 70.33a2.475 2.475 0 0 1-4.222-1.75V58.523a3.428 3.428 0 0 1 3.399-3.425l.563.035h14.61L17.165 67.772h.001Zm30.257 9.399h4.798V76.2h-4.798v-3.68h4.928v-.975h-6.226V82.36h6.307v-.973h-5.009v-4.215Zm10.801-5.627L54.415 82.36h1.524l.94-2.74h4.46l.956 2.74h1.785l-3.925-10.815h-1.93Zm-.957 6.892 1.8-5.513 1.847 5.513h-3.647Zm13.993 2.447c-.6.177-1.361.324-2.075.324-.957 0-1.555-.292-2.026-.94-.503-.712-.779-1.896-.779-3.34 0-2.82.958-4.181 2.967-4.181.699 0 1.703.145 2.936.42l.259-1.184c-1.459-.438-2.481-.6-3.357-.6-2.933 0-4.587 1.978-4.587 5.594 0 3.615 1.572 5.576 4.263 5.576 1.12 0 2.319-.259 4.005-.94V77.25H71.26v3.633Zm5.468-3.582h4.718v-1.2h-4.718v-3.34h4.864v-1.217H75.04V82.36h6.616v-1.215h-4.929V77.3Zm13.516 3.452-4.45-9.209H83.49V82.36h1.387v-9.127l4.45 9.127h2.303V71.544h-1.387v9.209Zm8.006.407c-1.766 0-2.723-1.508-2.723-4.311 0-2.562.924-4.102 2.967-4.102.665 0 1.427.082 2.481.308l.275-1.217c-1.167-.324-2.108-.47-2.95-.47-2.902 0-4.556 2.01-4.556 5.628 0 3.617 1.589 5.56 4.198 5.56.973 0 2.174-.244 3.567-.794l-.374-1.168c-1.393.406-2.237.568-2.885.568v-.001Zm11.563-9.616-2.675 4.783-2.706-4.783h-1.963l3.664 6.065v4.75h1.687v-4.75l3.647-6.065h-1.654Z" fill="#F8F7F5"/></svg>
+</div></div>
+<div class="inner"><div class="kick">The Agency Charlotte × Lake Norman</div><h1>Every home gets <em>the red carpet.</em></h1>
+<div class="sub" style="color:rgba(255,255,255,.85)">222 homes sold. $148M+ closed. One standard of service.</div></div>
+<div class="scrollcue">Scroll</div></section>
+<section class="s s-red"><div><div class="kick">The standard</div>
+<h2>White-glove isn&rsquo;t a price&nbsp;point. It&rsquo;s the <em>standard.</em></h2><div class="rule"></div></div></section>
+<section class="s s-cream slidefit"><div class="about">
+<img class="shot" src="m/1601b8698f.jpg" alt="Ryan Palmer">
+<div class="atext"><div class="kick">Your agent</div><h2 style="font-size:clamp(28px,4.2vw,58px)">A track record measured<br>in results, not <em>promises.</em></h2>
+<div class="sub">Ryan Palmer &middot; Partner, Luxury Division &middot; The Agency Charlotte &times; Lake Norman &middot; Licensed NC &amp; SC</div>
+<div class="tiles"><div class="tile"><div class="n">$148M+</div><div class="l">Career sales volume</div></div><div class="tile"><div class="n">222</div><div class="l">Homes closed</div></div><div class="tile"><div class="n">Top 50</div><div class="l">of 17,000 agents in NC &amp; SC</div></div><div class="tile"><div class="n">Top 1%</div><div class="l">of REALTORS&reg; in NC</div></div></div>
+<div class="quoteline">&ldquo;Luxury isn&rsquo;t defined by price &mdash; it&rsquo;s defined by the level of service every client deserves.&rdquo;</div>
+</div>
+<div class="aboutpress"><div class="kick" style="margin-bottom:1.4vh">As featured in</div>
+<div class="pressrow pr-dark"><img src="m/9fc7bb2109.png" alt="Luxury Home Magazine"><img src="m/165d6a88c7.png" alt="SouthPark Magazine"><img src="m/8f4b62a4d3.png" alt="Homes & Land"><img src="m/d0193eb170.png" alt="Axios"><img src="m/697e690daa.png" alt="Real Producers"><img src="m/82021bcdc9.png" alt="Stroll"></div></div>
+</div></section>
+<section class="s s-white"><div>
+<img src="m/c39ace2b90.png" alt="Realty Ryan" style="height:clamp(40px,5vw,58px);width:auto;margin-bottom:3.5vh">
+<div class="kick">What I bring</div>
+<h2>More than an agent. A <em>platform.</em></h2>
+<div class="sub">Four things working for your home from day one.</div>
+<div class="cardrow cards4">
+<div class="card"><div class="t">The audience</div><p>12K+ followers, a curated buyer database, and content that buyers actually watch.</p></div>
+<div class="card"><div class="t">The media</div><p>Editorial photography, cinematic film, and print &mdash; produced for every listing.</p></div>
+<div class="card"><div class="t">The operations</div><p>Weekly strategy updates, a trusted vendor bench, white&#8209;glove prep through closing.</p></div>
+<div class="card"><div class="t">The record</div><p>99% of list achieved and a 14&#8209;day median market time, on the record.</p></div>
+</div></div></section>
+<section class="s s-cream"><div><div class="kick">The first decision</div>
+<h2>Your price is a strategy, not a <em>guess.</em></h2>
+<div class="sub">Data sets the number; the launch window protects it.</div>
+<div class="cardrow">
+<div class="card"><div class="t">The data</div><p>Every comparable sale, active competitor, and market signal &mdash; priced from evidence, not opinion.</p></div>
+<div class="card"><div class="t">The window</div><p>The first fourteen days decide the outcome. I price to own them.</p></div>
+<div class="card"><div class="t">The position</div><p>Your home framed against the competition, so buyers see the value before they see the price.</p></div>
+</div>
+<div class="tiles mkt">
+<div class="tile mut"><div class="n">96.3%</div><div class="l">Charlotte &middot; of&nbsp;list achieved</div></div>
+<div class="tile"><div class="n">99%</div><div class="l">Ryan &middot; of&nbsp;list achieved</div></div>
+<div class="tile mut"><div class="n">47</div><div class="l">Charlotte &middot; median&nbsp;days on&nbsp;market</div></div>
+<div class="tile"><div class="n">14</div><div class="l">Ryan &middot; median&nbsp;days on&nbsp;market</div></div>
+</div>
+<div class="cap" style="margin-top:3vh"><span>Canopy MLS &middot; mid-2026 &middot; Ryan: 31 closings 2025&ndash;26, MLS record</span><span>84% of first-time sellers regret pricing or timing &mdash; Zillow</span></div>
+</div></section>
+<section class="s s-plaster slidefit"><div><div class="kick">Recent results</div>
+<h2 style="font-size:clamp(28px,4.2vw,58px)">The strategy, working in real <em>time.</em></h2>
+<div class="sub">Sold over asking in the last twelve months &mdash; and one that hasn&rsquo;t even closed yet.</div>
+<div class="wins"><figure><span class="chip">+$151K over ask &middot; 1 day</span><img src="m/7fd0860afa.jpg" alt="8419 Prince George Road &middot; sold $1,350,000 &middot; 2025" loading="lazy">
+<figcaption>8419 Prince George Road &middot; sold $1,350,000 &middot; 2025</figcaption></figure><figure><span class="chip">+$239K over original ask</span><img src="m/bfd1bc4935.jpg" alt="1437 Montford Drive &middot; sold $2,464,450 &middot; 2026" loading="lazy">
+<figcaption>1437 Montford Drive &middot; sold $2,464,450 &middot; 2026</figcaption></figure><figure><span class="chip">+$15K over ask &middot; 1 day</span><img src="m/9aeae56efe.jpg" alt="4601 General Pershing Drive &middot; sold $715,000 &middot; 2026" loading="lazy">
+<figcaption>4601 General Pershing Drive &middot; sold $715,000 &middot; 2026</figcaption></figure><figure><span class="chip">+$8K over ask &middot; 1 day</span><img src="m/2c852a4b4c.jpg" alt="5834 Timbertop Lane &middot; sold $343,000 &middot; 2026" loading="lazy">
+<figcaption>5834 Timbertop Lane &middot; sold $343,000 &middot; 2026</figcaption></figure><figure><span class="chip">+$10K over ask</span><img src="m/fd5494151e.jpg" alt="113 Scottsmoor Drive &middot; sold $460,000 &middot; 2026" loading="lazy">
+<figcaption>113 Scottsmoor Drive &middot; sold $460,000 &middot; 2026</figcaption></figure><figure><span class="chip">Multiple offers &middot; under contract</span><img src="m/193edfe0b6.jpg" alt="5434 Stallworth Drive &middot; Charlotte &middot; 2026" loading="lazy">
+<figcaption>5434 Stallworth Drive &middot; Charlotte &middot; 2026</figcaption></figure></div></div></section>
+<section class="s s-iron slidefit"><div><div class="kick">When it didn&rsquo;t sell</div>
+<h2 style="font-size:clamp(30px,4.6vw,64px)">Same home. Same market. Different <em>outcome.</em></h2>
+<div class="sub" style="margin-top:1.6vh">Homes that sat with other brokerages &mdash; relisted, relaunched, and sold. Every number is from the MLS record.</div>
+<div class="to">
+<img src="m/33b432f9c8.jpg" alt="1401 Heather Lane" loading="lazy">
+<div class="tostats">
+<div class="tocol was"><div class="n">222</div><div class="l">Days on market<br>with another brokerage</div></div>
+<div class="tocol now"><div class="n">13</div><div class="l">Days to sell<br>relisted with Ryan</div></div>
+<div class="tocol"><div class="n">$2.99M</div><div class="l">Sold &middot; 1401 Heather Lane</div></div>
+</div></div><div class="to">
+<img src="m/080eab304e.jpg" alt="531 Manhasset Road" loading="lazy">
+<div class="tostats">
+<div class="tocol was"><div class="n">125</div><div class="l">Days on market<br>with another brokerage</div></div>
+<div class="tocol now"><div class="n">4</div><div class="l">Days to sell<br>relisted with Ryan</div></div>
+<div class="tocol"><div class="n">$835K</div><div class="l">Sold &middot; 531 Manhasset Road</div></div>
+</div></div><div class="to">
+<img src="m/a982b745b1.jpg" alt="1751 Merriman Avenue" loading="lazy">
+<div class="tostats">
+<div class="tocol was"><div class="n">146</div><div class="l">Days on market<br>with another brokerage</div></div>
+<div class="tocol now"><div class="n">45</div><div class="l">Days to sell<br>relisted with Ryan</div></div>
+<div class="tocol"><div class="n">$1.08M</div><div class="l">Sold &middot; 1751 Merriman Avenue</div></div>
+</div></div></div></section>
+<section class="s s-cream slidefit"><div><div class="kick">Before the cameras</div>
+<h2 style="font-size:clamp(30px,4.6vw,64px)">First impressions get one <em>take.</em></h2>
+<div class="prepimgs">
+<img src="m/33a412251f.jpg" alt="Styled living room" loading="lazy">
+<img src="m/9f6f817798.jpg" alt="Styled dining" loading="lazy">
+<img src="m/03892e51c3.jpg" alt="Styled powder room" loading="lazy">
+</div>
+<div class="cardrow">
+<div class="card"><div class="t">Concierge prep</div><p>Paint, lighting, landscaping, deep cleaning, repairs &mdash; managed end&#8209;to&#8209;end with Ryan&rsquo;s trusted contractor network.</p></div>
+<div class="card"><div class="t">Staging that sells</div><p>Complimentary consultation, room&#8209;by&#8209;room plan, styling for photography and film.</p></div>
+<div class="card"><div class="t">The Agency ReFrame</div><div class="big" style="font-size:clamp(24px,2.8vw,36px);margin-bottom:.4em">Up to $50,000</div><p>Strategic improvements now, $0 out of pocket &mdash; repaid at closing.</p></div>
+</div></div></section>
+<section class="s s-plaster slidefit"><div><div class="kick">The photography</div>
+<h2 style="font-size:clamp(30px,4.6vw,64px)">Shot like a magazine <em>spread.</em></h2>
+<div class="sub" style="margin-top:1.4vh">Editorial photography that earns the click — and the showing.</div><div class="galslide"><div class="gtile"><img src="m/7d3162027d.jpg" alt="Plum Arbor Way" class="on" loading="eager"><img src="m/1aed87d1ac.jpg" alt="Marsh Road" class="" loading="eager"><img src="m/fb103a50d8.jpg" alt="The Point" class="" loading="eager"></div><div class="gtile"><img src="m/122f3dd7e1.jpg" alt="Plum Arbor Way" class="on" loading="eager"><img src="m/d8018d28bc.jpg" alt="Plum Arbor Way" class="" loading="eager"><img src="m/20f669f78b.jpg" alt="Marsh Road" class="" loading="eager"></div><div class="gtile"><img src="m/998e44d60c.jpg" alt="Marsh Road" class="on" loading="eager"><img src="m/7327aee4e2.jpg" alt="Marsh Road" class="" loading="eager"><img src="m/35fb962818.jpg" alt="The Point" class="" loading="eager"></div></div>
+<div class="cap" style="margin-top:2vh;max-width:1080px"><span>Detail studies &middot; shot for Ryan&rsquo;s listings</span><span>78% of sellers say professional photography matters most &mdash; Zillow</span></div></div></section>
+<section class="s s-iron slidefit"><div><div class="kick">The film</div>
+<h2 style="font-size:clamp(28px,4.2vw,58px)">Every listing gets a <em>premiere.</em></h2>
+<div class="sub">A cinematic film for every listing — because buyers fall for stories, not&nbsp;specs.</div>
+<div class="filmwrap"><video data-v="film" src="m/film.mp4" muted playsinline loop preload="auto" poster="m/dbe522e1f2.jpg"></video>
+<button class="pill" type="button">Sound on</button></div>
+<div class="cap"><span>131 The Point Drive &middot; Lake Norman</span><span>Listed &amp; sold by Ryan Palmer</span></div>
+</div></section>
+<section class="s s-white slidefit"><div><div class="kick">The audience</div>
+<h2 style="font-size:clamp(28px,4.2vw,58px)">Where buyers <em>actually</em> spend their evenings.</h2>
+<div class="sub">Short-form video engineered for reach, timed to your launch.</div>
+<div class="reels"><div class="phone"><div class="frame"><div class="notch"></div><video data-v="rstall" src="m/rstall.mp4" muted playsinline loop preload="auto" poster="m/ee543d12d7.jpg"></video><button class="pill" type="button">Sound on</button></div><div class="tag">Under contract · multiple offers</div></div><div class="phone"><div class="frame"><div class="notch"></div><video data-v="rclose" src="m/rclose.mp4" muted playsinline loop preload="auto" poster="m/a3e60bbe60.jpg"></video><button class="pill" type="button">Sound on</button></div><div class="tag">Just listed · SouthPark</div></div><div class="phone"><div class="frame"><div class="notch"></div><video data-v="r131" src="m/r131.mp4" muted playsinline loop preload="auto" poster="m/1bce54b988.jpg"></video><button class="pill" type="button">Sound on</button></div><div class="tag">Just listed · The Point</div></div></div>
+<div class="tiles minitiles">
+<div class="tile"><div class="n">5.2M</div><div class="l">Views &middot; top single reel</div></div>
+<div class="tile"><div class="n">12K+</div><div class="l">Followers &middot; @realty.ryan</div></div>
+<div class="tile"><div class="n">Global</div><div class="l">Best overall social media award</div></div>
+</div></div></section>
+<section class="s s-plaster slidefit"><div><div class="kick">Its own address</div>
+<h2 style="font-size:clamp(30px,4.6vw,64px)">One home. One <em>domain.</em></h2>
+<div class="sub">A dedicated website for every listing &mdash; no ads, no competing homes on the page.</div>
+<div class="browser"><div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+<span class="url">131thepoint.com</span><span style="width:34px"></span></div>
+<img src="m/4202505041.jpg" alt="Custom property website for 131 The Point Drive"></div>
+<div class="cap" style="max-width:980px"><span>Every listing &middot; its own domain, gallery, film &amp; story</span><span>131thepoint.com &middot; sold $2.8M</span></div>
+</div></section>
+<section class="s s-white"><div>
+<img src="m/cb78b00dcd.png" alt="Luxury Presence" style="height:clamp(30px,4vw,48px);width:auto;margin-bottom:3.5vh">
+<div class="kick">The digital platform</div>
+<h2>Websites built like the homes they <em>sell.</em></h2>
+<div class="sub">The Agency&rsquo;s website partner &mdash; award-winning design, advanced SEO, and global digital marketing behind my listing sites.</div>
+<div class="tiles">
+<div class="tile"><div class="n">9,000+</div><div class="l">Agents &amp; brokerages on the platform</div></div>
+<div class="tile"><div class="n">SEO</div><div class="l">Built to be found</div></div>
+<div class="tile"><div class="n">Global</div><div class="l">Digital campaigns beyond Charlotte</div></div>
+</div>
+<ul class="quiet">
+<li>A dedicated site for your home &mdash; and the platform to make it found</li>
+<li>Retargeting of your home&rsquo;s site visitors across the web</li>
+</ul></div></section>
+<section class="s s-plaster"><div>
+<img src="m/13287e3ad0.jpg" alt="Zillow Showcase" style="height:clamp(34px,4vw,52px);width:auto;margin-bottom:3vh">
+<div class="kick">Exclusive national partnership</div>
+<h2>Won where buyers start <em>looking.</em></h2>
+<div class="sub">Through The Agency&rsquo;s partnership, qualifying listings receive Zillow&rsquo;s premium Showcase presentation &mdash; reserved for roughly one in ten listings nationwide.</div>
+<div class="split" style="align-items:center">
+<div><div class="tiles" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+<div class="tile"><div class="n">81%</div><div class="l">More page views</div></div>
+<div class="tile"><div class="n">80%</div><div class="l">More saves</div></div>
+<div class="tile"><div class="n">90%</div><div class="l">More shares</div></div>
+<div class="tile"><div class="n">2%</div><div class="l">Higher average sale price</div></div>
+</div></div>
+<div><img src="m/2aa3ee3321.jpg" alt="Zillow Showcase listing on desktop and mobile" style="box-shadow:0 26px 60px -26px rgba(0,0,0,.35)">
+<ul class="quiet" style="margin-top:2.5vh">
+<li>Immersive presentation &mdash; interactive floor plan &amp; 3D tour</li>
+<li>Room-by-room photo experience &amp; special map badge</li>
+<li>Premium placement plus dedicated email promotion</li>
+</ul></div>
+</div></div></section>
+<section class="s s-white slidefit"><div><div class="kick">In print</div>
+<h2 style="font-size:clamp(30px,4.6vw,64px)">Some things still deserve <em>paper.</em></h2>
+<div class="sub" style="margin-top:1.4vh">Agency 8&times;8 brochures, feature sheets, and flyers — designed, not templated.</div>
+<div class="printgrid">
+<img class="rv" src="m/1c94851c72.jpg" alt="Agency brochure cover">
+<img class="rv" src="m/5cc3c3c54a.jpg" alt="Agency brochure cover" style="transition-delay:.15s">
+<img class="rv" src="m/20fbf0a7dc.jpg" alt="Agency brochure cover" style="transition-delay:.3s">
+</div>
+<div class="printrow2">
+<img class="rv" src="m/94d8d74267.jpg" alt="Brochure interior spread" style="transition-delay:.45s">
+<img class="rv" src="m/40e437743f.jpg" alt="Floor-plan flyer" style="transition-delay:.6s">
+</div>
+<div class="cap" style="margin-top:2vh;max-width:1080px"><span>8&times;8 brochure &middot; interior spreads &middot; floor-plan flyer</span><span>Printed for every listing</span></div>
+</div></section>
+<section class="s s-cream"><div><div class="kick">Direct to inbox</div>
+<h2>Delivered to buyers I already <em>know.</em></h2>
+<div class="emailwrap"><div class="newscard"><img src="m/cd7b4c66c0.jpg" alt="Ryan&rsquo;s weekly market email"></div>
+<div><div class="sub" style="margin-top:0">Your home, delivered straight to the people most likely to buy it.</div>
+<ul class="quiet">
+<li>Launch announcement to my curated buyer database</li>
+<li>The Monday Market &mdash; my weekly Charlotte market email</li>
+<li>Broker-to-broker campaigns across The Agency network</li>
+</ul></div></div></div></section>
+<section class="s s-iron"><div><div class="kick">The Agency worldwide</div>
+<h2>Charlotte address. <em>Worldwide</em> audience.</h2>
+<div class="sub">One brand, one referral network, one standard — everywhere.</div>
+<div class="tiles"><div class="tile"><div class="n">17</div><div class="l">Countries</div></div><div class="tile"><div class="n">180+</div><div class="l">Offices worldwide</div></div><div class="tile"><div class="n">$104B+</div><div class="l">Closed since 2011</div></div><div class="tile"><div class="n">$2.5M</div><div class="l">#1 average sale price in America &mdash; RealTrends</div></div></div>
+<ul class="quiet">
+<li>In-house relocation desk &mdash; inbound buyers routed to your listing</li>
+<li>Referral network across 180+ offices, agent to agent</li>
+<li>In-house PR desk &mdash; 2,000 press placements a year</li>
+</ul>
+<div class="pressrow"><img class="inv" src="m/9fc7bb2109.png" alt="Luxury Home Magazine"><img class="inv" src="m/165d6a88c7.png" alt="SouthPark Magazine"><img src="m/97952af651.png" alt="Homes & Land"><img class="inv" src="m/d0193eb170.png" alt="Axios"><img src="m/a2424dcfce.svg" alt="Real Producers"><img src="m/561cf5087a.svg" alt="Stroll"></div></div></section>
+<section class="s s-cream"><div><div class="kick">The launch</div>
+<h2>A launch, not a <em>listing.</em></h2>
+<div class="sub">Demand built quietly before day one &mdash; then full-market exposure when attention peaks.</div>
+<div class="tl"><div class="step"><div class="h">Coming Soon</div><p>Teaser reel<br>Sign &amp; site prep<br>Agent network preview</p></div><div class="step"><div class="h">Live</div><p>MLS + full syndication<br>Property site<br>Email launch</p></div><div class="step"><div class="h">Weekend One</div><p>Open house<br>Social push<br>Feedback in</p></div><div class="step"><div class="h">Ongoing</div><p>Weekly strategy update<br>Data review<br>Repositioning as needed</p></div></div></div></section>
+<section class="s s-white"><div><div class="kick">After the signature</div>
+<h2>You&rsquo;ll hear from me before you <em>wonder.</em></h2>
+<div class="sub">The Sunday Report &mdash; a written strategy update every single week &mdash; plus showing feedback within 24 hours and my direct line, always.</div>
+<div class="tiles"><div class="tile"><div class="n">Sunday</div><div class="l">The Sunday Report, in&nbsp;writing</div></div><div class="tile"><div class="n">24hrs</div><div class="l">Showing feedback, within a day</div></div><div class="tile"><div class="n">Direct</div><div class="l">My line &mdash; always</div></div><div class="tile"><div class="n">100%</div><div class="l">Start&#8209;to&#8209;close service</div></div></div>
+<div class="arc"><div class="kick" style="margin-bottom:1.6vh;font-size:11px">The full arc</div>
+<div class="cap" style="margin-top:0"><span>Agreement</span><span>Prep</span><span>Launch</span><span>Showings</span><span>Offers</span><span>Negotiation</span><span>Closing</span></div></div>
+</div></section>
+<section class="s s-plaster"><div><div class="kick">Behind the scenes</div>
+<h2>Hire one agent. <em>Gain a brokerage.</em></h2>
+<div class="sub">Marketing, transaction management, and a full Agency team on your listing — one point of contact.</div>
+<div class="tiles minitiles" style="margin-top:5vh">
+<div class="tile"><div class="n">1</div><div class="l">Point of contact, start to close</div></div>
+<div class="tile"><div class="n">Full</div><div class="l">Marketing &amp; transaction team</div></div>
+</div>
+<div style="display:flex;align-items:center;gap:4vw;margin-top:6vh">
+<div style="width:clamp(96px,10vw,130px)"><svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M120 0H0v120h120V0Z" fill="#ED2127"/><path d="M26.08 72.518h3.339v9.84h1.296v-9.84h3.341v-.974H26.08v.974Zm16.023 3.664h-5.19v-4.638h-1.296V82.36h1.297v-5.205h5.189v5.205h1.294V71.544h-1.294v4.638Zm8.065-34.287V64.06h1.977V41.895a4.454 4.454 0 0 0-4.45-4.449 4.428 4.428 0 0 0-3.16 1.318l-1.076 1.12-12.517 13.275H14.56l-.566-.034h-.059a5.408 5.408 0 0 0-5.403 5.4v10.057a4.454 4.454 0 0 0 4.45 4.45 4.43 4.43 0 0 0 3.162-1.322l2.454-2.578 13.197-13.997h10.884V53.16h-9.023l11.231-11.912 1.058-1.101a2.454 2.454 0 0 1 1.747-.723 2.476 2.476 0 0 1 2.473 2.474l.003-.002ZM17.166 67.772 14.73 70.33a2.475 2.475 0 0 1-4.222-1.75V58.523a3.428 3.428 0 0 1 3.399-3.425l.563.035h14.61L17.165 67.772h.001Zm30.257 9.399h4.798V76.2h-4.798v-3.68h4.928v-.975h-6.226V82.36h6.307v-.973h-5.009v-4.215Zm10.801-5.627L54.415 82.36h1.524l.94-2.74h4.46l.956 2.74h1.785l-3.925-10.815h-1.93Zm-.957 6.892 1.8-5.513 1.847 5.513h-3.647Zm13.993 2.447c-.6.177-1.361.324-2.075.324-.957 0-1.555-.292-2.026-.94-.503-.712-.779-1.896-.779-3.34 0-2.82.958-4.181 2.967-4.181.699 0 1.703.145 2.936.42l.259-1.184c-1.459-.438-2.481-.6-3.357-.6-2.933 0-4.587 1.978-4.587 5.594 0 3.615 1.572 5.576 4.263 5.576 1.12 0 2.319-.259 4.005-.94V77.25H71.26v3.633Zm5.468-3.582h4.718v-1.2h-4.718v-3.34h4.864v-1.217H75.04V82.36h6.616v-1.215h-4.929V77.3Zm13.516 3.452-4.45-9.209H83.49V82.36h1.387v-9.127l4.45 9.127h2.303V71.544h-1.387v9.209Zm8.006.407c-1.766 0-2.723-1.508-2.723-4.311 0-2.562.924-4.102 2.967-4.102.665 0 1.427.082 2.481.308l.275-1.217c-1.167-.324-2.108-.47-2.95-.47-2.902 0-4.556 2.01-4.556 5.628 0 3.617 1.589 5.56 4.198 5.56.973 0 2.174-.244 3.567-.794l-.374-1.168c-1.393.406-2.237.568-2.885.568v-.001Zm11.563-9.616-2.675 4.783-2.706-4.783h-1.963l3.664 6.065v4.75h1.687v-4.75l3.647-6.065h-1.654Z" fill="#F8F7F5"/></svg>
+</div>
+<img src="m/c39ace2b90.png" alt="Realty Ryan" style="height:clamp(40px,4.6vw,56px);width:auto">
+</div></div></section>
+<section class="s s-iron"><div><div class="kick">The difference</div>
+<h2>Most homes get listed. Yours gets <em>launched.</em></h2>
+<div class="diff"><div class="diffhead"><span class="a">A typical listing</span><span class="b">With Ryan</span></div><div class="diffrow"><span class="a">MLS photos</span><span class="b">An editorial shoot and a cinematic film</span></div><div class="diffrow"><span class="a">One portal page</span><span class="b">Its own website &mdash; plus Zillow Showcase</span></div><div class="diffrow"><span class="a">A sign and a blast email</span><span class="b">A 12K+ audience and a curated buyer database</span></div><div class="diffrow"><span class="a">List and wait</span><span class="b">A timed launch with momentum built in</span></div><div class="diffrow"><span class="a">Updates when you call</span><span class="b">A written strategy update every week</span></div><div class="diffrow"><span class="a">One agent</span><span class="b">A global brokerage behind one accountable voice</span></div></div>
+</div></section>
+<section class="s s-red close"><div><div class="kick">The next step</div>
+<h2>Let&rsquo;s talk about your <em>number.</em></h2>
+<div class="sub">One conversation sets the launch date.</div>
+<div class="contact">Ryan Palmer<br>Partner, Luxury Division &middot; The Agency Charlotte &times; Lake Norman<br>
+Ryan.Palmer@TheAgencyRE.com &middot; (508) 954&#8209;2159<br>realtyryan.com &middot; theagencyre.com<br>Proud Partner of the Carolina Panthers</div>
+<img class="lockup" src="m/3cff23f503.png" alt="Realty Ryan">
+<div class="fine">NC License #315654 &middot; SC License #118641 &middot; An independently owned and operated franchisee of The&nbsp;Agency Real&nbsp;Estate Franchising,&nbsp;LLC. Statistics shown reflect Ryan Palmer&rsquo;s career MLS production and The Agency&rsquo;s published network figures.</div>
+</div></section></main>
+<script>var VID={};</script>
+<script>
+(function(){
+ var PRM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+ // decode videos once -> blob URLs
+ Object.keys(VID).forEach(function(k){
+   var bin = atob(VID[k]); var len = bin.length; var buf = new Uint8Array(len);
+   for (var i=0;i<len;i++) buf[i]=bin.charCodeAt(i);
+   var url = URL.createObjectURL(new Blob([buf],{type:'video/mp4'}));
+   document.querySelectorAll('video[data-v="'+k+'"]').forEach(function(v){ v.src = url; v.load(); });
+   VID[k]=null;
+ });
+ var vids = [].slice.call(document.querySelectorAll('video'));
+ var io = new IntersectionObserver(function(es){
+   es.forEach(function(e){
+     var v = e.target;
+     if (e.intersectionRatio >= 0.35) { if(!PRM || v.dataset.tapped) v.play().catch(function(){}); }
+     else { v.pause(); if (!v.muted && e.intersectionRatio === 0){ v.muted = true; syncPill(v); } }
+   });
+ },{threshold:[0,0.35]});
+ vids.forEach(function(v){ io.observe(v); v.addEventListener('click',function(){ v.dataset.tapped=1; v.paused?v.play():v.pause(); }); });
+ function playVisible(){ vids.forEach(function(v){ var r = v.getBoundingClientRect();
+   var vis = r.top < innerHeight && r.bottom > 0;
+   if (vis && v.paused && (!PRM || v.dataset.tapped)) v.play().catch(function(){}); }); }
+ playVisible(); setTimeout(playVisible, 400); setTimeout(playVisible, 1500);
+ addEventListener('scroll', function(){ playVisible(); }, {passive:true});
+ function syncPill(v){ var p = v.parentElement.querySelector('.pill'); if(p) p.textContent = v.muted ? 'Sound on' : 'Mute'; }
+ document.querySelectorAll('.pill').forEach(function(p){
+   p.addEventListener('click',function(ev){ ev.stopPropagation();
+     var v = p.parentElement.querySelector('video'); v.muted = !v.muted; v.dataset.tapped=1; v.play().catch(function(){}); syncPill(v); });
+ });
+ var rv = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); rv.unobserve(e.target); } }); },{threshold:0.2});
+ document.querySelectorAll('.rv').forEach(function(el){ rv.observe(el); });
+ document.querySelectorAll('.gtile').forEach(function(t, ti){
+   var gi = [].slice.call(t.querySelectorAll('img'));
+   if (gi.length < 2 || PRM) return;
+   var ci = 0;
+   setTimeout(function(){ setInterval(function(){
+     gi[ci].classList.remove('on'); ci = (ci + 1) % gi.length; gi[ci].classList.add('on');
+   }, 4200); }, ti * 1400);
+ });
+ var bar = document.getElementById('bar');
+ addEventListener('scroll',function(){
+   var h = document.documentElement; var p = h.scrollTop/(h.scrollHeight-h.clientHeight);
+   bar.style.width = (p*100).toFixed(2)+'%';
+ },{passive:true});
+})();
+</script>
+</body>
+</html>

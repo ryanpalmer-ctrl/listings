@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3208 Mayfield Avenue · Sedgefield · Charlotte</title>
+<meta name="description" content="New construction by Keen Building Co. in Sedgefield, Charlotte NC 28209. 5 bedrooms, two primary suites, approx. 5,162 sq ft, pool and spa included. $3,200,000. Presented by Ryan Palmer, The Agency Charlotte.">
+<meta property="og:title" content="3208 Mayfield Avenue · Sedgefield">
+<meta property="og:description" content="New construction by Keen Building Co. Five bedrooms, two primary suites, pool and spa included.">
+<meta property="og:image" content="https://3208mayfield.com/img/01-front.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Barlow:wght@300;400;500&family=Barlow+Condensed:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#ED2127; --ink:#0B0B0B; --plaster:#F7F6F4; --stone:#E9E6E0; --mute:#6E6A64; --line:rgba(11,11,11,.14);
+  --serif:"Newsreader", ui-serif, "New York", Georgia, serif;
+  --sans:"Barlow", system-ui, sans-serif;
+  --cond:"Barlow Condensed", "Barlow", sans-serif;
+  --gut:clamp(20px,5vw,72px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--plaster);color:var(--ink);font-family:var(--sans);font-weight:300;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.eyebrow{font-family:var(--cond);font-weight:500;letter-spacing:.32em;text-transform:uppercase;font-size:13px}
+.eyebrow.red{color:var(--red)}
+.wrap{padding:0 var(--gut);max-width:1500px;margin:0 auto}
+.pad{padding:clamp(80px,12vw,170px) 0}
+.h2{font-family:var(--serif);font-weight:300;font-size:clamp(38px,5.4vw,80px);line-height:1.02;letter-spacing:-.015em}
+.h2 em,.h1 em{font-style:italic}
+.lead{font-size:clamp(18px,1.5vw,21px);max-width:640px}
+.rule{width:56px;height:1px;background:var(--red);margin:30px 0}
+.fade{opacity:0;transform:translateY(28px);transition:opacity 1.1s ease,transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.fade.in{opacity:1;transform:none}
+
+/* loader */
+#loader{position:fixed;inset:0;background:var(--ink);color:#fff;z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;transition:opacity .9s ease .2s,visibility 0s 1.2s}
+#loader span{font-family:var(--serif);font-size:clamp(64px,10vw,140px);font-weight:300;letter-spacing:-.02em}
+#loader small{opacity:.6}
+body.ready #loader{opacity:0;visibility:hidden}
+
+/* nav */
+#nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:22px var(--gut);color:#fff;transition:background .4s,color .4s,padding .4s}
+#nav.solid{background:rgba(247,246,244,.94);backdrop-filter:blur(12px);color:var(--ink);padding:14px var(--gut);border-bottom:1px solid var(--line)}
+#nav .lockup{display:flex;align-items:center;gap:14px;text-decoration:none}
+#nav .lockup img{width:40px;height:40px}
+#nav .lockup b{font-family:var(--cond);font-weight:500;letter-spacing:.28em;font-size:13px;text-transform:uppercase}
+#nav .links{display:flex;gap:30px;align-items:center}
+#nav .links a{font-family:var(--cond);letter-spacing:.24em;text-transform:uppercase;font-size:13px;text-decoration:none;opacity:.9}
+#nav .links a.cta{border:1px solid currentColor;padding:9px 18px}
+@media(max-width:900px){#nav .links a:not(.cta){display:none}}
+
+/* hero */
+.hero{position:relative;height:100svh;min-height:620px;color:#fff;overflow:hidden;background:#000}
+.hero .media{position:absolute;inset:0}
+.hero .media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.08);animation:drift 22s ease-out forwards}
+.hero .media iframe{position:absolute;top:50%;left:50%;width:100%;height:100%;transform:translate(-50%,-50%);border:0;pointer-events:none;opacity:0;transition:opacity 1.6s}
+.hero .media iframe.on{opacity:1}
+@keyframes drift{to{transform:scale(1)}}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 50%,rgba(0,0,0,.72) 100%)}
+.hero .copy{position:absolute;left:var(--gut);right:var(--gut);bottom:clamp(40px,8vh,90px);z-index:2;display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:end}
+.h1{font-family:var(--serif);font-weight:300;font-size:clamp(66px,12vw,200px);line-height:.88;letter-spacing:-.03em}
+.reveal-line{display:block;overflow:hidden;padding:.1em .12em .14em 0;margin:-.1em -.12em -.14em 0}
+.reveal-line span{display:block;transform:translateY(105%);transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+body.ready .reveal-line span{transform:none}
+body.ready .reveal-line:nth-child(2) span{transition-delay:.15s}
+.hero .sub p{font-size:clamp(17px,1.4vw,20px);max-width:440px;margin-bottom:22px}
+.hero .price{font-family:var(--serif);font-size:clamp(28px,2.6vw,38px)}
+@media(max-width:800px){.hero .copy{grid-template-columns:1fr;gap:18px}}
+.scroll{position:absolute;left:50%;bottom:26px;z-index:2;width:18px;height:18px;margin-left:-9px;border-right:1.5px solid rgba(255,255,255,.9);border-bottom:1.5px solid rgba(255,255,255,.9);transform:rotate(45deg);animation:bob 2.2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(8px) rotate(45deg)}}
+@media(max-width:800px){.scroll{display:none}}
+@keyframes sc{to{top:46px}}
+
+/* three big things */
+.three{background:var(--ink);color:#fff}
+.three .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.three .item{padding:clamp(48px,6vw,90px) clamp(18px,2.5vw,40px);border-left:1px solid rgba(255,255,255,.14)}
+.three .item:first-child{border-left:0}
+.three .n{font-family:var(--cond);color:var(--red);letter-spacing:.3em;font-size:13px}
+.three h3{font-family:var(--serif);font-weight:300;font-size:clamp(30px,3vw,46px);line-height:1.05;margin:18px 0 14px}
+.three p{color:rgba(255,255,255,.7);font-size:16px}
+@media(max-width:900px){.three .wrap{grid-template-columns:1fr}.three .item{border-left:0;border-top:1px solid rgba(255,255,255,.14)}.three .item:first-child{border-top:0}}
+
+/* stats */
+.stats{border-bottom:1px solid var(--line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(6,1fr)}
+.stat{padding:38px 10px;text-align:center;border-left:1px solid var(--line)}
+.stat:first-child{border-left:0}
+.stat b{display:block;font-family:var(--serif);font-weight:300;font-size:clamp(30px,3.2vw,48px);line-height:1}
+.stat .eyebrow{display:block;margin-top:12px;color:var(--mute);font-size:11px}
+@media(max-width:900px){.stats .wrap{grid-template-columns:repeat(2,1fr)}.stat{border-top:1px solid var(--line)}.stat:nth-child(odd){border-left:0}}
+
+/* film */
+.film{background:var(--ink);color:#fff}
+.film .head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:46px;flex-wrap:wrap}
+.player{position:relative;aspect-ratio:16/9;background:#000;cursor:pointer;overflow:hidden}
+.player img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s ease,opacity .6s}
+.player:hover img{transform:scale(1.03)}
+.player .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:18px;color:#fff}
+.player .play i{width:92px;height:92px;border:1px solid rgba(255,255,255,.8);border-radius:50%;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(6px);background:rgba(0,0,0,.18)}
+.player .play i:after{content:"";border-left:18px solid #fff;border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:5px}
+.player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* chapters */
+.chapter{display:grid;grid-template-columns:5fr 7fr;gap:clamp(30px,6vw,110px);align-items:start}
+.chapter.flip{grid-template-columns:7fr 5fr}
+.chapter .sticky{position:sticky;top:110px}
+.chapter .why{margin-top:34px;padding:26px 28px;background:var(--stone);border-left:2px solid var(--red)}
+.chapter .why .eyebrow{color:var(--red);margin-bottom:10px;display:block}
+.chapter .why p{font-size:16px}
+.specs{list-style:none;border-top:1px solid var(--line)}
+.specs li{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:22px 0;border-bottom:1px solid var(--line)}
+.specs li span{font-family:var(--cond);letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:var(--mute);padding-top:4px}
+.specs li b{font-weight:400;display:block;font-size:18px}
+.specs li em{font-style:normal;color:var(--mute);font-size:15px;display:block;margin-top:4px}
+@media(max-width:900px){.chapter,.chapter.flip{grid-template-columns:1fr}.chapter .sticky{position:static}.specs li{grid-template-columns:1fr;gap:6px}}
+.dark{background:var(--ink);color:#fff}
+.dark .specs{border-color:rgba(255,255,255,.16)}
+.dark .specs li{border-color:rgba(255,255,255,.16)}
+.dark .specs li span,.dark .specs li em{color:rgba(255,255,255,.55)}
+.dark .chapter .why{background:rgba(255,255,255,.06)}
+.stone{background:var(--stone)}
+.stone .chapter .why{background:var(--plaster)}
+
+/* aerial */
+.aerial{position:relative;color:#fff;background:#000}
+.aerial img{width:100%;height:min(100vh,1000px);object-fit:cover;opacity:.92}
+.aerial .cap{position:absolute;left:var(--gut);bottom:clamp(30px,6vw,70px);right:var(--gut);display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap}
+.aerial .cap h2{text-shadow:0 2px 30px rgba(0,0,0,.4)}
+.aerial .tags{display:flex;gap:10px;flex-wrap:wrap}
+.aerial .tags span{font-family:var(--cond);letter-spacing:.22em;text-transform:uppercase;font-size:12px;padding:8px 14px;background:rgba(0,0,0,.45);backdrop-filter:blur(8px)}
+
+/* light */
+.light .dial{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:60px;background:var(--line)}
+.light .dial div{background:var(--plaster);padding:40px 30px}
+.light .dial b{font-family:var(--serif);font-weight:300;font-size:34px;display:block;margin:12px 0}
+@media(max-width:900px){.light .dial{grid-template-columns:1fr}}
+
+/* reel */
+.reel .grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,100px);align-items:center}
+.reel .phone{max-width:380px;margin:0 auto;width:100%;aspect-ratio:9/16;border-radius:34px;overflow:hidden;position:relative;box-shadow:0 40px 80px rgba(0,0,0,.25);border:8px solid #111;background:#000;cursor:pointer}
+.reel .phone img{width:100%;height:100%;object-fit:cover}
+.reel .phone iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+@media(max-width:900px){.reel .grid{grid-template-columns:1fr}}
+
+/* location */
+.loc .grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,100px)}
+.loc .btn{margin-top:30px}
+@media(max-width:900px){.loc .grid{grid-template-columns:1fr}}
+
+/* contact */
+.contact .grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(30px,6vw,100px);align-items:center}
+.contact .portrait{aspect-ratio:4/5;overflow:hidden;background:var(--stone);max-width:460px}
+.contact .portrait img{width:100%;height:100%;object-fit:cover;object-position:top}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.btn{display:inline-block;font-family:var(--cond);letter-spacing:.24em;text-transform:uppercase;font-size:13px;padding:15px 26px;border:1px solid var(--ink);text-decoration:none;background:none;cursor:pointer;color:inherit}
+.btn.solid{background:var(--ink);color:#fff}
+.btn.red{background:var(--red);border-color:var(--red);color:#fff}
+@media(max-width:900px){.contact .grid{grid-template-columns:1fr}}
+
+footer{background:var(--ink);color:rgba(255,255,255,.6);padding:70px 0 50px;font-size:13px}
+footer .lockup{display:flex;align-items:center;gap:14px;margin-bottom:28px;color:#fff;text-decoration:none}
+footer .lockup img{width:48px;height:48px}
+footer p{max-width:1000px;margin-top:12px}
+
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.94);z-index:200;display:none;align-items:center;justify-content:center;padding:4vw}
+#lb.open{display:flex}
+#lb iframe{width:min(1400px,92vw);aspect-ratio:16/9;border:0;background:#000}
+#lb iframe.v{width:auto;height:88vh;aspect-ratio:9/16}
+#lb .x{position:absolute;top:18px;right:24px;color:#fff;font-size:34px;background:none;border:0;cursor:pointer;font-family:var(--serif)}
+/* 3D tour */
+.tour .head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:46px;flex-wrap:wrap}
+.tour .frame{position:relative;height:min(82vh,860px);background:#000;overflow:hidden;cursor:pointer}
+.tour .frame img{width:100%;height:100%;object-fit:cover;opacity:.55;transition:opacity .6s,transform 1.2s ease}
+.tour .frame:hover img{opacity:.7;transform:scale(1.02)}
+.tour .frame .play{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;color:#fff;text-align:center}
+.tour .frame .play i{font-style:normal;font-family:var(--cond);letter-spacing:.24em;font-size:14px;border:1px solid rgba(255,255,255,.85);padding:16px 30px;backdrop-filter:blur(6px);background:rgba(0,0,0,.2)}
+.tour .frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+@media(max-width:600px){.tour .head{margin-bottom:28px}.tour .frame{height:72svh}}
+
+/* photos */
+.band{display:grid;gap:8px;padding:8px}
+.band.duo{grid-template-columns:2fr 1fr}
+.band.trio{grid-template-columns:repeat(3,1fr)}
+.band figure,.ggrid figure{position:relative;overflow:hidden;background:var(--stone);cursor:zoom-in}
+.band figure{height:clamp(340px,76vh,860px)}
+.band img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.band figure:hover img,.ggrid figure:hover img{transform:scale(1.03)}
+.gallery .head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:46px;flex-wrap:wrap}
+.sbox{position:relative}
+.ggrid{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x proximity;height:clamp(260px,44vh,460px);scrollbar-width:thin;overscroll-behavior-x:contain}
+.ggrid figure{flex:0 0 auto;height:100%;scroll-snap-align:start}
+.ggrid img{height:100%;width:auto;transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.sa{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:54px;height:54px;border-radius:50%;border:0;background:rgba(247,246,244,.92);color:var(--ink);font-family:var(--serif);font-size:34px;line-height:1;cursor:pointer;box-shadow:0 6px 24px rgba(0,0,0,.18)}
+.sl{left:14px}.sr{right:14px}
+.ggrid{cursor:grab;-webkit-overflow-scrolling:touch}.ggrid.drag{cursor:grabbing;scroll-snap-type:none;user-select:none}.ggrid.drag figure{pointer-events:none}.ggrid img{-webkit-user-drag:none;user-select:none}.sa.off{opacity:0;pointer-events:none}.sa{transition:opacity .3s}
+@media(max-width:800px){.sa{width:40px;height:40px}.sa svg{width:18px;height:18px}.sl{left:8px}.sr{right:8px}}
+.gallery .more{text-align:center;margin-top:40px}
+#plb{position:fixed;inset:0;background:rgba(8,8,8,.97);z-index:210;display:none;align-items:center;justify-content:center;touch-action:pan-y}
+#plb.open{display:flex}
+#plb img{max-width:94vw;max-height:84vh;object-fit:contain;user-select:none;-webkit-user-drag:none}
+#plb .cap{position:absolute;left:0;right:0;bottom:22px;text-align:center;color:rgba(255,255,255,.7)}
+#plb button{position:absolute;background:none;border:0;color:#fff;cursor:pointer;font-family:var(--serif);font-weight:300}
+#plb .x{top:14px;right:22px;font-size:38px}
+#plb .nv{top:50%;transform:translateY(-50%);font-size:54px;padding:20px;opacity:.75}
+#plb .nv:hover{opacity:1}
+#plb .pv{left:6px} #plb .nx{right:6px}
+@media(max-width:700px){
+  .band{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:6px;padding:6px;scrollbar-width:none}
+  .band::-webkit-scrollbar{display:none}
+  .band figure{flex:0 0 84vw;height:auto;aspect-ratio:4/5;scroll-snap-align:center}
+  .band figure.w{aspect-ratio:4/3;align-self:center}
+  .ggrid{height:38svh;gap:6px}.sa{display:none}
+  #plb .nv{display:none}
+  #plb img{max-width:100vw;max-height:78vh}
+}
+
+/* chapter photos */
+.chapter .sticky.hasimg{position:static}
+.cimg{margin-top:34px;overflow:hidden;background:var(--stone);cursor:zoom-in}
+.cimg img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.cimg.w img{aspect-ratio:4/3}
+.cimg:hover img{transform:scale(1.03)}
+.light .wide{margin-top:60px;overflow:hidden;cursor:zoom-in}
+.light .wide img{width:100%;aspect-ratio:21/9;object-fit:cover;object-position:50% 85%}
+.sa{display:flex;align-items:center;justify-content:center;padding:0}
+.sa svg{width:22px;height:22px}
+/* floor plans */
+.plans .head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px;flex-wrap:wrap}
+.fptabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.fptabs button{font-family:var(--cond);letter-spacing:.22em;text-transform:uppercase;font-size:12px;padding:11px 18px;border:1px solid var(--ink);background:none;cursor:pointer;color:var(--ink)}
+.fptabs button.on{background:var(--ink);color:#fff}
+.fpimg{background:#fff;cursor:zoom-in;border:1px solid var(--line)}
+.fpimg img{width:100%;aspect-ratio:3/2;object-fit:contain}
+@media(max-width:600px){.light .wide{margin-top:36px}.light .wide img{aspect-ratio:4/3}.cimg{margin-top:24px}}
+
+/* phone flow: heading before specs on flipped chapters, tighter rhythm */
+@media(max-width:900px){
+  .chapter.flip .sticky{order:-1}
+  .stat:last-child{grid-column:1/-1;border-left:0}
+}
+@media(max-width:600px){
+  .pad{padding:64px 0}
+  .h2{font-size:clamp(34px,9.5vw,44px)}
+  .rule{margin:22px 0}
+  .chapter{gap:34px}
+  .chapter .why{margin-top:24px;padding:18px 20px}
+  .specs li{padding:14px 0;gap:2px}
+  .specs li b{font-size:17px}
+  .specs li em{font-size:14px;margin-top:2px}
+  .three .item{padding:40px 4px}
+  .three h3{font-size:30px;margin:12px 0 10px}
+  .stat{padding:26px 8px}
+  .light .dial{margin-top:36px}
+  .light .dial div{padding:26px 22px}
+  .light .dial b{font-size:28px;margin:8px 0}
+  .film .head{margin-bottom:28px}
+  .aerial img{height:78vh}
+  .hero .copy{bottom:44px}
+  #nav{padding:16px var(--gut)}
+  #nav .lockup b{letter-spacing:.2em}
+  #nav .links a.cta{padding:8px 14px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.fade{opacity:1;transform:none}}
+
+.ggrid figure{background:#fff}
+.reel .phone video{position:absolute;inset:0}
+.plans .fpimg img{aspect-ratio:3/2}
+.cimg img[style*="contain"]{aspect-ratio:4/3}
+@media(max-width:700px){.dark .band.duo{display:grid;grid-template-columns:1fr!important}.dark .band figure{flex:none;aspect-ratio:auto}}
+</style>
+</head>
+<body>
+
+<div id="loader"><span>3208</span><small class="eyebrow">Mayfield Avenue · Sedgefield</small></div>
+
+<nav id="nav">
+  <a class="lockup" href="#top" aria-label="The Agency"><img src="img/agency-mark.png" alt="The Agency"><b>3208 Mayfield</b></a>
+  <div class="links">
+    <a href="#residence">The Residence</a>
+    <a href="#plans">Floor Plans</a>
+    <a href="#outside">Pool</a>
+    <a href="#selections">Selections</a>
+    <a href="#progress">Progress</a>
+    <a class="cta" href="#contact">Private Tour</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="media">
+    <img src="img/01-front.jpg" alt="Rendering of the front of 3208 Mayfield Avenue: whitewashed brick, steep layered gables and black windows">
+  </div>
+  <div class="copy">
+    <h1 class="h1"><span class="reveal-line"><span>3208</span></span><span class="reveal-line"><span><em>Mayfield</em></span></span></h1>
+    <div class="sub">
+      <p>New construction by Keen Building Co. in Sedgefield. Five bedrooms, two primary suites, and a pool and spa out back.</p>
+      <div class="eyebrow" style="opacity:.8;margin-bottom:8px">Offered at</div>
+      <div class="price">$3,200,000</div>
+      <div class="eyebrow" style="opacity:.8;margin-top:10px">Pool &amp; spa included</div>
+    </div>
+  </div>
+  <div class="scroll"></div>
+</header>
+
+<section class="three">
+  <div class="wrap">
+    <div class="item fade"><div class="n">01</div><h3>The primary suite is on the main.</h3><p>It takes the whole right wing: its own hall, a bath with two vanities, a separate shower room and a walk-in closet of more than 13 by 17 feet.</p></div>
+    <div class="item fade"><div class="n">02</div><h3>A second primary upstairs.</h3><p>Nearly 19 by 25 feet, with a soaking tub and a large walk-in shower. Room for guests, in-laws or older kids, with a loft and a bonus room down the hall.</p></div>
+    <div class="item fade"><div class="n">03</div><h3>Pool and spa, included.</h3><p>A 21 by 10 foot pool and a 10 by 7 foot spa, set just off a covered porch with its own fireplace. Already in the price.</p></div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><b>5</b><span class="eyebrow">Bedrooms</span></div>
+    <div class="stat"><b>5,162</b><span class="eyebrow">Sq ft, approx.</span></div>
+    <div class="stat"><b>2</b><span class="eyebrow">Primary suites</span></div>
+    <div class="stat"><b>2</b><span class="eyebrow">Car garage</span></div>
+    <div class="stat"><b>Pool</b><span class="eyebrow">+ spa, included</span></div>
+    <div class="stat"><b>Q1</b><span class="eyebrow">2027 · est. completion</span></div>
+  </div>
+</div>
+
+<section class="pad" id="residence">
+  <div class="wrap chapter">
+    <div class="sticky fade hasimg">
+      <div class="eyebrow red">The Residence</div>
+      <h2 class="h2" style="margin-top:20px">Whitewashed brick, <em>quietly European.</em></h2>
+      <div class="rule"></div>
+      <p class="lead">Steep layered gables, whitewashed brick and black windows on a tree-lined street in Sedgefield. Built by Keen Building Co.</p>
+      <div class="why"><span class="eyebrow">Why it matters</span><p>You get to buy it before it's finished. The design selections are already made, and the house is far enough along to walk, so you know exactly what you're getting.</p></div>
+      <figure class="cimg w" data-p="01-front"><img src="img/01-front.jpg" alt="Front elevation rendering" loading="lazy"></figure>
+    </div>
+    <ul class="specs fade">
+      <li><span>Builder</span><div><b>Keen Building Co.</b><em>New construction, underway now</em></div></li>
+      <li><span>Exterior</span><div><b>Whitewashed brick</b><em>Steep layered gables, black windows, covered entry</em></div></li>
+      <li><span>Bedrooms</span><div><b>5, with 2 primary suites</b><em>One on the main, one upstairs</em></div></li>
+      <li><span>Living area</span><div><b>Approx. 5,162 sq ft</b><em>2,312 on the main, 2,851 upstairs</em></div></li>
+      <li><span>Garage</span><div><b>2 car</b><em>With a mudroom and laundry off the garage entry</em></div></li>
+      <li><span>Status</span><div><b>Under construction</b><em>Estimated completion Q1 2027</em></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="pad stone" id="inside">
+  <div class="wrap chapter flip">
+    <ul class="specs fade">
+      <li><span>Living room</span><div><b>21′4″ × 20′6″, fireplace</b><em>Between the kitchen and dining room, opening to the covered porch</em></div></li>
+      <li><span>Kitchen</span><div><b>18′4″ × 14′5″</b><em>Backed by a working scullery and pantry</em></div></li>
+      <li><span>Dining room</span><div><b>17′10″ × 10′10″</b><em>Open to the kitchen and living room</em></div></li>
+      <li><span>Flex room</span><div><b>12′10″ × 11′3″</b><em>A study or a fifth bedroom on the main</em></div></li>
+      <li><span>Upstairs</span><div><b>27′ loft + bonus room</b><em>Three more bedrooms and a second laundry</em></div></li>
+      <li><span>Rear porch</span><div><b>22′6″ × 15′7″, covered</b><em>With its own fireplace, looking onto the pool</em></div></li>
+    </ul>
+    <div class="sticky fade hasimg">
+      <div class="eyebrow red">Inside</div>
+      <h2 class="h2" style="margin-top:20px">Built around <em>the kitchen.</em></h2>
+      <div class="rule"></div>
+      <p class="lead">The foyer opens to a living room of more than 21 feet, set between the kitchen and dining room and the covered rear porch.</p>
+      <div class="why"><span class="eyebrow">Why it matters</span><p>The scullery takes the mess. Dishes, small appliances and prep stay out of sight, so the main kitchen stays clean when people are over.</p></div>
+      <figure class="cimg w" data-p="sel-01-kitchen"><img src="img/sel-01-kitchen.jpg" alt="Kitchen design selections board" loading="lazy" style="object-fit:contain;background:#fff"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="pad stone plans" id="plans" style="background:var(--plaster)">
+  <div class="wrap">
+    <div class="head fade">
+      <div>
+        <div class="eyebrow red">The Floor Plans</div>
+        <h2 class="h2" style="margin-top:20px">Know the layout <em>before it's built.</em></h2>
+      </div>
+      <p class="lead" style="max-width:440px;color:var(--mute)">The primary suite, kitchen, living, dining and a flex room are on the main level. A second primary suite, three bedrooms, the loft, a bonus room and a second laundry are upstairs.</p>
+    </div>
+    <div class="fptabs fade"><button class="on" data-fp="0">Main level · 2,312 sf</button><button data-fp="1">Upper level · 2,851 sf</button></div>
+    <figure class="fpimg fade" id="fpFig"><img id="fpImg" src="img/plan-first-mp.jpg" alt="Main level floor plan" loading="lazy"></figure>
+    <p style="margin-top:14px;font-size:13px;color:var(--mute)">Approx. 5,162 sq ft of living area in all. Tap the plan to open it full size. Room sizes and square footage are approximate, from a third-party measurement, and may change.</p>
+  </div>
+</section>
+
+<section class="pad dark" id="outside">
+  <div class="wrap chapter">
+    <div class="sticky fade hasimg">
+      <div class="eyebrow red">Outdoor Living</div>
+      <h2 class="h2" style="margin-top:20px">The pool is <em>in the price.</em></h2>
+      <div class="rule"></div>
+      <p class="lead">A 21 by 10 foot pool and a 10 by 7 foot spa, just off the covered porch, with the porch, terrace and pool all on one level.</p>
+      <div class="why"><span class="eyebrow">Why it matters</span><p>Adding a pool after closing means a second contractor, a second permit and a torn-up yard. Here it's designed with the house and built as part of it.</p></div>
+      <figure class="cimg w" data-p="site-pool-layout"><img src="img/site-pool-layout.jpg" alt="Pool layout plan with a 21 by 10 foot pool and 10 by 7 foot spa" loading="lazy" style="object-fit:contain;background:#fff"></figure>
+    </div>
+    <ul class="specs fade">
+      <li><span>Pool</span><div><b>21′ × 10′</b><em>Set just off the covered porch</em></div></li>
+      <li><span>Spa</span><div><b>10′ × 7′</b><em>Tucked beside the pool terrace</em></div></li>
+      <li><span>Covered porch</span><div><b>22′6″ × 15′7″, fireplace</b><em>Outdoor living you can use most of the year</em></div></li>
+      <li><span>Landscape</span><div><b>Planted perimeter for privacy</b><em>Per the landscape plan (L100)</em></div></li>
+      <li><span>Plans</span><div><b>Landscape + pool layout</b><em>Tap either plan below to open it full size</em></div></li>
+    </ul>
+  </div>
+  <div class="wrap" style="margin-top:60px">
+    <div class="band duo" style="padding:0;grid-template-columns:1fr 1fr">
+      <figure class="w" data-p="site-landscape-plan" style="height:auto;background:#fff"><img src="img/site-landscape-plan.jpg" alt="Landscape plan" loading="lazy" style="height:auto;object-fit:contain"></figure>
+      <figure class="w" data-p="site-pool-layout" style="height:auto;background:#fff"><img src="img/site-pool-layout.jpg" alt="Pool layout plan" loading="lazy" style="height:auto;object-fit:contain"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="pad gallery" id="selections">
+  <div class="wrap">
+    <div class="head fade">
+      <div>
+        <div class="eyebrow red">Design Selections</div>
+        <h2 class="h2" style="margin-top:20px">Every finish, <em>already chosen.</em></h2>
+      </div>
+      <p class="lead" style="max-width:440px;color:var(--mute)">Keen's selections, room by room: cabinet and wall colors, stone, tile, plumbing fixtures, hardware and lighting. Thirteen boards.</p>
+    </div>
+  </div>
+  <div class="sbox">
+    <button class="sa sl" aria-label="Scroll left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <div class="ggrid" id="ggrid"></div>
+    <button class="sa sr" aria-label="Scroll right"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5l7 7-7 7"/></svg></button>
+  </div>
+  <div class="wrap"><div class="more"><button class="btn solid" data-all>View full screen</button></div></div>
+</section>
+
+<section class="pad reel stone" id="progress">
+  <div class="wrap grid">
+    <div class="fade">
+      <div class="eyebrow red">Progress</div>
+      <h2 class="h2" style="margin-top:20px">Walk it <em>as it's built.</em></h2>
+      <div class="rule"></div>
+      <p class="lead">A walk through the house on October 24, 2026: hardwood floors, cabinetry and trim going in upstairs and down.</p>
+      <a class="btn solid" href="#contact" style="margin-top:30px">Schedule a site walk</a>
+    </div>
+    <div class="phone fade" style="cursor:auto">
+      <video controls playsinline preload="metadata" poster="img/progress-20261024-poster.jpg" style="width:100%;height:100%;object-fit:cover;display:block">
+        <source src="img/progress-20261024.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<section class="pad loc">
+  <div class="wrap grid">
+    <div class="fade">
+      <div class="eyebrow red">Location</div>
+      <h2 class="h2" style="margin-top:20px">Sedgefield, <em>28209.</em></h2>
+      <div class="rule"></div>
+      <p class="lead">Mayfield Avenue, one of Charlotte's established tree-lined streets between Park Road and South Boulevard. Minutes to Park Road Shopping Center, Freedom Park and South End.</p>
+      <a class="btn solid" href="https://www.google.com/maps/search/?api=1&amp;query=3208+Mayfield+Ave+Charlotte+NC+28209" target="_blank" rel="noopener">Open in Maps</a>
+    </div>
+    <ul class="specs fade">
+      <li><span>Elementary</span><div><b>Dilworth</b></div></li>
+      <li><span>Middle</span><div><b>Sedgefield</b></div></li>
+      <li><span>High</span><div><b>Myers Park</b><em>CMS assignments as of November 2026 and subject to change. Verify with CMS.</em></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="pad contact stone" id="contact">
+  <div class="wrap grid">
+    <div class="portrait fade"><img src="img/ryan.jpg" alt="Ryan Palmer"></div>
+    <div class="fade">
+      <div class="eyebrow red">Private Tours</div>
+      <h2 class="h2" style="margin-top:20px">See it <em>in person.</em></h2>
+      <div class="rule"></div>
+      <p class="lead">Walk the house while it's going up, go through the selections and see where the pool goes. Tours by appointment.</p>
+      <p style="margin-top:28px;font-family:var(--serif);font-size:28px">Ryan Palmer</p>
+      <p style="color:var(--mute)">Partner, Luxury Division · The Agency Charlotte &amp; Lake Norman</p>
+      <div class="btns">
+        <a class="btn solid" href="mailto:ryan.palmer@theagencyre.com?subject=3208%20Mayfield%20Ave%20%E2%80%94%20Private%20Tour">Request a tour</a>
+        <a class="btn" href="tel:+15089542159">Call</a>
+        <a class="btn" href="sms:+15089542159?&amp;body=Hi%20Ryan%2C%20I%27m%20interested%20in%203208%20Mayfield.">Text</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a class="lockup" href="#top"><img src="img/agency-mark.png" alt="The Agency"></a>
+    <p>3208 Mayfield Avenue, Charlotte, NC 28209. New construction, currently underway. Renderings, landscape and pool plans, and design selections are illustrative. Final design, specifications, materials and pricing may vary and are subject to change without notice. Square footage and room dimensions are approximate, from a third-party measurement, and may differ from the finished home. The pool and spa are included in the price and subject to final design and permitting. Information deemed reliable but not guaranteed; buyers should verify all details, including school assignments.</p>
+    <p>Ryan Palmer, NC Lic. 315654 · The Agency Charlotte, NC Firm Lic. C37988 · 3540 Toringdon Way, Suite 125, Charlotte, NC 28277. An independently owned and operated franchisee of The Agency Real Estate Franchising, LLC. Equal Housing Opportunity.</p>
+  </div>
+</footer>
+
+<div id="plb" role="dialog" aria-modal="true" aria-label="Photos"><button class="x" aria-label="Close">×</button><button class="nv pv" aria-label="Previous">‹</button><img id="plbImg" alt=""><button class="nv nx" aria-label="Next">›</button><div class="cap eyebrow" id="plbCap"></div></div>
+
+<script>
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+window.addEventListener('load', () => setTimeout(() => document.body.classList.add('ready'), 500));
+setTimeout(() => document.body.classList.add('ready'), 3500);
+history.scrollRestoration = 'manual';
+const nav = $('#nav');
+addEventListener('scroll', () => nav.classList.toggle('solid', scrollY > innerHeight * .8), {passive:true});
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
+$$('.fade').forEach(el => io.observe(el));
+const SEL = [["01-kitchen","Kitchen"],["02-scullery","Scullery"],["03-mudroom","Mudroom"],["04-great-room","Great room"],["05-dining-room","Dining room"],["06-bath-2","Bath 2"],["07-bedroom-2","Study · bedroom 2"],["08-powder","Powder room"],["09-primary-suite","Primary suite"],["10-second-primary-suite","Second primary suite"],["11-laundry","Laundry"],["12-bath-4","Bath 4"],["13-bath-5","Bath 5"]];
+const P = [["01-front","Front elevation · rendering"]].concat(SEL.map(s => ["sel-" + s[0], s[1] + " · design selections"])).concat([["site-landscape-plan","Landscape plan · L100"],["site-pool-layout","Pool layout · L200"]]), PB = "img/";
+const gg = $('#ggrid');
+SEL.forEach(s => { const f = document.createElement('figure'); f.dataset.p = 'sel-' + s[0]; f.style.background = '#fff'; f.innerHTML = `<img src="img/sel-${s[0]}.jpg" alt="${s[1]} design selections" loading="lazy">`; gg.appendChild(f); });
+const plb = $('#plb'), pimg = $('#plbImg'), pcap = $('#plbCap'); let pi = 0;
+const FP = [["plan-first-mp","Main level"],["plan-second-mp","Upper level"]], FB = "img/";
+let L = P, LB = PB;
+function showP(i){
+  pi = (i + L.length) % L.length;
+  pimg.src = LB + L[pi][0] + '.jpg'; pimg.alt = L[pi][1] || '3208 Mayfield Avenue';
+  pcap.textContent = (L[pi][1] ? L[pi][1] + '  ·  ' : '') + (pi + 1) + ' / ' + L.length;
+  [1, -1].forEach(d => { new Image().src = LB + L[(pi + d + L.length) % L.length][0] + '.jpg'; });
+}
+function openList(list, base, i){ L = list; LB = base; showP(i); plb.classList.add('open'); document.body.style.overflow = 'hidden'; }
+function openP(id){ const i = P.findIndex(p => p[0] === id); openList(P, PB, i < 0 ? 0 : i); }
+let fpi = 0;
+$$('[data-fp]').forEach(b => b.addEventListener('click', () => {
+  fpi = +b.dataset.fp; $$('[data-fp]').forEach(x => x.classList.toggle('on', x === b));
+  $('#fpImg').src = FB + FP[fpi][0] + '.jpg'; $('#fpImg').alt = FP[fpi][1] + ' floor plan';
+}));
+$('#fpFig').addEventListener('click', () => openList(FP, FB, fpi));
+function closeP(){ plb.classList.remove('open'); document.body.style.overflow = ''; pimg.removeAttribute('src'); }
+$$('[data-p]').forEach(el => el.addEventListener('click', () => openP(el.dataset.p)));
+$$('.sa').forEach(b => b.addEventListener('click', () => gg.scrollBy({left: (b.classList.contains('sr') ? 1 : -1) * gg.clientWidth * .8, behavior: 'smooth'})));
+let dx = null, moved = 0;
+gg.addEventListener('pointerdown', e => { if (e.pointerType !== 'mouse' || e.button) return; dx = {x: e.clientX, l: gg.scrollLeft}; moved = 0; });
+addEventListener('pointermove', e => { if (!dx) return; moved = Math.max(moved, Math.abs(e.clientX - dx.x)); if (moved > 5) { gg.classList.add('drag'); gg.scrollLeft = dx.l - (e.clientX - dx.x); } });
+addEventListener('pointerup', () => { if (!dx) return; dx = null; gg.classList.remove('drag'); });
+gg.addEventListener('click', e => { if (moved > 5) { e.stopPropagation(); e.preventDefault(); moved = 0; } }, true);
+gg.addEventListener('dragstart', e => e.preventDefault());
+function edges(){ const m = gg.scrollWidth - gg.clientWidth - 2; $('.sa.sl').classList.toggle('off', gg.scrollLeft < 2); $('.sa.sr').classList.toggle('off', gg.scrollLeft > m); }
+gg.addEventListener('scroll', edges, {passive: true}); addEventListener('load', edges); edges();
+$('[data-all]').addEventListener('click', () => openList(P.slice(1, 14), PB, 0));
+plb.querySelector('.pv').addEventListener('click', e => { e.stopPropagation(); showP(pi - 1); });
+plb.querySelector('.nx').addEventListener('click', e => { e.stopPropagation(); showP(pi + 1); });
+plb.addEventListener('click', e => { if (e.target === plb || e.target.classList.contains('x')) closeP(); });
+addEventListener('keydown', e => { if (!plb.classList.contains('open')) return; if (e.key === 'Escape') closeP(); if (e.key === 'ArrowRight') showP(pi + 1); if (e.key === 'ArrowLeft') showP(pi - 1); });
+let tx = null;
+plb.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, {passive:true});
+plb.addEventListener('touchend', e => { if (tx === null) return; const d = e.changedTouches[0].clientX - tx; if (Math.abs(d) > 40) showP(pi + (d < 0 ? 1 : -1)); tx = null; });
+</script>
+</body>
+</html>

@@ -63,6 +63,19 @@ footer{max-width:560px;margin:0 auto;padding:0 16px 40px;font-size:11.5px;line-h
 .logos div{display:flex;align-items:center;justify-content:center;height:92px;padding:14px 18px;border-top:1px solid var(--line)}
 .logos div:nth-child(odd){border-right:1px solid var(--line)}
 .logos img{max-width:100%;max-height:52px;width:auto;height:auto;filter:brightness(0);opacity:.82}
+.om-intro{font-family:var(--serif);font-weight:300;font-size:16px;line-height:1.35;color:#3a3734;margin:-4px 0 12px}
+.om-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.om-t{display:block;background:#fff;box-shadow:0 1px 0 var(--line);overflow:hidden}
+.om-img{aspect-ratio:4/3;overflow:hidden;background:#e9e7e3}
+.om-img>img{width:100%;height:100%;object-fit:cover}
+.om-img .ph{height:100%;display:flex;align-items:center;justify-content:center;background:#0B0B0B}
+.om-img .ph img{width:62%;height:auto;filter:invert(1)}
+.om-tx{padding:9px 10px 11px}
+.om-b{font-family:var(--cond);font-weight:500;letter-spacing:.18em;text-transform:uppercase;font-size:9.5px;color:var(--mute)}
+.om-tx h3{font-family:var(--serif);font-weight:400;font-size:16.5px;line-height:1.2;margin-top:2px}
+.om-tx p{color:var(--mute);font-size:12.5px;line-height:1.35}
+.om-go{display:block;margin-top:6px;font-family:var(--cond);font-weight:500;letter-spacing:.16em;text-transform:uppercase;font-size:10px;color:var(--red)}
+.om-img{position:relative}.om-img::after{content:"Rendering";position:absolute;left:6px;bottom:6px;font-family:var(--cond);font-weight:500;letter-spacing:.16em;text-transform:uppercase;font-size:9px;color:#fff;background:rgba(11,11,11,.55);padding:2px 6px}
 </style>
 </head>
 <body>
@@ -154,6 +167,35 @@ footer{max-width:560px;margin:0 auto;padding:0 16px 40px;font-size:11.5px;line-h
     <img src="hub/mls-CAR4431947.jpg" alt="4805 Murrayhill Road" loading="lazy">
     <div><span class="tag">Under Contract</span><h3>4805 Murrayhill Road</h3><p class="price">$450,000</p><p>Selwyn Park · Charlotte · 3 bed · 1 bath · 976 sq ft</p><span class="go">DETAILS →</span></div>
   </a>
+
+  <div class="label eyebrow more" id="off-market">Off-Market Opportunities</div>
+  <p class="om-intro">Upcoming builds, before they hit the market. Pricing available upon request.</p>
+  <div class="om-grid">
+      <a class="om-t" href="sms:+15089542159?&body=Hi%20Ryan%2C%20I%27d%20like%20pricing%20and%20details%20on%20924%20Poindexter%20Dr.">
+        <div class="om-img"><img src="hub/om-poindexter.jpg" alt="924 Poindexter Dr rendering" loading="lazy"></div>
+        <div class="om-tx"><span class="om-b">KEEN</span><h3>924 Poindexter Dr</h3><p>Freedom Park</p><p>4 bd · 5,447 sf</p><span class="om-go">Price on request</span></div>
+      </a>
+      <a class="om-t" href="https://3208mayfield.com/">
+        <div class="om-img"><img src="hub/om-mayfield.jpg" alt="3208 Mayfield Ave rendering" loading="lazy"></div>
+        <div class="om-tx"><span class="om-b">KEEN</span><h3>3208 Mayfield Ave</h3><p>Sedgefield</p><p>5 bd · 4,995 sf</p><span class="om-go">View →</span></div>
+      </a>
+      <a class="om-t" href="sms:+15089542159?&body=Hi%20Ryan%2C%20I%27d%20like%20pricing%20and%20details%20on%20401%20Hollis%20Rd.">
+        <div class="om-img"><img src="hub/om-hollis.jpg" alt="401 Hollis Rd rendering" loading="lazy"></div>
+        <div class="om-tx"><span class="om-b">KEEN</span><h3>401 Hollis Rd</h3><p>Sedgefield</p><p>5 bd · 6,150 sf · 1 ac</p><span class="om-go">Price on request</span></div>
+      </a>
+      <a class="om-t" href="https://240shoreline.com/">
+        <div class="om-img"><img src="hub/om-shoreline.jpg" alt="240 Shoreline Loop rendering" loading="lazy"></div>
+        <div class="om-tx"><span class="om-b">Hunt Custom</span><h3>240 Shoreline Loop</h3><p>Lake Norman · Mooresville</p><p>Sakora plan</p><span class="om-go">View →</span></div>
+      </a>
+      <a class="om-t" href="sms:+15089542159?&body=Hi%20Ryan%2C%20I%27d%20like%20pricing%20and%20details%20on%203526%20Fielding%20Ave.">
+        <div class="om-img"><img src="hub/om-fielding.jpg" alt="3526 Fielding Ave rendering" loading="lazy"></div>
+        <div class="om-tx"><span class="om-b">Brancer</span><h3>3526 Fielding Ave</h3><p>Providence Park</p><p>5 bd · 4,523 sf</p><span class="om-go">Price on request</span></div>
+      </a>
+      <a class="om-t" href="sms:+15089542159?&body=Hi%20Ryan%2C%20I%27d%20like%20pricing%20and%20details%20on%2014125%20Clearvale%20Dr.">
+        <div class="om-img"><img src="hub/om-clearvale.jpg" alt="14125 Clearvale Drive rendering" loading="lazy"></div>
+        <div class="om-tx"><span class="om-b">Posh</span><h3>14125 Clearvale Dr</h3><p>Mint Hill</p><p>4 bd · 2,316 sf · one level</p><span class="om-go">Price on request</span></div>
+      </a>
+  </div>
 
   <div class="label eyebrow more">Builder Partners</div>
   <div class="builders">

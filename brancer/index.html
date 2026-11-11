@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Brancer Homes builds custom homes and luxury renovations around Lake Norman and Charlotte.">
+<meta property="og:title" content="Brancer Homes">
+<meta property="og:description" content="Custom homes and luxury renovations · Lake Norman &amp; Charlotte">
+<meta property="og:image" content="https://realtyryanhomes.com/brancer/img/hero.jpg">
+<meta property="og:url" content="https://realtyryanhomes.com/brancer/">
+<meta name="twitter:card" content="summary_large_image">
+<title>Brancer Homes</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Marcellus&family=Corinthia:wght@400;700&display=swap">
+<style>
+/* Layout: sand ground, full-bleed photography, a dark "signage" band per chapter; monogram + script used as the only flourishes */
+:root{
+  --sand:#DED9CC; --sand-2:#E9E5DB; --stone:#C5C0BA;
+  --moss:#9A9A80; --olive:#5F5F4B; --dirt:#8E6449;
+  --teal:#748985; --deep:#3F5A55; --ink:#231F20; --paper:#F4F1EA;
+  --fg:#231F20; --muted:#5F5F4B; --line:rgba(35,31,32,.18);
+  --f-head:"Cairo","Avenir Next","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Libre Baskerville",Baskerville,"Baskerville Old Face",Georgia,serif;
+  --f-call:"Marcellus","Trajan Pro",Georgia,serif;
+  --f-script:"Corinthia","Snell Roundhand","Apple Chancery",cursive;
+  --gut:max(16px, env(safe-area-inset-left, 0px));
+  --gut-r:max(16px, env(safe-area-inset-right, 0px));
+  --wrap:1180px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--sand);color:var(--fg);font-family:var(--f-body);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--dirt);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:var(--gut);padding-right:var(--gut-r)}
+h1,h2,h3{font-family:var(--f-head);font-weight:300;text-transform:uppercase;letter-spacing:.22em;line-height:1.25;text-wrap:balance;margin:0}
+h2{font-size:clamp(1.5rem,3.2vw,2.3rem)}
+h3{font-size:1rem;letter-spacing:.24em;font-weight:400}
+p{margin:0;max-width:62ch}
+.eyebrow{font-family:var(--f-call);text-transform:uppercase;letter-spacing:.32em;font-size:.78rem;color:var(--dirt)}
+.script{font-family:var(--f-script);font-weight:400;text-transform:none;letter-spacing:0;line-height:1}
+.rule{width:64px;height:1px;background:currentColor;opacity:.5}
+
+/* logo masks: recolor the real BH artwork with any token */
+.mark{display:block;background:currentColor;-webkit-mask:var(--m) center/contain no-repeat;mask:var(--m) center/contain no-repeat}
+.m-stack{--m:url(img/logo-stacked.png);aspect-ratio:1424/1104}
+.m-horiz{--m:url(img/logo-horizontal.png);aspect-ratio:2171/599}
+.m-circ{--m:url(img/monogram-circle.png);aspect-ratio:598/578}
+
+/* header */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--ink)}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(35,31,32,.94);color:var(--sand);backdrop-filter:blur(8px)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:12px}
+header.top .m-horiz{width:clamp(150px,18vw,200px)}
+nav ul{display:flex;gap:clamp(14px,2.2vw,30px);list-style:none;margin:0;padding:0;font-family:var(--f-head);font-size:.74rem;letter-spacing:.24em;text-transform:uppercase}
+nav a{text-decoration:none;opacity:.85;white-space:nowrap}
+nav a:hover{opacity:1;color:#fff}
+.call{font-family:var(--f-head);letter-spacing:.2em;font-size:.8rem;text-decoration:none;border:1px solid rgba(222,217,204,.45);padding:8px 14px;white-space:nowrap}
+.call:hover{background:var(--sand);color:var(--ink)}
+.burger{display:none;background:none;border:1px solid rgba(222,217,204,.45);color:var(--sand);font-family:var(--f-head);text-transform:uppercase;letter-spacing:.24em;font-size:.72rem;padding:8px 12px;cursor:pointer}
+.mnav{position:fixed;inset:calc(64px + env(safe-area-inset-top,0px)) 0 auto;z-index:49;background:var(--ink);display:grid;padding:8px var(--gut-r) 24px var(--gut);border-bottom:1px solid rgba(222,217,204,.15)}
+.mnav a{color:var(--sand);text-decoration:none;font-family:var(--f-head);text-transform:uppercase;letter-spacing:.26em;font-size:.9rem;padding:14px 0;border-bottom:1px solid rgba(222,217,204,.1)}
+@media (max-width:1060px){nav{display:none}.burger{display:block}}
+@media (max-width:520px){.call{display:none}}
+
+/* hero */
+.hero{position:relative;color:var(--sand);background:var(--ink);overflow:hidden;min-height:min(92vh,940px);display:grid}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;animation:kb 18s ease-out both}
+@keyframes kb{from{transform:scale(1.09)}to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 55% at 50% 42%,rgba(35,31,32,.42),rgba(35,31,32,.1) 70%),linear-gradient(180deg,rgba(35,31,32,.35) 0%,rgba(35,31,32,0) 30%,rgba(35,31,32,.15) 62%,rgba(35,31,32,.88) 100%)}
+.hero .inner{position:relative;z-index:1;display:grid;grid-template-rows:1fr auto;justify-items:center;text-align:center;gap:28px;padding-block:clamp(56px,9vw,110px) 28px;width:100%}
+.hero .center{display:grid;justify-items:center;align-content:center;gap:20px}
+.hero .m-stack{width:min(380px,72vw);filter:drop-shadow(0 2px 18px rgba(0,0,0,.35))}
+.hero .tag{font-family:var(--f-script);font-size:clamp(2.6rem,6vw,4.2rem);line-height:.9;text-shadow:0 2px 16px rgba(0,0,0,.4)}
+.hero .sub{font-family:var(--f-call);letter-spacing:.34em;text-transform:uppercase;font-size:.8rem;opacity:.92}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:8px}
+.hero .towns{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 22px;font-family:var(--f-call);text-transform:uppercase;letter-spacing:.3em;font-size:.68rem;color:var(--stone);border-top:1px solid rgba(222,217,204,.25);padding-top:18px;width:min(900px,100%)}
+.hero .center > *{animation:rise 1.1s cubic-bezier(.2,.7,.2,1) both}
+.hero .center > :nth-child(2){animation-delay:.25s}.hero .center > :nth-child(3){animation-delay:.4s}.hero .center > :nth-child(4){animation-delay:.55s}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.btn{display:inline-block;font-family:var(--f-head);text-transform:uppercase;letter-spacing:.24em;font-size:.76rem;padding:14px 26px;text-decoration:none;border:1px solid currentColor;transition:background .25s,color .25s}
+.btn.solid{background:var(--sand);color:var(--ink);border-color:var(--sand)}
+.btn.solid:hover{background:transparent;color:var(--sand)}
+.btn.ghost:hover{background:var(--sand);color:var(--ink)}
+.btn.dark{border-color:var(--ink);color:var(--ink)}
+.btn.dark:hover{background:var(--ink);color:var(--sand)}
+
+/* sections */
+section{padding-block:clamp(64px,9vw,120px)}
+.lede{display:grid;grid-template-columns:1fr 1.25fr;gap:clamp(28px,6vw,90px);align-items:start}
+.lede > *{min-width:0}
+.lede .big{font-family:var(--f-body);font-size:clamp(1.25rem,2.2vw,1.6rem);line-height:1.6}
+.lede .stack{display:grid;gap:18px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:clamp(40px,6vw,70px);border-top:1px solid var(--line)}
+.facts div{padding:22px 18px 0 0;display:grid;gap:4px}
+.facts b{font-family:var(--f-head);font-weight:300;font-size:clamp(1.6rem,3vw,2.2rem);letter-spacing:.08em}
+.facts span{font-family:var(--f-call);text-transform:uppercase;letter-spacing:.22em;font-size:.72rem;color:var(--muted)}
+@media (max-width:760px){.lede{grid-template-columns:1fr}.facts{grid-template-columns:1fr}.facts div{padding:16px 0;border-bottom:1px solid var(--line)}}
+
+/* services */
+.services{background:var(--paper)}
+.svc-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(30px,5vw,56px)}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.5vw,32px)}
+.svc article{display:grid;gap:16px;align-content:start}
+.svc figure{margin:0;aspect-ratio:4/5;overflow:hidden;max-width:100%}
+.svc figure img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.svc article:hover img{transform:scale(1.04)}
+.svc .num{font-family:var(--f-call);color:var(--dirt);letter-spacing:.2em;font-size:.8rem}
+@media (max-width:860px){.svc{grid-template-columns:1fr}.svc figure{aspect-ratio:3/2}}
+
+/* signature story */
+.story{padding-top:0;background:var(--sand)}
+.story-hero{position:relative;height:clamp(380px,72vh,760px);overflow:hidden;color:var(--sand);background:var(--ink)}
+.story-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 60%}
+.story-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(35,31,32,0) 45%,rgba(35,31,32,.78))}
+.story-hero .cap{position:relative;z-index:1;height:100%;display:grid;align-content:end;gap:10px;padding-block:0 clamp(28px,5vw,56px)}
+.story-hero .eyebrow{color:var(--stone)}
+.story-hero h2{font-size:clamp(2.2rem,6vw,4.6rem);letter-spacing:.18em}
+.story-hero h2 .script{font-size:1.15em;letter-spacing:0;margin-right:.1em;vertical-align:-.08em}
+.story-body{display:grid;grid-template-columns:1fr 1.5fr;gap:clamp(28px,5vw,70px);padding-top:clamp(40px,6vw,80px);align-items:start}
+.story-body > *{min-width:0}
+.story-copy{display:grid;gap:26px;position:sticky;top:calc(90px + env(safe-area-inset-top,0px))}
+.story-copy .big{font-size:clamp(1.15rem,1.9vw,1.4rem);line-height:1.65}
+.feat{list-style:none;margin:0;padding:0;columns:2;column-gap:24px;font-family:var(--f-call);text-transform:uppercase;letter-spacing:.16em;font-size:.74rem;color:var(--olive)}
+.feat li{padding:10px 0;border-top:1px solid var(--line);break-inside:avoid}
+.story-grid{display:grid;grid-template-columns:1.2fr 1fr;grid-template-rows:auto auto;gap:12px}
+.story-grid figure{margin:0;overflow:hidden;max-width:100%}
+.story-grid img{width:100%;height:100%;object-fit:cover}
+.story-grid .a{grid-column:1/-1;aspect-ratio:16/9}
+.story-grid .b{aspect-ratio:4/5}
+.story-grid .c{aspect-ratio:4/5}
+.story-grid .d{grid-column:1/-1;aspect-ratio:21/9}
+@media (max-width:860px){.story-body{grid-template-columns:1fr}.story-copy{position:static}}
+@media (max-width:420px){.feat{columns:1}}
+
+/* feature band */
+.band{position:relative;color:var(--sand);background:var(--olive);padding:0}
+.band .grid{display:grid;grid-template-columns:1.1fr 1fr;min-height:520px}
+.band .grid > *{min-width:0}
+.band .ph{position:relative;min-height:360px}
+.band .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.band .tx{display:grid;align-content:center;gap:22px;padding:clamp(40px,6vw,80px) var(--gut-r) clamp(40px,6vw,80px) clamp(28px,5vw,72px)}
+.band .tx .script{font-size:clamp(2.6rem,5vw,3.8rem);color:var(--sand)}
+.band blockquote{margin:0;font-family:var(--f-body);font-style:italic;font-size:clamp(1.1rem,1.8vw,1.3rem);line-height:1.7}
+.band cite{font-style:normal;font-family:var(--f-call);letter-spacing:.24em;text-transform:uppercase;font-size:.74rem;opacity:.85}
+@media (max-width:860px){.band .grid{grid-template-columns:1fr}.band .tx{padding-left:var(--gut)}}
+
+/* gallery */
+.gal-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:28px}
+.filters{display:flex;gap:6px;flex-wrap:wrap}
+.filters button{font-family:var(--f-head);text-transform:uppercase;letter-spacing:.2em;font-size:.7rem;background:transparent;border:1px solid var(--line);color:var(--fg);padding:9px 14px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--sand);border-color:var(--ink)}
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:clamp(110px,13vw,170px);gap:10px}
+.gallery button{all:unset;display:block;box-sizing:border-box;position:relative;overflow:hidden;cursor:zoom-in;background:var(--stone)}
+.gallery button:focus-visible{outline:2px solid var(--dirt);outline-offset:2px}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .7s,filter .4s}
+.gallery button:hover img{transform:scale(1.04)}
+.gallery .cap{position:absolute;left:0;right:0;bottom:0;padding:24px 12px 10px;color:var(--sand);font-family:var(--f-call);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;background:linear-gradient(transparent,rgba(35,31,32,.75));opacity:0;transition:opacity .3s}
+.gallery button:hover .cap,.gallery button:focus-visible .cap{opacity:1}
+.gallery .w6{grid-column:span 6}.gallery .w4{grid-column:span 4}.gallery .w8{grid-column:span 8}.gallery .w3{grid-column:span 3}.gallery .h1{grid-row:span 1}.gallery .h2{grid-row:span 2}.gallery .h3{grid-row:span 3}
+@media (max-width:760px){.gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}.gallery .w6,.gallery .w4,.gallery .w3{grid-column:span 1}.gallery .w8{grid-column:span 2}.gallery .h3{grid-row:span 2}.gallery .cap{opacity:1}}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(35,31,32,.94);display:grid;place-items:center;padding:max(20px,env(safe-area-inset-top,0px)) var(--gut-r) 20px var(--gut)}
+.lb figure{margin:0;display:grid;gap:12px;justify-items:center}
+.lb img{max-height:80vh;width:auto}
+.lb figcaption{color:var(--sand);font-family:var(--f-call);letter-spacing:.2em;text-transform:uppercase;font-size:.78rem}
+.lb .x{position:absolute;top:calc(14px + env(safe-area-inset-top,0px));right:calc(16px + env(safe-area-inset-right,0px));background:none;border:1px solid rgba(222,217,204,.5);color:var(--sand);font-family:var(--f-head);letter-spacing:.2em;font-size:.72rem;padding:8px 12px;cursor:pointer}
+
+/* process */
+.process{background:var(--ink);color:var(--sand)}
+.process .eyebrow{color:var(--moss)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:clamp(36px,5vw,60px);border-top:1px solid rgba(222,217,204,.2)}
+.steps li{list-style:none;padding:28px clamp(16px,2.5vw,32px) 0 0;display:grid;gap:14px;align-content:start;min-width:0}
+.steps li + li{padding-left:clamp(16px,2.5vw,32px);border-left:1px solid rgba(222,217,204,.2)}
+.steps .n{font-family:var(--f-call);font-size:3rem;line-height:1;color:var(--moss)}
+.steps p{font-size:.95rem;opacity:.88}
+.steps .note{font-family:var(--f-call);letter-spacing:.18em;text-transform:uppercase;font-size:.72rem;color:var(--stone)}
+.process ol{margin:0;padding:0}
+@media (max-width:860px){.steps{grid-template-columns:1fr}.steps li + li{border-left:0;padding-left:0;border-top:1px solid rgba(222,217,204,.2);margin-top:28px}}
+.process .after{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center;margin-top:clamp(40px,6vw,64px);padding-top:28px;border-top:1px solid rgba(222,217,204,.2)}
+.process .after .m-circ{width:64px;color:var(--moss)}
+@media (max-width:560px){.process .after{grid-template-columns:1fr}}
+
+/* plans */
+.plans-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,2vw,24px);margin-top:clamp(30px,5vw,50px)}
+.plan{background:var(--paper);display:grid;grid-template-rows:auto 1fr}
+.plan figure{margin:0;aspect-ratio:3/2;overflow:hidden;background:var(--stone);max-width:100%}
+.plan figure img{width:100%;height:100%;object-fit:cover}
+.plan .b{padding:18px 18px 20px;display:grid;gap:12px;align-content:start}
+.plan h3{font-size:.86rem}
+.plan dl{display:grid;grid-template-columns:1fr auto;margin:0;font-size:.82rem;row-gap:4px;font-variant-numeric:tabular-nums}
+.plan dt{color:var(--muted)}
+.plan dd{margin:0;text-align:right;font-family:var(--f-head);letter-spacing:.06em}
+.plan .tot{font-family:var(--f-head);font-weight:300;font-size:1.6rem;letter-spacing:.06em;line-height:1}
+.plan .tot small{font-family:var(--f-call);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-left:6px}
+@media (max-width:1000px){.plans-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.plans-grid{grid-template-columns:1fr}}
+
+/* renovations */
+.reno{background:var(--deep);color:var(--sand)}
+.reno .eyebrow{color:var(--stone)}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,40px);margin-top:clamp(30px,5vw,50px)}
+.ba > *{min-width:0}
+.compare{position:relative;aspect-ratio:3/2;overflow:hidden;max-width:100%;user-select:none;background:var(--ink)}
+.compare img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.compare .after-img{clip-path:inset(0 0 0 var(--pos,50%))}
+.compare .handle{position:absolute;top:0;bottom:0;left:var(--pos,50%);width:1px;background:var(--sand);pointer-events:none}
+.compare .handle::after{content:"";position:absolute;top:50%;left:50%;width:38px;height:38px;border:1px solid var(--sand);border-radius:50%;transform:translate(-50%,-50%);background:rgba(35,31,32,.5)}
+.compare input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.compare .lbl{position:absolute;top:12px;font-family:var(--f-call);font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;background:rgba(35,31,32,.6);padding:5px 9px}
+.compare .l{left:12px}.compare .r{right:12px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.pair figure{margin:0;position:relative;aspect-ratio:4/5;overflow:hidden;max-width:100%;background:var(--ink)}
+.pair img{width:100%;height:100%;object-fit:cover}
+.pair figcaption{position:absolute;left:10px;top:10px;font-family:var(--f-call);font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;background:rgba(35,31,32,.65);padding:5px 9px}
+.pair figure:last-child figcaption{background:var(--sand);color:var(--deep)}
+.ba h3{margin-top:18px}
+.ba p{font-size:.93rem;opacity:.88;margin-top:8px}
+@media (max-width:860px){.ba{grid-template-columns:1fr}}
+
+/* about */
+.about .grid{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(30px,6vw,90px);align-items:center}
+.about .grid > *{min-width:0}
+.about figure{margin:0;position:relative}
+.about figure img{aspect-ratio:4/5;object-fit:cover;width:100%}
+.about figure .m-circ{position:absolute;right:-22px;bottom:-22px;width:110px;color:var(--olive);background:var(--sand);border-radius:50%;-webkit-mask:none;mask:none;padding:12px}
+.about figure .m-circ i{display:block;width:100%;height:100%;background:var(--olive);-webkit-mask:url(img/monogram-circle.png) center/contain no-repeat;mask:url(img/monogram-circle.png) center/contain no-repeat}
+.about .copy{display:grid;gap:18px}
+.about .sig{font-family:var(--f-script);font-size:3rem;line-height:1;color:var(--dirt)}
+@media (max-width:860px){.about .grid{grid-template-columns:1fr}.about figure .m-circ{right:10px;bottom:-30px}}
+
+/* divisions: signage system from the brand guide */
+.divs{background:var(--paper)}
+.divs .row{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,3vw,40px);margin-top:clamp(36px,5vw,60px)}
+.sign-wrap{margin:0;display:grid;gap:18px;justify-items:center}
+.div-mark{display:grid;justify-items:center;gap:2px}
+.div-mark .wm{font-family:var(--f-head);font-weight:300;font-size:clamp(1.3rem,2.2vw,1.7rem);letter-spacing:.02em;line-height:1}
+.div-mark .wm .script{font-size:1.7em;margin-left:-1px}
+.div-mark .homes{font-family:var(--f-head);font-weight:500;letter-spacing:.42em;font-size:.95rem}
+.s-metro-t{color:var(--olive)}.s-shore-t{color:var(--deep)}.s-ridge-t{color:var(--dirt)}
+.sign{width:100%;max-width:330px;aspect-ratio:2/3;display:grid;justify-items:center;align-content:start;padding:7% 6% 6%;box-shadow:0 30px 50px -30px rgba(35,31,32,.55);transition:transform .5s}
+.sign-wrap:hover .sign{transform:translateY(-6px) rotate(-.6deg)}
+.sign .avail{width:100%;display:grid;place-items:center;padding:6% 0 8%}
+.sign .avail .script{font-size:clamp(2.2rem,4.4vw,3.3rem)}
+.sign .m-circ{width:38%;margin-top:9%}
+.sign .b-word{font-family:var(--f-head);font-weight:300;letter-spacing:.2em;font-size:clamp(1.3rem,2.4vw,1.9rem);margin-top:6%;padding-left:.2em}
+.sign .b-rule{width:62%;height:1px;background:currentColor;margin:3% 0}
+.sign .b-homes{font-family:var(--f-head);letter-spacing:.42em;font-size:clamp(.72rem,1.2vw,.9rem);padding-left:.42em}
+.sign .ph{width:100%;text-align:center;font-family:var(--f-head);font-weight:300;letter-spacing:.3em;font-size:clamp(.82rem,1.4vw,1.05rem);padding:3% 0;margin-top:6%}
+.sign .url{font-family:var(--f-head);font-size:clamp(.8rem,1.3vw,.95rem);margin-top:4%;letter-spacing:.02em}
+.sign-wrap figcaption{font-family:var(--f-call);text-transform:uppercase;letter-spacing:.24em;font-size:.68rem;color:var(--muted)}
+.s-metro{background:var(--sand);color:var(--olive)} .s-metro .avail,.s-metro .ph{background:var(--olive);color:var(--sand)}
+.s-shore{background:var(--deep);color:var(--sand)} .s-shore .avail,.s-shore .ph{background:var(--stone);color:var(--deep)}
+.s-ridge{background:var(--dirt);color:var(--sand)} .s-ridge .avail,.s-ridge .ph{background:var(--sand);color:var(--dirt)}
+@media (max-width:860px){.divs .row{grid-template-columns:1fr}.sign{max-width:300px}}
+
+/* contact */
+.contact{background:var(--ink);color:var(--sand)}
+.contact .grid{display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(30px,6vw,80px)}
+.contact .grid > *{min-width:0}
+.contact .eyebrow{color:var(--moss)}
+.info{display:grid;gap:22px;align-content:start}
+.info dl{margin:0;display:grid;gap:16px}
+.info dt{font-family:var(--f-call);letter-spacing:.24em;text-transform:uppercase;font-size:.7rem;color:var(--moss)}
+.info dd{margin:2px 0 0;user-select:all}
+.info .phone{font-family:var(--f-head);font-weight:300;letter-spacing:.3em;font-size:clamp(1.3rem,2.6vw,1.8rem)}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px 18px}
+form .full{grid-column:1/-1}
+label{display:grid;gap:6px;font-family:var(--f-call);letter-spacing:.18em;text-transform:uppercase;font-size:.68rem;color:var(--stone)}
+input,select,textarea{font:inherit;font-family:var(--f-body);font-size:.95rem;text-transform:none;letter-spacing:0;color:var(--sand);background:transparent;border:0;border-bottom:1px solid rgba(222,217,204,.35);padding:8px 0;border-radius:0;width:100%}
+select option{color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:none;border-bottom-color:var(--sand)}
+textarea{resize:vertical;min-height:80px}
+form .btn{justify-self:start;background:var(--sand);color:var(--ink);border-color:var(--sand);cursor:pointer}
+form .btn:hover{background:transparent;color:var(--sand)}
+.sent{grid-column:1/-1;font-family:var(--f-body);font-style:italic;color:var(--moss)}
+@media (max-width:860px){.contact .grid{grid-template-columns:1fr}}
+@media (max-width:520px){form{grid-template-columns:1fr}}
+
+footer{background:var(--ink);color:var(--stone);border-top:1px solid rgba(222,217,204,.12);font-size:.86rem}
+.fgrid{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:clamp(24px,4vw,56px);padding-block:clamp(48px,7vw,80px) 36px;align-items:start}
+.fgrid > *{min-width:0}
+.fgrid .m-stack{width:min(180px,60%);color:var(--sand)}
+footer h4{margin:0 0 10px;font-family:var(--f-call);font-weight:400;text-transform:uppercase;letter-spacing:.26em;font-size:.7rem;color:var(--moss)}
+footer p{margin:0 0 8px;line-height:1.8}
+footer a{text-decoration:none}footer a:hover{color:var(--sand)}
+.fbase{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;padding-block:20px 28px;border-top:1px solid rgba(222,217,204,.12);font-size:.74rem;opacity:.8}
+@media (max-width:860px){.fgrid{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.fgrid{grid-template-columns:1fr}}
+
+
+/* page headers, teasers, CTA band, active nav */
+nav a[aria-current="page"]{opacity:1;color:#fff;box-shadow:0 1px 0 var(--moss)}
+.mnav a[aria-current="page"]{color:var(--moss)}
+.phead{position:relative;padding:0;color:var(--sand);background:var(--ink);min-height:clamp(320px,50vh,520px);display:grid;overflow:hidden}
+.phead img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:kb 14s ease-out both}
+.phead::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(35,31,32,.35),rgba(35,31,32,.2) 40%,rgba(35,31,32,.82))}
+.pcap{position:relative;z-index:1;align-self:end;display:grid;gap:12px;padding-block:clamp(48px,8vw,90px) clamp(32px,5vw,56px)}
+.pcap .eyebrow{color:var(--stone)}
+.pcap h1{font-size:clamp(1.9rem,4.6vw,3.4rem);letter-spacing:.16em}
+.pcap p{max-width:58ch;opacity:.9}
+.pcap > *{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}.pcap > :nth-child(2){animation-delay:.15s}.pcap > :nth-child(3){animation-delay:.3s}
+.muted-note{font-family:var(--f-call);text-transform:uppercase;letter-spacing:.2em;font-size:.7rem;color:var(--muted)}
+.teasers{background:var(--sand)}
+.t-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:repeat(2,clamp(220px,24vw,320px));gap:12px;margin-top:clamp(30px,5vw,50px)}
+.t{position:relative;overflow:hidden;color:var(--sand);text-decoration:none;background:var(--ink);min-width:0}
+.t img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s}
+.t::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(35,31,32,.8))}
+.t:hover img{transform:scale(1.05)}
+.t.big{grid-row:span 2}.t.wide{grid-column:span 2}
+.t-cap{position:absolute;z-index:1;left:0;right:0;bottom:0;display:grid;gap:4px;padding:20px 22px}
+.t-cap .eyebrow{color:var(--stone)}
+.t-cap b{font-family:var(--f-head);font-weight:300;text-transform:uppercase;letter-spacing:.2em;font-size:clamp(1.05rem,1.8vw,1.4rem)}
+.t-cap i{font-style:normal;font-family:var(--f-call);font-size:.7rem;letter-spacing:.26em;text-transform:uppercase;opacity:.85}
+.t-cap i::after{content:" \2192"}
+@media (max-width:860px){.t-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}.t{aspect-ratio:4/3}.t.big,.t.wide{grid-column:span 2;grid-row:auto;aspect-ratio:16/10}}
+@media (max-width:520px){.t-grid{grid-template-columns:1fr}.t.big,.t.wide{grid-column:auto}}
+.cta-band{background:var(--olive);color:var(--sand);text-align:center}
+.cta-band .wrap{display:grid;justify-items:center;gap:18px}
+.cta-band .script{font-size:clamp(2.8rem,6vw,4.4rem)}
+.cta-band p{opacity:.9}
+.cta-band .ctas{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:center}
+.cta-ph{font-family:var(--f-head);letter-spacing:.24em;font-size:.82rem;text-transform:uppercase}
+.contact .info h2{font-size:clamp(1.3rem,2.4vw,1.7rem)}
+
+/* scroll reveal: only below-the-fold blocks are ever pre-hidden */
+.pre{opacity:0;transform:translateY(22px)}
+.reveal-in{transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1);opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+
+<header class="top">
+  <div class="wrap">
+    <a href="#home" aria-label="Brancer Homes, back to top"><span class="mark m-horiz"></span></a>
+    <nav aria-label="Main"><ul>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#lake-house">Lake House</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#plans">Floor Plans</a></li>
+      <li><a href="#renovations">Renovations</a></li>
+      <li><a href="#about">Our Story</a></li>
+    </ul></nav>
+    <a class="call" href="#contact">Contact</a>
+    <button class="burger" type="button" id="burger" aria-expanded="false" aria-controls="mnav">Menu</button>
+  </div>
+</header>
+<div class="mnav" id="mnav" hidden>
+  <a href="#home">Home</a><a href="#portfolio">Portfolio</a><a href="#lake-house">The Lake House</a><a href="#process">Process</a><a href="#plans">Floor Plans</a><a href="#renovations">Renovations</a><a href="#about">Our Story</a><a href="#contact">Contact</a>
+</div>
+
+<main>
+<div class="view" data-view="home" data-title="Brancer Homes">
+  <section class="hero" style="padding:0">
+    <img src="img/hero.jpg" alt="White modern farmhouse with a standing-seam metal roof and wraparound porch, built by Brancer Homes">
+    <div class="wrap inner">
+      <div class="center">
+        <span class="mark m-stack" role="img" aria-label="Brancer Homes"></span>
+        <div class="tag">Custom Homes</div>
+        <div class="sub">Lake Norman &amp; Charlotte</div>
+        <div class="ctas">
+          <a class="btn solid" href="#contact">Begin Your Home</a>
+          <a class="btn ghost" href="#portfolio">View Portfolio</a>
+        </div>
+      </div>
+      <div class="towns" aria-label="Where we build"><span>Charlotte</span><span>Denver</span><span>Catawba</span><span>Sherrills Ford</span><span>Maiden</span><span>Mooresville</span><span>Wesley Chapel</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="lede">
+        <div class="stack">
+          <span class="eyebrow">Our Philosophy</span>
+          <h2>Built the way we would build our own</h2>
+        </div>
+        <div class="stack">
+          <p class="big">Brancer Homes is a family-owned builder of custom homes and luxury renovations around Lake Norman. We stay close to every project, and we deliver what we promise, when we promise it.</p>
+          <p>Bobby and Jessica Tucker founded Brancer in 2017, after building their first home together. Behind it stands United Contracting Group, the commercial firm Bobby started at eighteen, and the discipline that comes with it. Most of our homes come to us through referrals and returning clients, which is the measure we care about most.</p>
+        </div>
+      </div>
+      <div class="facts">
+        <div><b>Est. 2017</b><span>Family owned, Denver NC</span></div>
+        <div><b>30 mi</b><span>Building radius from Lake Norman</span></div>
+        <div><b>3–4 wks</b><span>From approved plans to full bid</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="wrap">
+      <div class="svc-head">
+        <div style="display:grid;gap:14px"><span class="eyebrow">Services</span><h2>Design. Build. Renew.</h2></div>
+        <a class="btn dark" href="#contact">Schedule a Consultation</a>
+      </div>
+      <div class="svc">
+        <article>
+          <figure><img src="img/kitchen-oak.jpg" alt="Vaulted white oak kitchen with exposed beams" loading="lazy"></figure>
+          <span class="num">Custom Homes</span>
+          <h3>Homes of lasting character</h3>
+          <p>From a farmhouse on acreage to a lakefront home terraced down to the water, every Brancer home is held to the same standard of craftsmanship, whatever its size.</p>
+        </article>
+        <article>
+          <figure><img src="img/wine.jpg" alt="Custom white oak wine room with glass door" loading="lazy"></figure>
+          <span class="num">Design Services</span>
+          <h3>Every selection, considered</h3>
+          <p>Architectural drawings for the home, patio or garage, and an in-house design team to guide each choice, from cabinetry and stone down to the last piece of hardware.</p>
+        </article>
+        <article>
+          <figure><img src="img/r-poolhouse.jpg" alt="Pool house addition with covered patio" loading="lazy"></figure>
+          <span class="num">Renovations &amp; Additions</span>
+          <h3>Fall in love with home again</h3>
+          <p>Kitchens, primary suites, pool houses and whole-home renovations, designed and executed with precision, so staying where you are becomes the better investment.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="teasers">
+    <div class="wrap">
+      <div class="lede">
+        <div class="stack"><span class="eyebrow">Explore</span><h2>See what we build</h2></div>
+        <div class="stack"><p>Walk through a signature lakefront home, browse the portfolio, start from one of our plans, or see what a Brancer renovation can do.</p></div>
+      </div>
+      <div class="t-grid">
+        <a class="t big" href="#lake-house"><img src="img/lake-view.jpg" alt="" loading="lazy"><span class="t-cap"><span class="eyebrow">Signature Home</span><b>The Lake House</b><i>Explore</i></span></a>
+        <a class="t" href="#portfolio"><img src="img/greatroom.jpg" alt="" loading="lazy"><span class="t-cap"><span class="eyebrow">Portfolio</span><b>Selected Work</b><i>Explore</i></span></a>
+        <a class="t" href="#plans"><img src="img/plan-riverstone.jpg" alt="" loading="lazy"><span class="t-cap"><span class="eyebrow">Signature Plans</span><b>Floor Plans</b><i>Explore</i></span></a>
+        <a class="t wide" href="#renovations"><img src="img/r-farm-after.jpg" alt="" loading="lazy" style="object-position:center 40%"><span class="t-cap"><span class="eyebrow">Renovations</span><b>Before &amp; After</b><i>Explore</i></span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="divs">
+    <div class="wrap">
+      <div class="lede">
+        <div class="stack"><span class="eyebrow">Our Collections</span><h2>Look for the sign</h2></div>
+        <div class="stack"><p>Three collections, one standard of craftsmanship. Each carries the Brancer monogram and its own color, unified by sand.</p></div>
+      </div>
+      <div class="row">
+        <figure class="sign-wrap">
+          <div class="div-mark s-metro-t"><span class="wm">CHARLOTTE<span class="script">metro</span></span><span class="homes">HOMES</span></div>
+          <div class="sign s-metro">
+            <div class="avail"><span class="script">Available</span></div>
+            <span class="mark m-circ"></span>
+            <span class="b-word">BRANCER</span><span class="b-rule"></span><span class="b-homes">HOMES</span>
+            <div class="ph">704.736.2051</div>
+            <span class="url">BrancerHomes.com</span>
+          </div>
+          <figcaption>Charlotte Metro Homes</figcaption>
+        </figure>
+        <figure class="sign-wrap">
+          <div class="div-mark s-shore-t"><span class="wm">SHORE<span class="script">line</span></span><span class="homes">HOMES</span></div>
+          <div class="sign s-shore">
+            <div class="avail"><span class="script">Available</span></div>
+            <span class="mark m-circ"></span>
+            <span class="b-word">BRANCER</span><span class="b-rule"></span><span class="b-homes">HOMES</span>
+            <div class="ph">704.736.2051</div>
+            <span class="url">BrancerHomes.com</span>
+          </div>
+          <figcaption>Shoreline Homes</figcaption>
+        </figure>
+        <figure class="sign-wrap">
+          <div class="div-mark s-ridge-t"><span class="wm">RIDGE<span class="script">line</span></span><span class="homes">HOMES</span></div>
+          <div class="sign s-ridge">
+            <div class="avail"><span class="script">Available</span></div>
+            <span class="mark m-circ"></span>
+            <span class="b-word">BRANCER</span><span class="b-rule"></span><span class="b-homes">HOMES</span>
+            <div class="ph">704.736.2051</div>
+            <span class="url">BrancerHomes.com</span>
+          </div>
+          <figcaption>Ridgeline Homes</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <span class="script">Begin your home</span>
+      <p>Whether you have land, a plan, or only an idea, the first conversation is where it starts.</p>
+      <div class="ctas"><a class="btn solid" href="#contact">Schedule a Consultation</a><span class="cta-ph">or call 704.736.2051</span></div>
+    </div>
+  </section>
+</div>
+
+<div class="view" data-view="portfolio" data-title="Portfolio · Brancer Homes" hidden>
+  <section class="phead">
+    <img src="img/pool-home.jpg" alt="" style="object-position:center 50%">
+    <div class="wrap pcap">
+      <span class="eyebrow">Portfolio</span>
+      <h1>Selected Work</h1>
+      <p>Custom homes from Denver to Sherrills Ford, photographed by Scott Broome.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="gal-head">
+        <p class="muted-note">Tap any image to enlarge.</p>
+        <div class="filters" role="group" aria-label="Filter gallery">
+          <button type="button" data-f="all" aria-pressed="true">All</button>
+          <button type="button" data-f="ext" aria-pressed="false">Exteriors</button>
+          <button type="button" data-f="int" aria-pressed="false">Interiors</button>
+          <button type="button" data-f="out" aria-pressed="false">Outdoor Living</button>
+        </div>
+      </div>
+      <div class="gallery" id="gallery"></div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <span class="script">Begin your home</span>
+      <p>Whether you have land, a plan, or only an idea, the first conversation is where it starts.</p>
+      <div class="ctas"><a class="btn solid" href="#contact">Schedule a Consultation</a><span class="cta-ph">or call 704.736.2051</span></div>
+    </div>
+  </section>
+</div>
+
+<div class="view" data-view="lake-house" data-title="The Lake House · Brancer Homes" hidden>
+  <section class="story">
+    <div class="story-hero">
+      <img src="img/lake-view.jpg" alt="Private dock on Lake Norman seen from a Brancer home in Sherrills Ford" loading="lazy">
+      <div class="wrap cap">
+        <span class="eyebrow">Signature Home · Sherrills Ford, NC</span>
+        <h2><span class="script">The</span> Lake House</h2>
+      </div>
+    </div>
+    <div class="wrap story-body">
+      <div class="story-copy">
+        <p class="big">Terraced down to the water and built around the view. Screened porches on every level, a fire-pit terrace above the dock, and inside, brick arches and coffered ceilings that keep the rooms grounded.</p>
+        <ul class="feat">
+          <li>Custom brick arch</li><li>Coffered ceilings</li><li>Screened porch with brick fireplace</li><li>Custom wine room</li><li>Lower-level kitchen</li><li>Home gym</li><li>Flagstone fire-pit terrace</li><li>Private dock</li>
+        </ul>
+      </div>
+      <div class="story-grid">
+        <figure class="a"><img src="img/lake-house.jpg" alt="Lake-side elevation with stacked screened porches" loading="lazy"></figure>
+        <figure class="b"><img src="img/arch.jpg" alt="Brick arch opening to the great room" loading="lazy"></figure>
+        <figure class="c"><img src="img/lake-patio.jpg" alt="Flagstone fire-pit terrace above the lake" loading="lazy"></figure>
+        <figure class="d"><img src="img/lake-porch.jpg" alt="Screened porch with brick floor and fireplace" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <span class="script">Begin your home</span>
+      <p>Whether you have land, a plan, or only an idea, the first conversation is where it starts.</p>
+      <div class="ctas"><a class="btn solid" href="#contact">Schedule a Consultation</a><span class="cta-ph">or call 704.736.2051</span></div>
+    </div>
+  </section>
+</div>
+
+<div class="view" data-view="process" data-title="Process · Brancer Homes" hidden>
+  <section class="phead">
+    <img src="img/kitchen-oak.jpg" alt="" style="object-position:center 40%">
+    <div class="wrap pcap">
+      <span class="eyebrow">The Process</span>
+      <h1>From first conversation to contract</h1>
+      <p>Three clear steps, with no surprises in between.</p>
+    </div>
+  </section>
+
+  <section class="process">
+    <div class="wrap">
+      <ol class="steps" style="margin-top:0">
+        <li>
+          <span class="n">1</span>
+          <h3>Initial Consultation</h3>
+          <p>We sit down together to walk through how a Brancer home is built, then review your plan (or one of ours), your site, the finishes you're drawn to and an early budget. No plan yet? Our design team will draw one around the way you live.</p>
+        </li>
+        <li>
+          <span class="n">2</span>
+          <h3>Planning &amp; Design</h3>
+          <p>A room-by-room study of the home: flooring, cabinetry, stone, appliances, fixtures, siding and outdoor spaces. Each detail is reviewed for both structure and beauty, and refined with you before construction drawings begin.</p>
+        </li>
+        <li>
+          <span class="n">3</span>
+          <h3>Final Review</h3>
+          <p>With your plans approved, we price the home line by line in a complete Bid Proposal: materials, labor, permits and every associated cost. Once you've reviewed and approved it, we sign the Contract to Build.</p>
+          <span class="note">Bid proposal: typically 3–4 weeks</span>
+        </li>
+      </ol>
+      <div class="after">
+        <span class="mark m-circ" aria-hidden="true"></span>
+        <p>Selections are the most personal part of building a home. Gather inspiration early, visit showrooms, start a mood board. The more that's decided before we break ground, the more you'll enjoy the build.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <span class="script">Begin your home</span>
+      <p>Whether you have land, a plan, or only an idea, the first conversation is where it starts.</p>
+      <div class="ctas"><a class="btn solid" href="#contact">Schedule a Consultation</a><span class="cta-ph">or call 704.736.2051</span></div>
+    </div>
+  </section>
+</div>
+
+<div class="view" data-view="plans" data-title="Floor Plans · Brancer Homes" hidden>
+  <section class="phead">
+    <img src="img/plan-courtland.jpg" alt="" style="object-position:center 60%">
+    <div class="wrap pcap">
+      <span class="eyebrow">Signature Plans</span>
+      <h1>Begin with a home we know well</h1>
+      <p>Each plan has been built and lived in, and each can be tailored to you. Prefer something entirely your own? Bring your plan, or we will design one together.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="plans-grid" id="plans-grid" style="margin-top:0"></div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <span class="script">Begin your home</span>
+      <p>Whether you have land, a plan, or only an idea, the first conversation is where it starts.</p>
+      <div class="ctas"><a class="btn solid" href="#contact">Schedule a Consultation</a><span class="cta-ph">or call 704.736.2051</span></div>
+    </div>
+  </section>
+</div>
+
+<div class="view" data-view="renovations" data-title="Renovations · Brancer Homes" hidden>
+  <section class="phead">
+    <img src="img/r-poolhouse.jpg" alt="" style="object-position:center 55%">
+    <div class="wrap pcap">
+      <span class="eyebrow">Renovations &amp; Additions</span>
+      <h1>Reimagine the home you already love</h1>
+      <p>Kitchens, primary suites, pool houses and whole-home renovations. We manage every detail, respect the budget, and build it to last.</p>
+    </div>
+  </section>
+
+  <section class="reno">
+    <div class="wrap">
+      <div class="ba" style="margin-top:0">
+        <div class="pair-block">
+          <div class="pair">
+            <figure><img src="img/r-maiden-before.jpg" alt="Maiden living room during demo: framed walls, lowered ceiling, original brick fireplace" loading="lazy"><figcaption>Before</figcaption></figure>
+            <figure><img src="img/r-maiden-after.jpg" alt="Maiden living room after: vaulted ceiling, painted brick fireplace carried to the peak, floating stair rail" loading="lazy"><figcaption>After</figcaption></figure>
+          </div>
+          <h3>Maiden · Full-House Remodel</h3>
+          <p>Taken to the studs. We raised the ceiling, extended the brick to the peak, and set an exposed steel beam that now carries floating stairs, then built a custom kitchen and new baths around it.</p>
+        </div>
+        <div class="pair-block">
+          <div class="pair">
+            <figure><img src="img/r-farm-before.jpg" alt="Catawba farmhouse before renovation" loading="lazy"><figcaption>Before</figcaption></figure>
+            <figure><img src="img/r-farm-after.jpg" alt="Catawba farmhouse after: new Hardie siding, windows, porch posts and front door" loading="lazy"><figcaption>After</figcaption></figure>
+          </div>
+          <h3>Catawba · Farmhouse Exterior</h3>
+          <p>New Hardie siding, windows, porch posts and front door give an older farmhouse a second life, with a remodeled primary bath and shower inside.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <span class="script">Begin your home</span>
+      <p>Whether you have land, a plan, or only an idea, the first conversation is where it starts.</p>
+      <div class="ctas"><a class="btn solid" href="#contact">Schedule a Consultation</a><span class="cta-ph">or call 704.736.2051</span></div>
+    </div>
+  </section>
+</div>
+
+<div class="view" data-view="about" data-title="Our Story · Brancer Homes" hidden>
+  <section class="phead">
+    <img src="img/beams.jpg" alt="" style="object-position:center 35%">
+    <div class="wrap pcap">
+      <span class="eyebrow">Our Story</span>
+      <h1>Bobby &amp; Jessica Tucker</h1>
+      <p>A family-owned builder with commercial roots, building homes for families to grow in for generations.</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="wrap grid">
+      <figure>
+        <img src="img/stairs.jpg" alt="White oak staircase in a Denver, NC custom home" loading="lazy">
+        <span class="m-circ" aria-hidden="true"><i></i></span>
+      </figure>
+      <div class="copy">
+        <span class="eyebrow">Our Story</span>
+        <h2>A family business, rooted in Denver</h2>
+        <p>Bobby started building young, working alongside his father, and founded United Contracting Group at 18. UCG grew into commercial framing and interiors for brands like Chick-fil-A, Bojangles and Darden Restaurants, but Bobby never lost his love for residential work.</p>
+        <p>In 2017, Bobby and Jessica launched Brancer Homes, a division of UCG, to focus on what they love most: thoughtfully designed homes for families to grow in for generations. A trusted network of subcontractors and vendors stands behind every project.</p>
+        <p>Away from the job site, you'll find Bobby with Jessica and their two boys, out on the lake or at a campsite.</p>
+        <span class="sig" aria-label="Bobby Tucker">Bobby Tucker</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="grid">
+      <div class="ph"><img src="img/pool-wide.jpg" alt="Saltwater pool and covered outdoor living, Catawba" loading="lazy"></div>
+      <div class="tx">
+        <span class="script">In Bobby's words</span>
+        <blockquote>“My goal as a builder is to focus on providing clients with a positive building experience. We are committed to delivering what we promised, when we promised.”</blockquote>
+        <cite>Bobby Tucker · Founder &amp; Builder</cite>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <span class="script">Begin your home</span>
+      <p>Whether you have land, a plan, or only an idea, the first conversation is where it starts.</p>
+      <div class="ctas"><a class="btn solid" href="#contact">Schedule a Consultation</a><span class="cta-ph">or call 704.736.2051</span></div>
+    </div>
+  </section>
+</div>
+
+<div class="view" data-view="contact" data-title="Contact · Brancer Homes" hidden>
+  <section class="phead">
+    <img src="img/lake-porch.jpg" alt="" style="object-position:center 55%">
+    <div class="wrap pcap">
+      <span class="eyebrow">Contact</span>
+      <h1>Let&rsquo;s talk about your home</h1>
+      <p>Bobby&rsquo;s team responds within three business days.</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="wrap grid">
+      <div class="info">
+        <h2>Visit or call</h2>
+        <dl>
+          <div><dt>Call</dt><dd class="phone">704.736.2051</dd></div>
+          <div><dt>Email</dt><dd>brancerhomes@buildwithucg.com</dd></div>
+          <div><dt>Office</dt><dd>7480 Waterside Loop Rd, Suite 203<br>Denver, NC 28037</dd></div>
+          <div><dt>Hours</dt><dd>Monday – Friday, 8am – 5pm</dd></div>
+        </dl>
+      </div>
+      <form id="inq" novalidate>
+        <label>Name<input id="f-name" name="name" autocomplete="name" required></label>
+        <label>Phone<input id="f-phone" name="phone" type="tel" autocomplete="tel" required></label>
+        <label class="full">Email<input id="f-email" name="email" type="email" autocomplete="email" required></label>
+        <label>Project type<select id="f-type" name="type"><option>New Home Construction</option><option>Remodel</option></select></label>
+        <label>Do you have a lot?<select id="f-lot" name="lot"><option>Yes</option><option>No</option><option>I'm in the process of buying one</option><option>I'm still looking</option><option>N/A – Remodel</option></select></label>
+        <label>Within 30 miles of Lake Norman?<select id="f-lkn" name="lkn"><option>Yes</option><option>No</option><option>It will be</option></select></label>
+        <label>House plan<select id="f-plan" name="plan"><option>Yes, I have construction plans</option><option>I like a Brancer Homes plan</option><option>I found a plan online</option><option>No, I'm still looking</option></select></label>
+        <label class="full">Budget<select id="f-budget" name="budget"><option>$500k – $700k</option><option>$700k – $900k</option><option>$900k – $1.2M</option><option>$1.2M+</option><option>Remodel: $40k – $60k</option><option>Remodel: $60k – $90k</option><option>Remodel: $90k – $125k</option><option>Remodel: $125k+</option></select></label>
+        <label class="full">Tell us about your project<textarea id="f-msg" name="msg"></textarea></label>
+        <button class="btn" type="submit">Send Inquiry</button>
+        <p class="sent" id="sent" hidden>Thank you. For the fastest response, call 704.736.2051 or email brancerhomes@buildwithucg.com.</p>
+      </form>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer>
+  <div class="wrap fgrid">
+    <span class="mark m-stack" role="img" aria-label="Brancer Homes"></span>
+    <div><h4>Visit</h4><p>7480 Waterside Loop Rd, Suite 203<br>Denver, NC 28037</p><p>Mailing: PO Box 444, Denver, NC 28037</p></div>
+    <div><h4>Contact</h4><p>704.736.2051<br>brancerhomes@buildwithucg.com<br>Mon – Fri, 8am – 5pm</p></div>
+    <div><h4>Explore</h4><p><a href="#portfolio">Portfolio</a><br><a href="#lake-house">The Lake House</a><br><a href="#plans">Floor Plans</a><br><a href="#renovations">Renovations</a><br><a href="#process">Process</a><br><a href="#about">Our Story</a></p></div>
+  </div>
+  <div class="wrap fbase"><span>© 2026 Brancer Homes, a division of United Contracting Group, Inc.</span><span>Photography: Scott Broome · Proud member, Lincoln County Chamber</span></div>
+</footer>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="x" type="button" id="lb-x">Close</button>
+  <figure><img id="lb-img" alt=""><figcaption id="lb-cap"></figcaption></figure>
+</div>
+
+<script>
+const G=[
+ ['lake-sherrills','ext','Lakefront · Sherrills Ford','w8 h3'],
+ ['greatroom','int','Great room · Denver','w4 h2'],
+ ['tub','int','Primary bath · Denver','w4 h1'],
+ ['catawba-porch','ext','Timber-gable porch · Catawba','w4 h2'],
+ ['kitchen-island','int','Kitchen · Catawba','w4 h2'],
+ ['pool','out','Pool &amp; spa · Catawba','w4 h2'],
+ ['farmhouse','ext','Modern farmhouse · Catawba','w6 h2'],
+ ['arch','int','Brick arch · Sherrills Ford','w6 h2'],
+ ['shower','int','Spa shower · Denver','w3 h2'],
+ ['coffered','int','Coffered ceiling · Sherrills Ford','w6 h2'],
+ ['beams','int','Custom beams · Catawba','w3 h2'],
+ ['pool-home','out','Rear elevation &amp; pool · Catawba','w8 h2'],
+ ['kitchen-hood','int','Custom hood · Sherrills Ford','w4 h2'],
+ ['r-outdoor-kitchen','out','Outdoor kitchen · Wesley Chapel','w6 h2'],
+ ['porch-ceiling','out','Covered porch · Catawba','w6 h2'],
+];
+const gal=document.getElementById('gallery');
+function draw(f){
+  gal.innerHTML=G.filter(g=>f==='all'||g[1]===f).map(g=>{
+    const cls=f==='all'?g[3]:'w4 h2';
+    return `<button type="button" class="${cls}" data-src="img/${g[0]}.jpg" data-cap="${g[2]}"><img src="img/${g[0]}.jpg" alt="${g[2].replace('&amp;','and')}" loading="lazy"><span class="cap">${g[2]}</span></button>`}).join('');
+}
+draw('all');
+document.querySelectorAll('.filters button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.filters button').forEach(x=>x.setAttribute('aria-pressed',x===b));draw(b.dataset.f);
+}));
+const lb=document.getElementById('lb'),li=document.getElementById('lb-img'),lc=document.getElementById('lb-cap');
+let last=null;
+gal.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;last=b;li.src=b.dataset.src;li.alt=b.querySelector('img').alt;lc.innerHTML=b.dataset.cap;lb.hidden=false;document.getElementById('lb-x').focus()});
+function close(){lb.hidden=true;last&&last.focus()}
+document.getElementById('lb-x').onclick=close;
+lb.addEventListener('click',e=>{if(e.target===lb)close()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!lb.hidden)close()});
+
+const P=[
+ ['Barrett Ridge','barrett',[['Main',2320],['Upper level',1154],['Bonus',541]],4015,[853,532]],
+ ['Courtland Drive','courtland',[['Main',2589],['Bonus',397]],2986,[729,594]],
+ ['Riverstone Court','riverstone',[['Main',2534],['Bonus',418]],2952,[740,496]],
+ ['Oak Harbor','oak',[['Main',2329],['Bonus',382]],2711,[591,396]],
+ ['Alpine Court','alpine',[['Main',2073],['Bonus',430]],2503,[668,354]],
+ ['Highland Court','highland',[['Main',2077],['Bonus',372]],2449,[665,475]],
+ ['Park Lane','park',[['Main',1988],['Bonus',372]],2360,[643,415]],
+ ['Cherry Laurel','cherry',[['Main',2004],['Bonus',354]],2358,[618,525]],
+];
+const n=v=>v.toLocaleString('en-US');
+document.getElementById('plans-grid').innerHTML=P.map(p=>`<article class="plan">
+ <figure><img src="img/plan-${p[1]}.jpg" alt="The ${p[0]}${p[1]==='barrett'?' main-level floor plan':' as built'}" loading="lazy"></figure>
+ <div class="b"><h3>The ${p[0]}</h3><div class="tot">${n(p[3])}<small>heated sq ft</small></div>
+ <dl>${p[2].map(r=>`<dt>${r[0]}</dt><dd>${n(r[1])}</dd>`).join('')}<dt>Garage / storage</dt><dd>${n(p[4][0])}</dd><dt>Porches</dt><dd>${n(p[4][1])}</dd></dl></div></article>`).join('');
+
+document.getElementById('inq').addEventListener('submit',e=>{
+  e.preventDefault();
+  const f=e.target, v=id=>(document.getElementById(id).value||'').trim();
+  if(!v('f-name')||!v('f-email')){document.getElementById('sent').textContent='Please add your name and email.';document.getElementById('sent').hidden=false;return}
+  const body=['Name: '+v('f-name'),'Phone: '+v('f-phone'),'Email: '+v('f-email'),'Project type: '+v('f-type'),'Lot: '+v('f-lot'),'Within 30 miles of Lake Norman: '+v('f-lkn'),'House plan: '+v('f-plan'),'Budget: '+v('f-budget'),'','About the project:',v('f-msg')].join('\n');
+  location.href='mailto:brancerhomes@buildwithucg.com?subject='+encodeURIComponent('New home inquiry: '+v('f-name'))+'&body='+encodeURIComponent(body);
+  document.getElementById('sent').textContent='Your email app should open with your inquiry ready to send. If it doesn\u2019t, call 704.736.2051 or email brancerhomes@buildwithucg.com.';
+  document.getElementById('sent').hidden=false;
+});
+
+const bg=document.getElementById('burger'),mn=document.getElementById('mnav');
+bg.addEventListener('click',()=>{const o=mn.hidden;mn.hidden=!o;bg.setAttribute('aria-expanded',o);bg.textContent=o?'Close':'Menu'});
+mn.addEventListener('click',e=>{if(e.target.tagName==='A'){mn.hidden=true;bg.setAttribute('aria-expanded',false);bg.textContent='Menu'}});
+const views=[...document.querySelectorAll('.view')];
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+let io=null;
+function reveal(v){
+  if(!('IntersectionObserver' in window)||RM) return;
+  io&&io.disconnect();
+  io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('reveal-in');e.target.classList.remove('pre');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+  [...v.querySelectorAll('section .lede, .svc article, .story-grid figure, .story-copy, .steps li, .plan, .ba > div, .about figure, .about .copy, .sign-wrap, .facts, .t')].forEach((el,i)=>{
+    if(el.getBoundingClientRect().top>innerHeight){el.classList.add('pre');el.style.transitionDelay=(i%4)*80+'ms';io.observe(el)}});
+}
+function route(){
+  const h=(location.hash||'#home').slice(1);
+  const v=views.find(x=>x.dataset.view===h)||views[0];
+  views.forEach(x=>x.hidden=x!==v);
+  document.title=v.dataset.title;
+  document.querySelectorAll('nav a, .mnav a').forEach(a=>a.getAttribute('href')==='#'+v.dataset.view?a.setAttribute('aria-current','page'):a.removeAttribute('aria-current'));
+  mn.hidden=true;bg.setAttribute('aria-expanded',false);bg.textContent='Menu';
+  window.scrollTo(0,0);
+  requestAnimationFrame(()=>reveal(v));
+}
+addEventListener('hashchange',route);
+route();
+</script>
+
+</body>
+</html>

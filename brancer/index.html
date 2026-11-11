@@ -71,8 +71,8 @@ nav a:hover{opacity:1;color:#fff}
 @media (max-width:520px){.call{display:none}}
 
 /* hero */
-.hero{position:relative;color:var(--sand);background:var(--ink);overflow:hidden;min-height:min(92vh,940px);display:grid}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;animation:kb 18s ease-out both}
+.hero{position:relative;color:var(--sand);background:var(--ink);overflow:hidden;min-height:min(92vh,66.6vw,940px);display:grid}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%;animation:kb 18s ease-out both}
 @keyframes kb{from{transform:scale(1.09)}to{transform:scale(1)}}
 .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 55% at 50% 42%,rgba(35,31,32,.42),rgba(35,31,32,.1) 70%),linear-gradient(180deg,rgba(35,31,32,.35) 0%,rgba(35,31,32,0) 30%,rgba(35,31,32,.15) 62%,rgba(35,31,32,.88) 100%)}
 .hero .inner{position:relative;z-index:1;display:grid;grid-template-rows:1fr auto;justify-items:center;text-align:center;gap:28px;padding-block:clamp(56px,9vw,110px) 28px;width:100%}
@@ -109,11 +109,11 @@ section{padding-block:clamp(64px,9vw,120px)}
 .svc-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(30px,5vw,56px)}
 .svc{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.5vw,32px)}
 .svc article{display:grid;gap:16px;align-content:start}
-.svc figure{margin:0;aspect-ratio:4/5;overflow:hidden;max-width:100%}
+.svc figure{margin:0;aspect-ratio:3/2;overflow:hidden;max-width:100%}
 .svc figure img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
 .svc article:hover img{transform:scale(1.04)}
 .svc .num{font-family:var(--f-call);color:var(--dirt);letter-spacing:.2em;font-size:.8rem}
-@media (max-width:860px){.svc{grid-template-columns:1fr}.svc figure{aspect-ratio:3/2}}
+@media (max-width:860px){.svc{grid-template-columns:1fr}}
 
 /* signature story */
 .story{padding-top:0;background:var(--sand)}
@@ -130,22 +130,19 @@ section{padding-block:clamp(64px,9vw,120px)}
 .story-copy .big{font-size:clamp(1.15rem,1.9vw,1.4rem);line-height:1.65}
 .feat{list-style:none;margin:0;padding:0;columns:2;column-gap:24px;font-family:var(--f-call);text-transform:uppercase;letter-spacing:.16em;font-size:.74rem;color:var(--olive)}
 .feat li{padding:10px 0;border-top:1px solid var(--line);break-inside:avoid}
-.story-grid{display:grid;grid-template-columns:1.2fr 1fr;grid-template-rows:auto auto;gap:12px}
-.story-grid figure{margin:0;overflow:hidden;max-width:100%}
-.story-grid img{width:100%;height:100%;object-fit:cover}
-.story-grid .a{grid-column:1/-1;aspect-ratio:16/9}
-.story-grid .b{aspect-ratio:4/5}
-.story-grid .c{aspect-ratio:4/5}
-.story-grid .d{grid-column:1/-1;aspect-ratio:21/9}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start}
+.story-grid figure{margin:0;max-width:100%}
+.story-grid img{width:100%;height:auto}
+.story-grid .a{grid-column:1/-1}
 @media (max-width:860px){.story-body{grid-template-columns:1fr}.story-copy{position:static}}
 @media (max-width:420px){.feat{columns:1}}
 
 /* feature band */
 .band{position:relative;color:var(--sand);background:var(--olive);padding:0}
-.band .grid{display:grid;grid-template-columns:1.1fr 1fr;min-height:520px}
+.band .grid{display:grid;grid-template-columns:1.1fr 1fr;align-items:center}
 .band .grid > *{min-width:0}
-.band .ph{position:relative;min-height:360px}
-.band .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.band .ph{position:relative;align-self:center}
+.band .ph img{width:100%;height:auto}
 .band .tx{display:grid;align-content:center;gap:22px;padding:clamp(40px,6vw,80px) var(--gut-r) clamp(40px,6vw,80px) clamp(28px,5vw,72px)}
 .band .tx .script{font-size:clamp(2.6rem,5vw,3.8rem);color:var(--sand)}
 .band blockquote{margin:0;font-family:var(--f-body);font-style:italic;font-size:clamp(1.1rem,1.8vw,1.3rem);line-height:1.7}
@@ -157,15 +154,15 @@ section{padding-block:clamp(64px,9vw,120px)}
 .filters{display:flex;gap:6px;flex-wrap:wrap}
 .filters button{font-family:var(--f-head);text-transform:uppercase;letter-spacing:.2em;font-size:.7rem;background:transparent;border:1px solid var(--line);color:var(--fg);padding:9px 14px;cursor:pointer}
 .filters button[aria-pressed="true"]{background:var(--ink);color:var(--sand);border-color:var(--ink)}
-.gallery{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:clamp(110px,13vw,170px);gap:10px}
-.gallery button{all:unset;display:block;box-sizing:border-box;position:relative;overflow:hidden;cursor:zoom-in;background:var(--stone)}
+.gallery{columns:3 260px;column-gap:10px}
+.gallery button{all:unset;display:block;box-sizing:border-box;position:relative;width:100%;margin-bottom:10px;break-inside:avoid;overflow:hidden;cursor:zoom-in;background:var(--stone)}
 .gallery button:focus-visible{outline:2px solid var(--dirt);outline-offset:2px}
-.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .7s,filter .4s}
+.gallery img{width:100%;height:auto;transition:transform .7s,filter .4s}
 .gallery button:hover img{transform:scale(1.04)}
 .gallery .cap{position:absolute;left:0;right:0;bottom:0;padding:24px 12px 10px;color:var(--sand);font-family:var(--f-call);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;background:linear-gradient(transparent,rgba(35,31,32,.75));opacity:0;transition:opacity .3s}
 .gallery button:hover .cap,.gallery button:focus-visible .cap{opacity:1}
 .gallery .w6{grid-column:span 6}.gallery .w4{grid-column:span 4}.gallery .w8{grid-column:span 8}.gallery .w3{grid-column:span 3}.gallery .h1{grid-row:span 1}.gallery .h2{grid-row:span 2}.gallery .h3{grid-row:span 3}
-@media (max-width:760px){.gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}.gallery .w6,.gallery .w4,.gallery .w3{grid-column:span 1}.gallery .w8{grid-column:span 2}.gallery .h3{grid-row:span 2}.gallery .cap{opacity:1}}
+@media (max-width:760px){.gallery{columns:2}.gallery .cap{opacity:1}}
 .lb{position:fixed;inset:0;z-index:100;background:rgba(35,31,32,.94);display:grid;place-items:center;padding:max(20px,env(safe-area-inset-top,0px)) var(--gut-r) 20px var(--gut)}
 .lb figure{margin:0;display:grid;gap:12px;justify-items:center}
 .lb img{max-height:80vh;width:auto}
@@ -190,8 +187,8 @@ section{padding-block:clamp(64px,9vw,120px)}
 /* plans */
 .plans-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(14px,2vw,24px);margin-top:clamp(30px,5vw,50px)}
 .plan{background:var(--paper);display:grid;grid-template-rows:auto 1fr}
-.plan figure{margin:0;aspect-ratio:3/2;overflow:hidden;background:var(--stone);max-width:100%}
-.plan figure img{width:100%;height:100%;object-fit:cover}
+.plan figure{margin:0;aspect-ratio:3/2;overflow:hidden;background:#fff;max-width:100%}
+.plan figure img{width:100%;height:100%;object-fit:contain}
 .plan .b{padding:18px 18px 20px;display:grid;gap:12px;align-content:start}
 .plan h3{font-size:.86rem}
 .plan dl{display:grid;grid-template-columns:1fr auto;margin:0;font-size:.82rem;row-gap:4px;font-variant-numeric:tabular-nums}
@@ -215,9 +212,9 @@ section{padding-block:clamp(64px,9vw,120px)}
 .compare input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
 .compare .lbl{position:absolute;top:12px;font-family:var(--f-call);font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;background:rgba(35,31,32,.6);padding:5px 9px}
 .compare .l{left:12px}.compare .r{right:12px}
-.pair{display:grid;grid-template-columns:1fr 1fr;gap:6px}
-.pair figure{margin:0;position:relative;aspect-ratio:4/5;overflow:hidden;max-width:100%;background:var(--ink)}
-.pair img{width:100%;height:100%;object-fit:cover}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:6px;align-items:start}
+.pair figure{margin:0;position:relative;max-width:100%;background:var(--ink)}
+.pair img{width:100%;height:auto}
 .pair figcaption{position:absolute;left:10px;top:10px;font-family:var(--f-call);font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;background:rgba(35,31,32,.65);padding:5px 9px}
 .pair figure:last-child figcaption{background:var(--sand);color:var(--deep)}
 .ba h3{margin-top:18px}
@@ -228,7 +225,7 @@ section{padding-block:clamp(64px,9vw,120px)}
 .about .grid{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(30px,6vw,90px);align-items:center}
 .about .grid > *{min-width:0}
 .about figure{margin:0;position:relative}
-.about figure img{aspect-ratio:4/5;object-fit:cover;width:100%}
+.about figure img{width:100%;height:auto}
 .about figure .m-circ{position:absolute;right:-22px;bottom:-22px;width:110px;color:var(--olive);background:var(--sand);border-radius:50%;-webkit-mask:none;mask:none;padding:12px}
 .about figure .m-circ i{display:block;width:100%;height:100%;background:var(--olive);-webkit-mask:url(img/monogram-circle.png) center/contain no-repeat;mask:url(img/monogram-circle.png) center/contain no-repeat}
 .about .copy{display:grid;gap:18px}
@@ -298,29 +295,28 @@ footer a{text-decoration:none}footer a:hover{color:var(--sand)}
 /* page headers, teasers, CTA band, active nav */
 nav a[aria-current="page"]{opacity:1;color:#fff;box-shadow:0 1px 0 var(--moss)}
 .mnav a[aria-current="page"]{color:var(--moss)}
-.phead{position:relative;padding:0;color:var(--sand);background:var(--ink);min-height:clamp(320px,50vh,520px);display:grid;overflow:hidden}
-.phead img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:kb 14s ease-out both}
-.phead::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(35,31,32,.35),rgba(35,31,32,.2) 40%,rgba(35,31,32,.82))}
-.pcap{position:relative;z-index:1;align-self:end;display:grid;gap:12px;padding-block:clamp(48px,8vw,90px) clamp(32px,5vw,56px)}
-.pcap .eyebrow{color:var(--stone)}
-.pcap h1{font-size:clamp(1.9rem,4.6vw,3.4rem);letter-spacing:.16em}
-.pcap p{max-width:58ch;opacity:.9}
+.phead{position:relative;padding:0;color:var(--sand);background:var(--ink);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);align-items:center}
+.phead > img{order:2;width:100%;height:auto;display:block}
+.pcap{display:grid;gap:14px;max-width:none;margin:0;padding-block:clamp(40px,6vw,70px);padding-left:max(var(--gut),calc((100vw - var(--wrap))/2 + 16px));padding-right:clamp(24px,4vw,56px)}
+.pcap .eyebrow{color:var(--moss)}
+.pcap h1{font-size:clamp(1.7rem,3.4vw,2.8rem);letter-spacing:.14em}
+.pcap p{max-width:46ch;opacity:.88}
+@media (max-width:860px){.phead{grid-template-columns:1fr}.phead > img{order:0}.pcap{padding-right:var(--gut-r)}}
 .pcap > *{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}.pcap > :nth-child(2){animation-delay:.15s}.pcap > :nth-child(3){animation-delay:.3s}
 .muted-note{font-family:var(--f-call);text-transform:uppercase;letter-spacing:.2em;font-size:.7rem;color:var(--muted)}
 .teasers{background:var(--sand)}
-.t-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:repeat(2,clamp(220px,24vw,320px));gap:12px;margin-top:clamp(30px,5vw,50px)}
-.t{position:relative;overflow:hidden;color:var(--sand);text-decoration:none;background:var(--ink);min-width:0}
+.t-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:clamp(30px,5vw,50px)}
+.t{position:relative;overflow:hidden;color:var(--sand);text-decoration:none;background:var(--ink);min-width:0;aspect-ratio:3/2}
 .t img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s}
 .t::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(35,31,32,.8))}
 .t:hover img{transform:scale(1.05)}
-.t.big{grid-row:span 2}.t.wide{grid-column:span 2}
+
 .t-cap{position:absolute;z-index:1;left:0;right:0;bottom:0;display:grid;gap:4px;padding:20px 22px}
 .t-cap .eyebrow{color:var(--stone)}
 .t-cap b{font-family:var(--f-head);font-weight:300;text-transform:uppercase;letter-spacing:.2em;font-size:clamp(1.05rem,1.8vw,1.4rem)}
 .t-cap i{font-style:normal;font-family:var(--f-call);font-size:.7rem;letter-spacing:.26em;text-transform:uppercase;opacity:.85}
 .t-cap i::after{content:" \2192"}
-@media (max-width:860px){.t-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}.t{aspect-ratio:4/3}.t.big,.t.wide{grid-column:span 2;grid-row:auto;aspect-ratio:16/10}}
-@media (max-width:520px){.t-grid{grid-template-columns:1fr}.t.big,.t.wide{grid-column:auto}}
+@media (max-width:620px){.t-grid{grid-template-columns:1fr}}
 .cta-band{background:var(--olive);color:var(--sand);text-align:center}
 .cta-band .wrap{display:grid;justify-items:center;gap:18px}
 .cta-band .script{font-size:clamp(2.8rem,6vw,4.4rem)}
@@ -328,6 +324,28 @@ nav a[aria-current="page"]{opacity:1;color:#fff;box-shadow:0 1px 0 var(--moss)}
 .cta-band .ctas{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:center}
 .cta-ph{font-family:var(--f-head);letter-spacing:.24em;font-size:.82rem;text-transform:uppercase}
 .contact .info h2{font-size:clamp(1.3rem,2.4vw,1.7rem)}
+
+
+/* custom homes page */
+.included{background:var(--paper)}
+.inc{display:grid;grid-template-columns:repeat(3,1fr);margin-top:clamp(36px,5vw,60px);border-top:1px solid var(--line)}
+.inc > div{padding:28px clamp(16px,2.5vw,30px) 28px 0;display:grid;gap:10px;align-content:start;min-width:0;border-bottom:1px solid var(--line)}
+.inc > div:not(:nth-child(3n+1)){padding-left:clamp(16px,2.5vw,30px);border-left:1px solid var(--line)}
+.inc p{font-size:.93rem}
+.more{font-family:var(--f-call);text-transform:uppercase;letter-spacing:.22em;font-size:.7rem;color:var(--dirt);text-decoration:none}
+.more::after{content:" \2192"}
+@media (max-width:860px){.inc{grid-template-columns:1fr}.inc > div:not(:nth-child(3n+1)){padding-left:0;border-left:0}}
+.sel{display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(28px,5vw,70px);align-items:center}
+.sel > *{min-width:0}
+.sel-copy{display:grid;gap:18px}
+.sel-imgs{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:start}
+.sel-imgs img{width:100%;height:auto}
+.sel-imgs img:first-child{grid-column:1/-1}
+@media (max-width:860px){.sel{grid-template-columns:1fr}}
+.story{padding-top:clamp(64px,9vw,120px)}
+.story-head{display:grid;gap:10px}
+.story-head h2{font-size:clamp(2rem,5vw,3.6rem);letter-spacing:.18em}
+.story-head h2 .script{font-size:1.15em;letter-spacing:0;margin-right:.1em;color:var(--dirt)}
 
 /* scroll reveal: only below-the-fold blocks are ever pre-hidden */
 .pre{opacity:0;transform:translateY(22px)}
@@ -342,7 +360,7 @@ nav a[aria-current="page"]{opacity:1;color:#fff;box-shadow:0 1px 0 var(--moss)}
     <a href="#home" aria-label="Brancer Homes, back to top"><span class="mark m-horiz"></span></a>
     <nav aria-label="Main"><ul>
       <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#lake-house">Lake House</a></li>
+      <li><a href="#custom-homes">Custom Homes</a></li>
       <li><a href="#process">Process</a></li>
       <li><a href="#plans">Floor Plans</a></li>
       <li><a href="#renovations">Renovations</a></li>
@@ -353,7 +371,7 @@ nav a[aria-current="page"]{opacity:1;color:#fff;box-shadow:0 1px 0 var(--moss)}
   </div>
 </header>
 <div class="mnav" id="mnav" hidden>
-  <a href="#home">Home</a><a href="#portfolio">Portfolio</a><a href="#lake-house">The Lake House</a><a href="#process">Process</a><a href="#plans">Floor Plans</a><a href="#renovations">Renovations</a><a href="#about">Our Story</a><a href="#contact">Contact</a>
+  <a href="#home">Home</a><a href="#portfolio">Portfolio</a><a href="#custom-homes">Custom Homes</a><a href="#process">Process</a><a href="#plans">Floor Plans</a><a href="#renovations">Renovations</a><a href="#about">Our Story</a><a href="#contact">Contact</a>
 </div>
 
 <main>
@@ -402,13 +420,13 @@ nav a[aria-current="page"]{opacity:1;color:#fff;box-shadow:0 1px 0 var(--moss)}
       </div>
       <div class="svc">
         <article>
-          <figure><img src="img/kitchen-oak.jpg" alt="Vaulted white oak kitchen with exposed beams" loading="lazy"></figure>
+          <figure><img src="img/kitchen-island.jpg" alt="Custom kitchen with wood island, Catawba" loading="lazy"></figure>
           <span class="num">Custom Homes</span>
-          <h3>Homes of lasting character</h3>
+          <h3><a href="#custom-homes" style="text-decoration:none">Homes of lasting character</a></h3>
           <p>From a farmhouse on acreage to a lakefront home terraced down to the water, every Brancer home is held to the same standard of craftsmanship, whatever its size.</p>
         </article>
         <article>
-          <figure><img src="img/wine.jpg" alt="Custom white oak wine room with glass door" loading="lazy"></figure>
+          <figure><img src="img/kitchen-hood.jpg" alt="Custom range hood and cabinetry" loading="lazy"></figure>
           <span class="num">Design Services</span>
           <h3>Every selection, considered</h3>
           <p>Architectural drawings for the home, patio or garage, and an in-house design team to guide each choice, from cabinetry and stone down to the last piece of hardware.</p>
@@ -427,13 +445,13 @@ nav a[aria-current="page"]{opacity:1;color:#fff;box-shadow:0 1px 0 var(--moss)}
     <div class="wrap">
       <div class="lede">
         <div class="stack"><span class="eyebrow">Explore</span><h2>See what we build</h2></div>
-        <div class="stack"><p>Walk through a signature lakefront home, browse the portfolio, start from one of our plans, or see what a Brancer renovation can do.</p></div>
+        <div class="stack"><p>See how a Brancer custom home comes together, browse the portfolio, start from one of our plans, or see what a renovation can do.</p></div>
       </div>
       <div class="t-grid">
-        <a class="t big" href="#lake-house"><img src="img/lake-view.jpg" alt="" loading="lazy"><span class="t-cap"><span class="eyebrow">Signature Home</span><b>The Lake House</b><i>Explore</i></span></a>
+        <a class="t" href="#custom-homes"><img src="img/catawba-porch.jpg" alt="" loading="lazy"><span class="t-cap"><span class="eyebrow">Design &amp; Build</span><b>Custom Homes</b><i>Explore</i></span></a>
         <a class="t" href="#portfolio"><img src="img/greatroom.jpg" alt="" loading="lazy"><span class="t-cap"><span class="eyebrow">Portfolio</span><b>Selected Work</b><i>Explore</i></span></a>
         <a class="t" href="#plans"><img src="img/plan-riverstone.jpg" alt="" loading="lazy"><span class="t-cap"><span class="eyebrow">Signature Plans</span><b>Floor Plans</b><i>Explore</i></span></a>
-        <a class="t wide" href="#renovations"><img src="img/r-farm-after.jpg" alt="" loading="lazy" style="object-position:center 40%"><span class="t-cap"><span class="eyebrow">Renovations</span><b>Before &amp; After</b><i>Explore</i></span></a>
+        <a class="t" href="#renovations"><img src="img/r-outdoor-kitchen.jpg" alt="" loading="lazy"><span class="t-cap"><span class="eyebrow">Renovations &amp; Additions</span><b>Reimagine Home</b><i>Explore</i></span></a>
       </div>
     </div>
   </section>
@@ -493,7 +511,7 @@ nav a[aria-current="page"]{opacity:1;color:#fff;box-shadow:0 1px 0 var(--moss)}
 
 <div class="view" data-view="portfolio" data-title="Portfolio · Brancer Homes" hidden>
   <section class="phead">
-    <img src="img/pool-home.jpg" alt="" style="object-position:center 50%">
+    <img src="img/pool-home.jpg" alt="">
     <div class="wrap pcap">
       <span class="eyebrow">Portfolio</span>
       <h1>Selected Work</h1>
@@ -525,12 +543,52 @@ nav a[aria-current="page"]{opacity:1;color:#fff;box-shadow:0 1px 0 var(--moss)}
   </section>
 </div>
 
-<div class="view" data-view="lake-house" data-title="The Lake House · Brancer Homes" hidden>
+<div class="view" data-view="custom-homes" data-title="Custom Homes · Brancer Homes" hidden>
+  <section class="phead">
+    <img src="img/farmhouse.jpg" alt="White modern farmhouse custom home in Catawba">
+    <div class="pcap">
+      <span class="eyebrow">Custom Homes</span>
+      <h1>Designed around you, built to last</h1>
+      <p>From the first sketch to the final walkthrough, a Brancer custom home is designed with you and built by a team that stays close to every detail.</p>
+    </div>
+  </section>
+
+  <section class="included">
+    <div class="wrap">
+      <div class="lede">
+        <div class="stack"><span class="eyebrow">The Brancer Standard</span><h2>What every custom home includes</h2></div>
+        <div class="stack"><p class="big">No project is too large, too small or too complex. Each one gets the same commitment to craftsmanship, and the same team from start to finish.</p></div>
+      </div>
+      <div class="inc">
+        <div><h3>Your plan, or ours</h3><p>Bring a full construction set, start from one of our signature plans, or work with our architectural draftsperson on something entirely your own.</p><a class="more" href="#plans">Signature plans</a></div>
+        <div><h3>In-house design team</h3><p>We get to know your style, then guide every selection: paint, cabinetry, countertops and flooring down to the cabinet hardware.</p></div>
+        <div><h3>Drawings for every space</h3><p>Architectural drawings for the home itself, and for the patio, garage and outdoor living areas that complete it.</p></div>
+        <div><h3>Pricing you can trust</h3><p>A line-by-line Bid Proposal covering materials, labor, permits and every associated cost, typically ready three to four weeks after plans are approved.</p><a class="more" href="#process">Our process</a></div>
+        <div><h3>Proven trades</h3><p>A trusted network of skilled subcontractors and vendors, many of whom have built alongside Bobby for years.</p></div>
+        <div><h3>Lake Norman &amp; Charlotte</h3><p>Homes built across the Lake Norman region, from Denver and Sherrills Ford to Mooresville, and now in Charlotte.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="selections">
+    <div class="wrap sel">
+      <div class="sel-copy">
+        <span class="eyebrow">Design Selections</span>
+        <h2>The most personal part of building</h2>
+        <p>If you love the creative side, this is where it gets exciting. If the choices feel overwhelming, our design team walks you through each one. Gather inspiration early, visit showrooms and start a mood board. The more that&rsquo;s decided before we break ground, the more you&rsquo;ll enjoy the build.</p>
+      </div>
+      <div class="sel-imgs">
+        <img src="img/kitchen-hood.jpg" alt="Custom range hood and cabinetry" loading="lazy">
+        <img src="img/tub.jpg" alt="Freestanding soaking tub with hexagon tile" loading="lazy">
+        <img src="img/wine.jpg" alt="White oak wine room" loading="lazy">
+      </div>
+    </div>
+  </section>
+
   <section class="story">
-    <div class="story-hero">
-      <img src="img/lake-view.jpg" alt="Private dock on Lake Norman seen from a Brancer home in Sherrills Ford" loading="lazy">
-      <div class="wrap cap">
-        <span class="eyebrow">Signature Home · Sherrills Ford, NC</span>
+    <div class="wrap">
+      <div class="story-head">
+        <span class="eyebrow">Featured Home · Sherrills Ford, NC</span>
         <h2><span class="script">The</span> Lake House</h2>
       </div>
     </div>
@@ -542,12 +600,14 @@ nav a[aria-current="page"]{opacity:1;color:#fff;box-shadow:0 1px 0 var(--moss)}
         </ul>
       </div>
       <div class="story-grid">
-        <figure class="a"><img src="img/lake-house.jpg" alt="Lake-side elevation with stacked screened porches" loading="lazy"></figure>
-        <figure class="b"><img src="img/arch.jpg" alt="Brick arch opening to the great room" loading="lazy"></figure>
-        <figure class="c"><img src="img/lake-patio.jpg" alt="Flagstone fire-pit terrace above the lake" loading="lazy"></figure>
-        <figure class="d"><img src="img/lake-porch.jpg" alt="Screened porch with brick floor and fireplace" loading="lazy"></figure>
+        <figure class="a"><img src="img/lake-view.jpg" alt="Private dock on Lake Norman below the home" loading="lazy"></figure>
+        <figure><img src="img/lake-house.jpg" alt="Lake-side elevation with stacked screened porches" loading="lazy"></figure>
+        <figure><img src="img/lake-patio.jpg" alt="Flagstone fire-pit terrace above the lake" loading="lazy"></figure>
+        <figure><img src="img/arch.jpg" alt="Brick arch opening to the great room" loading="lazy"></figure>
+        <figure><img src="img/lake-porch.jpg" alt="Screened porch with brick floor and fireplace" loading="lazy"></figure>
       </div>
     </div>
+
   </section>
 
   <section class="cta-band">
@@ -561,7 +621,7 @@ nav a[aria-current="page"]{opacity:1;color:#fff;box-shadow:0 1px 0 var(--moss)}
 
 <div class="view" data-view="process" data-title="Process · Brancer Homes" hidden>
   <section class="phead">
-    <img src="img/kitchen-oak.jpg" alt="" style="object-position:center 40%">
+    <img src="img/coffered.jpg" alt="Coffered ceiling great room, Sherrills Ford">
     <div class="wrap pcap">
       <span class="eyebrow">The Process</span>
       <h1>From first conversation to contract</h1>
@@ -607,7 +667,7 @@ nav a[aria-current="page"]{opacity:1;color:#fff;box-shadow:0 1px 0 var(--moss)}
 
 <div class="view" data-view="plans" data-title="Floor Plans · Brancer Homes" hidden>
   <section class="phead">
-    <img src="img/plan-courtland.jpg" alt="" style="object-position:center 60%">
+    <img src="img/plan-courtland.jpg" alt="">
     <div class="wrap pcap">
       <span class="eyebrow">Signature Plans</span>
       <h1>Begin with a home we know well</h1>
@@ -632,7 +692,7 @@ nav a[aria-current="page"]{opacity:1;color:#fff;box-shadow:0 1px 0 var(--moss)}
 
 <div class="view" data-view="renovations" data-title="Renovations · Brancer Homes" hidden>
   <section class="phead">
-    <img src="img/r-poolhouse.jpg" alt="" style="object-position:center 55%">
+    <img src="img/r-poolhouse.jpg" alt="">
     <div class="wrap pcap">
       <span class="eyebrow">Renovations &amp; Additions</span>
       <h1>Reimagine the home you already love</h1>
@@ -674,7 +734,7 @@ nav a[aria-current="page"]{opacity:1;color:#fff;box-shadow:0 1px 0 var(--moss)}
 
 <div class="view" data-view="about" data-title="Our Story · Brancer Homes" hidden>
   <section class="phead">
-    <img src="img/beams.jpg" alt="" style="object-position:center 35%">
+    <img src="img/beams.jpg" alt="">
     <div class="wrap pcap">
       <span class="eyebrow">Our Story</span>
       <h1>Bobby &amp; Jessica Tucker</h1>
@@ -721,7 +781,7 @@ nav a[aria-current="page"]{opacity:1;color:#fff;box-shadow:0 1px 0 var(--moss)}
 
 <div class="view" data-view="contact" data-title="Contact · Brancer Homes" hidden>
   <section class="phead">
-    <img src="img/lake-porch.jpg" alt="" style="object-position:center 55%">
+    <img src="img/lake-porch.jpg" alt="">
     <div class="wrap pcap">
       <span class="eyebrow">Contact</span>
       <h1>Let&rsquo;s talk about your home</h1>
@@ -751,7 +811,7 @@ nav a[aria-current="page"]{opacity:1;color:#fff;box-shadow:0 1px 0 var(--moss)}
         <label class="full">Budget<select id="f-budget" name="budget"><option>$500k – $700k</option><option>$700k – $900k</option><option>$900k – $1.2M</option><option>$1.2M+</option><option>Remodel: $40k – $60k</option><option>Remodel: $60k – $90k</option><option>Remodel: $90k – $125k</option><option>Remodel: $125k+</option></select></label>
         <label class="full">Tell us about your project<textarea id="f-msg" name="msg"></textarea></label>
         <button class="btn" type="submit">Send Inquiry</button>
-        <p class="sent" id="sent" hidden>Thank you. For the fastest response, call 704.736.2051 or email brancerhomes@buildwithucg.com.</p>
+        <p class="sent" id="sent" hidden>Preview only: on the live site this form will deliver straight to the Brancer inbox.</p>
       </form>
     </div>
   </section>
@@ -763,7 +823,7 @@ nav a[aria-current="page"]{opacity:1;color:#fff;box-shadow:0 1px 0 var(--moss)}
     <span class="mark m-stack" role="img" aria-label="Brancer Homes"></span>
     <div><h4>Visit</h4><p>7480 Waterside Loop Rd, Suite 203<br>Denver, NC 28037</p><p>Mailing: PO Box 444, Denver, NC 28037</p></div>
     <div><h4>Contact</h4><p>704.736.2051<br>brancerhomes@buildwithucg.com<br>Mon – Fri, 8am – 5pm</p></div>
-    <div><h4>Explore</h4><p><a href="#portfolio">Portfolio</a><br><a href="#lake-house">The Lake House</a><br><a href="#plans">Floor Plans</a><br><a href="#renovations">Renovations</a><br><a href="#process">Process</a><br><a href="#about">Our Story</a></p></div>
+    <div><h4>Explore</h4><p><a href="#portfolio">Portfolio</a><br><a href="#custom-homes">Custom Homes</a><br><a href="#plans">Floor Plans</a><br><a href="#renovations">Renovations</a><br><a href="#process">Process</a><br><a href="#about">Our Story</a></p></div>
   </div>
   <div class="wrap fbase"><span>© 2026 Brancer Homes, a division of United Contracting Group, Inc.</span><span>Photography: Scott Broome · Proud member, Lincoln County Chamber</span></div>
 </footer>
@@ -827,12 +887,12 @@ document.getElementById('plans-grid').innerHTML=P.map(p=>`<article class="plan">
 
 document.getElementById('inq').addEventListener('submit',e=>{
   e.preventDefault();
-  const f=e.target, v=id=>(document.getElementById(id).value||'').trim();
-  if(!v('f-name')||!v('f-email')){document.getElementById('sent').textContent='Please add your name and email.';document.getElementById('sent').hidden=false;return}
+  const v=id=>(document.getElementById(id).value||'').trim(), m=document.getElementById('sent');
+  if(!v('f-name')||!v('f-email')){m.textContent='Please add your name and email.';m.hidden=false;return}
   const body=['Name: '+v('f-name'),'Phone: '+v('f-phone'),'Email: '+v('f-email'),'Project type: '+v('f-type'),'Lot: '+v('f-lot'),'Within 30 miles of Lake Norman: '+v('f-lkn'),'House plan: '+v('f-plan'),'Budget: '+v('f-budget'),'','About the project:',v('f-msg')].join('\n');
   location.href='mailto:brancerhomes@buildwithucg.com?subject='+encodeURIComponent('New home inquiry: '+v('f-name'))+'&body='+encodeURIComponent(body);
-  document.getElementById('sent').textContent='Your email app should open with your inquiry ready to send. If it doesn\u2019t, call 704.736.2051 or email brancerhomes@buildwithucg.com.';
-  document.getElementById('sent').hidden=false;
+  m.textContent='Your email app should open with your inquiry ready to send. If it doesn\u2019t, call 704.736.2051 or email brancerhomes@buildwithucg.com.';
+  m.hidden=false;
 });
 
 const bg=document.getElementById('burger'),mn=document.getElementById('mnav');
@@ -845,7 +905,7 @@ function reveal(v){
   if(!('IntersectionObserver' in window)||RM) return;
   io&&io.disconnect();
   io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('reveal-in');e.target.classList.remove('pre');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
-  [...v.querySelectorAll('section .lede, .svc article, .story-grid figure, .story-copy, .steps li, .plan, .ba > div, .about figure, .about .copy, .sign-wrap, .facts, .t')].forEach((el,i)=>{
+  [...v.querySelectorAll('section .lede, .svc article, .story-grid figure, .story-copy, .inc > div, .sel-imgs img, .steps li, .plan, .ba > div, .about figure, .about .copy, .sign-wrap, .facts, .t')].forEach((el,i)=>{
     if(el.getBoundingClientRect().top>innerHeight){el.classList.add('pre');el.style.transitionDelay=(i%4)*80+'ms';io.observe(el)}});
 }
 function route(){

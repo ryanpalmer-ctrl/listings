@@ -8,17 +8,17 @@
 <meta name="description" content="A family jeweler on Providence Road in Charlotte. Fine watch service, bespoke design, engagement and bridal, repair.">
 <link rel="preload" as="image" href="img/hero.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Marcellus&family=Hanken+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root{--ivory:#F5F0E6;--paper:#FAF7F1;--ink:#101C16;--green:#16271F;--green2:#1D3329;--gold:#B8955A;--gold2:#D8C298;--stone:#7D7568;--line:rgba(16,28,22,.13);--gline:rgba(216,194,152,.22);--ease:cubic-bezier(.2,.7,.1,1)}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--ivory);color:var(--ink);font-family:"Hanken Grotesk",system-ui,sans-serif;font-weight:300;font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{background:var(--ivory);color:var(--ink);font-family:Barlow,system-ui,sans-serif;font-weight:300;font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
 img{display:block;width:100%;height:100%;object-fit:cover}
 .eyebrow{font-size:11px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);font-weight:500}
 .wrap{max-width:1240px;margin:0 auto;padding-left:32px;padding-right:32px}
-.serif,h1,h2,h3,h4{font-family:"Bodoni Moda",Didot,Georgia,serif;font-weight:400;font-optical-sizing:auto}
+.serif,h1,h2,h3,h4{font-family:Newsreader,Georgia,serif;font-weight:400;font-optical-sizing:auto}
 h2{font-size:clamp(36px,4.4vw,60px);line-height:1.08;letter-spacing:-.01em;margin:20px 0 28px}
 h2 em,h1 em{font-style:italic;color:var(--gold)}
 p+p{margin-top:18px}
@@ -46,14 +46,14 @@ header.solid .nav{height:74px}
 .nav a.u:after{content:"";position:absolute;left:50%;right:50%;bottom:-2px;height:1px;background:var(--gold);transition:all .4s var(--ease)}
 .nav a.u:hover:after{left:0;right:0}
 .brand{display:flex;flex-direction:column;align-items:center;line-height:1}
-.brand b{font-family:"Bodoni Moda",Didot,serif;font-weight:400;font-size:25px;letter-spacing:.32em;padding-left:.32em}
+.brand b{font-family:Newsreader,Georgia,serif;font-weight:400;font-size:25px;letter-spacing:.32em;padding-left:.32em}
 .brand span{font-size:8.5px;letter-spacing:.5em;text-transform:uppercase;margin-top:7px;opacity:.75;padding-left:.5em}
 .burger{display:none;background:none;border:0;width:28px;height:18px;position:relative;cursor:pointer;color:inherit;justify-self:end}
 .burger i{position:absolute;left:0;right:0;height:1px;background:currentColor;transition:all .4s}
 .burger i:nth-child(1){top:2px}.burger i:nth-child(2){top:9px;left:8px}.burger i:nth-child(3){top:16px}
 .drawer{position:fixed;inset:0;z-index:40;background:var(--green);color:var(--ivory);display:flex;flex-direction:column;justify-content:center;padding:0 36px;opacity:0;pointer-events:none;transition:opacity .5s var(--ease)}
 .drawer.open{opacity:1;pointer-events:auto}
-.drawer a{font-family:"Bodoni Moda",Didot,serif;font-size:42px;font-weight:300;line-height:1.5;border-bottom:1px solid var(--gline)}
+.drawer a{font-family:Newsreader,Georgia,serif;font-size:42px;font-weight:300;line-height:1.5;border-bottom:1px solid var(--gline)}
 .drawer .eyebrow{margin-top:36px}
 body.menu header{color:var(--ivory);background:transparent;box-shadow:none}
 
@@ -62,11 +62,13 @@ body.menu header{color:var(--ivory);background:transparent;box-shadow:none}
 .hero .bg{position:absolute;inset:0;transform:scale(1.08);animation:heroIn 2.6s var(--ease) forwards}
 .hero .bg img{object-position:62% 50%}
 
-/* type system v3: Bodoni Moda display, Marcellus engraved caps, Hanken Grotesk text */
-.eyebrow,.btn,.link,.nav-l,.nav-r,.brand b,.brand span,.sig,.svc span,.band cite,.chips span,.care-list span,.vgrid .d,.hours span:first-child,footer h5,.scrollcue,.fbot{font-family:Marcellus,"Bodoni Moda",serif;font-weight:400}
-.brand b{letter-spacing:.28em}
+/* type system v5: Newsreader display + wordmark, Barlow text + labels */
+.eyebrow,.btn,.link,.nav-l,.nav-r,.brand b,.brand span,.sig,.svc span,.band cite,.chips span,.care-list span,.vgrid .d,.hours span:first-child,footer h5,.scrollcue,.fbot{font-family:Barlow,sans-serif;font-weight:400}
+.brand b{font-family:Newsreader,Georgia,serif!important;font-weight:400!important;letter-spacing:.22em}
+h1,h2,h3,h4{letter-spacing:-.01em}
+body{font-size:16.5px}
 .eyebrow{text-wrap:balance}
-body{font-weight:300;letter-spacing:.005em}
+body{font-weight:400;letter-spacing:.005em}
 @media (min-width:981px){.hero .bg{left:24%}.hero .bg:before{content:"";position:absolute;inset:0 auto 0 0;width:30%;background:linear-gradient(90deg,#0b0f0c,transparent);z-index:1}}
 @keyframes heroIn{to{transform:scale(1)}}
 .hero:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(8,12,10,.86) 0%,rgba(8,12,10,.55) 42%,rgba(8,12,10,.08) 75%),linear-gradient(0deg,rgba(8,12,10,.55),transparent 35%)}
@@ -89,7 +91,7 @@ body{font-weight:300;letter-spacing:.005em}
 /* statement */
 .statement{padding:150px 0 140px;text-align:center}
 .seal{width:64px;height:64px;margin:0 auto 34px;color:var(--gold)}
-.statement p.big{font-family:"Bodoni Moda",Didot,serif;font-weight:300;font-size:clamp(28px,3.3vw,44px);line-height:1.32;max-width:920px;margin:0 auto}
+.statement p.big{font-family:Newsreader,Georgia,serif;font-weight:300;font-size:clamp(28px,3.3vw,44px);line-height:1.32;max-width:920px;margin:0 auto}
 .statement p.big em{color:var(--gold);font-style:italic}
 .sig{margin-top:40px;font-size:11px;letter-spacing:.36em;text-transform:uppercase;color:var(--stone)}
 
@@ -100,7 +102,7 @@ body{font-weight:300;letter-spacing:.005em}
 .dcard .ph{aspect-ratio:3/4;overflow:hidden;background:#111}
 .dcard .ph img{transition:transform 1.6s var(--ease)}
 .dcard:hover .ph img{transform:scale(1.06)}
-.dcard .num{font-family:"Bodoni Moda",Didot,serif;font-style:italic;color:var(--gold);font-size:20px;margin-top:24px}
+.dcard .num{font-family:Newsreader,Georgia,serif;font-style:italic;color:var(--gold);font-size:20px;margin-top:24px}
 .dcard h3{font-size:34px;line-height:1.1;margin:6px 0 10px}
 .dcard p{font-size:15.5px;color:#4b544e;max-width:330px}
 .disc-grid .dcard:nth-child(2){margin-top:90px}
@@ -114,7 +116,7 @@ body{font-weight:300;letter-spacing:.005em}
 .at-img .inset{position:absolute;width:52%;aspect-ratio:1;right:-18%;bottom:-8%;overflow:hidden;border:10px solid var(--green)}
 .svc{margin-top:40px;border-top:1px solid var(--gline)}
 .svc div{display:grid;grid-template-columns:1fr auto;padding:18px 0;border-bottom:1px solid var(--gline);align-items:baseline;gap:20px}
-.svc b{font-family:"Bodoni Moda",Didot,serif;font-weight:400;font-size:24px}
+.svc b{font-family:Newsreader,Georgia,serif;font-weight:400;font-size:24px}
 .svc span{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold2);text-align:right}
 
 /* band */
@@ -122,7 +124,7 @@ body{font-weight:300;letter-spacing:.005em}
 .band .bg{position:absolute;inset:-12% 0;will-change:transform}
 .band:before{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(ellipse at center,rgba(8,12,10,.8) 0%,rgba(8,12,10,.6) 70%)}
 .band blockquote{position:relative;z-index:2;max-width:900px;padding:0 30px}
-.band blockquote p{font-family:"Bodoni Moda",Didot,serif;font-weight:300;font-style:italic;font-size:clamp(32px,4.4vw,60px);line-height:1.18}
+.band blockquote p{font-family:Newsreader,Georgia,serif;font-weight:300;font-style:italic;font-size:clamp(32px,4.4vw,60px);line-height:1.18}
 .band cite{display:block;margin-top:34px;font-style:normal;font-size:11px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold2)}
 
 /* bespoke */
@@ -133,7 +135,7 @@ body{font-weight:300;letter-spacing:.005em}
 .steps{counter-reset:s}
 .step{display:grid;grid-template-columns:64px 1fr;padding:26px 0;border-top:1px solid var(--line)}
 .step:last-child{border-bottom:1px solid var(--line)}
-.step .n{font-family:"Bodoni Moda",Didot,serif;font-style:italic;color:var(--gold);font-size:30px;line-height:1.1}
+.step .n{font-family:Newsreader,Georgia,serif;font-style:italic;color:var(--gold);font-size:30px;line-height:1.1}
 .step h4{font-size:26px;font-weight:400;line-height:1.2;margin-bottom:6px}
 .step p{font-size:15.5px;color:#4b544e}
 
@@ -149,7 +151,7 @@ body{font-weight:300;letter-spacing:.005em}
 .care-grid{display:grid;grid-template-columns:5fr 7fr;gap:100px}
 .care-list div{display:grid;grid-template-columns:1fr auto;gap:20px;padding:22px 0;border-bottom:1px solid var(--line);align-items:baseline}
 .care-list div:first-child{border-top:1px solid var(--line)}
-.care-list b{font-family:"Bodoni Moda",Didot,serif;font-weight:400;font-size:26px}
+.care-list b{font-family:Newsreader,Georgia,serif;font-weight:400;font-size:26px}
 .care-list span{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--stone);text-align:right}
 
 /* voices */
@@ -164,7 +166,7 @@ body{font-weight:300;letter-spacing:.005em}
 .visit .ph{min-height:760px;overflow:hidden}
 .visit .txt{padding:130px 7vw}
 .visit .muted{color:#aab2ab}
-.addr{font-family:"Bodoni Moda",Didot,serif;font-weight:300;font-size:34px;line-height:1.28;margin-top:6px}
+.addr{font-family:Newsreader,Georgia,serif;font-weight:300;font-size:34px;line-height:1.28;margin-top:6px}
 .hours{margin-top:40px;border-top:1px solid var(--gline)}
 .hours div{display:flex;justify-content:space-between;padding:16px 0;border-bottom:1px solid var(--gline);font-size:15px}
 .hours span:first-child{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold2)}
@@ -243,7 +245,7 @@ footer h5{font-size:10.5px;letter-spacing:.34em;text-transform:uppercase;color:v
 <body>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
-<symbol id="seal" viewBox="0 0 100 100"><circle cx="50" cy="50" r="47" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="50" cy="50" r="42.5" fill="none" stroke="currentColor" stroke-width=".45"/><text x="50" y="61.5" text-anchor="middle" font-family="Bodoni Moda,Didot,Georgia,serif" font-size="36" font-weight="300" fill="currentColor">A<tspan font-style="italic" dx="-2">B</tspan></text><path d="M50 9.5l1.6 2.6L50 14.7l-1.6-2.6z" fill="currentColor"/></symbol>
+<symbol id="seal" viewBox="0 0 100 100"><circle cx="50" cy="50" r="47" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="50" cy="50" r="42.5" fill="none" stroke="currentColor" stroke-width=".45"/><text x="50" y="61.5" text-anchor="middle" font-family="Newsreader,Georgia,serif" font-size="36" font-weight="300" fill="currentColor">A<tspan font-style="italic" dx="-2">B</tspan></text><path d="M50 9.5l1.6 2.6L50 14.7l-1.6-2.6z" fill="currentColor"/></symbol>
 </defs></svg>
 
 <header id="hdr">

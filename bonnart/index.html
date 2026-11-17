@@ -5,370 +5,396 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>A. Bonnart Fine Jewelers · Charlotte</title>
-<meta name="description" content="A family-owned jeweler on Providence Road in Charlotte. Fine watch service, bespoke design, bridal, and repair.">
+<meta name="description" content="A family jeweler on Providence Road in Charlotte. Fine watch service, bespoke design, engagement and bridal, repair.">
+<link rel="preload" as="image" href="img/hero.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-:root{--ivory:#F6F1E7;--paper:#FBF8F2;--ink:#14231C;--ink2:#1E3229;--gold:#B8955A;--gold2:#D9C29A;--stone:#7D7568;--line:rgba(20,35,28,.14)}
+:root{--ivory:#F5F0E6;--paper:#FAF7F1;--ink:#101C16;--green:#16271F;--green2:#1D3329;--gold:#B8955A;--gold2:#D8C298;--stone:#7D7568;--line:rgba(16,28,22,.13);--gline:rgba(216,194,152,.22);--ease:cubic-bezier(.2,.7,.1,1)}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--ivory);color:var(--ink);font-family:Jost,system-ui,sans-serif;font-weight:300;font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
+body{background:var(--ivory);color:var(--ink);font-family:Jost,system-ui,sans-serif;font-weight:300;font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
-.serif{font-family:"Cormorant Garamond",Georgia,serif}
-.eyebrow{font-size:11.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-weight:500}
-.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
-/* nav */
-header{position:fixed;inset:0 0 auto 0;z-index:20;transition:background .4s,box-shadow .4s}
-header.solid{background:rgba(246,241,231,.94);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:78px}
-.brand{display:flex;align-items:center;gap:14px}
-.brand svg{width:40px;height:40px}
-.wm{line-height:1.05}
-.wm b{display:block;font-family:"Cormorant Garamond",serif;font-weight:500;font-size:21px;letter-spacing:.24em}
-.wm span{font-size:9.5px;letter-spacing:.38em;text-transform:uppercase;color:var(--stone)}
-nav.links{display:flex;gap:34px;font-size:12px;letter-spacing:.22em;text-transform:uppercase}
-nav.links a{position:relative;padding:4px 0}
-nav.links a:after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--gold);transition:width .35s}
-nav.links a:hover:after{width:100%}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;font-weight:500;border:1px solid var(--ink);transition:all .3s}
-.btn.dark{background:var(--ink);color:var(--ivory)}
-.btn.dark:hover{background:var(--ink2)}
-.btn.ghost:hover{background:var(--ink);color:var(--ivory)}
-.btn.goldline{border-color:var(--gold);color:var(--gold2)}
-.btn.goldline:hover{background:var(--gold);color:var(--ink)}
-.navcta{padding:11px 20px}
-.burger{display:none;background:none;border:0;width:30px;height:20px;position:relative;cursor:pointer}
-.burger i{position:absolute;left:0;right:0;height:1px;background:var(--ink)}
-.burger i:nth-child(1){top:3px}.burger i:nth-child(2){top:10px}.burger i:nth-child(3){top:17px}
-/* hero */
-.hero{min-height:100vh;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px;padding-top:110px;padding-bottom:60px}
-.hero h1{font-family:"Cormorant Garamond",serif;font-weight:300;font-size:clamp(46px,6.6vw,92px);line-height:1.02;letter-spacing:-.01em;margin:22px 0 26px}
-.hero h1 em{font-style:italic;color:var(--gold)}
-.hero p.lede{max-width:500px;font-size:18.5px;color:#3c463f}
-.hero .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:38px}
-.dialwrap{position:relative;display:flex;justify-content:center}
-.dialwrap:before{content:"";position:absolute;width:86%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 50% 45%,#fff 0,rgba(255,255,255,0) 68%);top:7%}
-.dial{width:min(500px,88%);height:auto;position:relative}
-#sec{transform-origin:250px 250px;animation:tick 60s steps(60) infinite}
-@keyframes tick{to{transform:rotate(360deg)}}
-/* ribbon */
-.ribbon{background:var(--ink);color:var(--gold2);overflow:hidden;white-space:nowrap}
-.ribbon div{display:inline-block;padding:20px 0;font-size:12px;letter-spacing:.34em;text-transform:uppercase;animation:mq 38s linear infinite}
-.ribbon span{margin:0 26px;color:var(--gold)}
-@keyframes mq{to{transform:translateX(-50%)}}
-section{padding:130px 0}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}
-h2{font-family:"Cormorant Garamond",serif;font-weight:300;font-size:clamp(38px,4.6vw,62px);line-height:1.08;margin:18px 0 26px}
-h2 em{font-style:italic;color:var(--gold)}
+img{display:block;width:100%;height:100%;object-fit:cover}
+.eyebrow{font-size:11px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);font-weight:500}
+.wrap{max-width:1240px;margin:0 auto;padding-left:32px;padding-right:32px}
+.serif,h1,h2,h3,h4{font-family:"Cormorant Garamond",Georgia,serif;font-weight:300}
+h2{font-size:clamp(40px,5vw,68px);line-height:1.04;letter-spacing:-.005em;margin:20px 0 28px}
+h2 em,h1 em{font-style:italic;color:var(--gold)}
 p+p{margin-top:18px}
-.muted{color:#4a534d}
-.rule{width:60px;height:1px;background:var(--gold);margin:30px 0}
-/* house */
-.house .art{background:var(--paper);border:1px solid var(--line);aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;position:relative}
-.house .art:after{content:"";position:absolute;inset:16px;border:1px solid rgba(184,149,90,.35)}
-.house .art svg{width:62%}
-.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:44px;border-top:1px solid var(--line)}
-.facts div{padding:24px 18px 0 0}
-.facts b{display:block;font-family:"Cormorant Garamond",serif;font-weight:400;font-size:34px;line-height:1.1}
-.facts span{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--stone)}
-/* services */
-.dark{background:var(--ink);color:var(--ivory)}
-.dark .muted,.visit .muted{color:#b9bfb7}
-.svc-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:70px}
-.svc-head p{max-width:420px}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(217,194,154,.25);border-left:1px solid rgba(217,194,154,.25)}
-.card{padding:48px 40px 52px;border-right:1px solid rgba(217,194,154,.25);border-bottom:1px solid rgba(217,194,154,.25);transition:background .4s}
-.card:hover{background:var(--ink2)}
-.card svg{width:46px;height:46px;stroke:var(--gold);fill:none;stroke-width:1.1;margin-bottom:30px}
-.card h3{font-family:"Cormorant Garamond",serif;font-weight:400;font-size:30px;line-height:1.15;margin-bottom:14px}
-.card p{font-size:15.5px;color:#b9bfb7}
-.card ul{list-style:none;margin-top:22px;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2)}
-.card li{padding:9px 0;border-top:1px solid rgba(217,194,154,.16)}
+.muted{color:#4b544e}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:17px 32px;font-size:11px;letter-spacing:.3em;text-transform:uppercase;font-weight:500;border:1px solid currentColor;transition:all .45s var(--ease);white-space:nowrap}
+.btn .ar{display:inline-block;width:22px;height:1px;background:currentColor;position:relative;transition:width .45s var(--ease)}
+.btn .ar:after{content:"";position:absolute;right:0;top:-3px;width:7px;height:7px;border-top:1px solid currentColor;border-right:1px solid currentColor;transform:rotate(45deg)}
+.btn:hover .ar{width:34px}
+.btn.gold{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.btn.gold:hover{background:var(--gold2);border-color:var(--gold2)}
+.btn.line-light{color:var(--ivory);border-color:rgba(245,240,230,.5)}
+.btn.line-light:hover{background:var(--ivory);color:var(--ink)}
+.btn.ink{background:var(--ink);color:var(--ivory);border-color:var(--ink)}
+.btn.ink:hover{background:var(--green2);border-color:var(--green2)}
+.link{font-size:11px;letter-spacing:.3em;text-transform:uppercase;font-weight:500;border-bottom:1px solid var(--gold);padding-bottom:6px;display:inline-block;margin-top:34px}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:50;color:var(--ivory);transition:background .5s,color .5s,box-shadow .5s}
+header.solid{background:rgba(245,240,230,.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:92px;transition:height .5s}
+header.solid .nav{height:74px}
+.nav-l,.nav-r{display:flex;gap:36px;font-size:11px;letter-spacing:.3em;text-transform:uppercase;font-weight:400}
+.nav-r{justify-content:flex-end;align-items:center}
+.nav a.u{position:relative;padding:4px 0}
+.nav a.u:after{content:"";position:absolute;left:50%;right:50%;bottom:-2px;height:1px;background:var(--gold);transition:all .4s var(--ease)}
+.nav a.u:hover:after{left:0;right:0}
+.brand{display:flex;flex-direction:column;align-items:center;line-height:1}
+.brand b{font-family:"Cormorant Garamond",serif;font-weight:400;font-size:25px;letter-spacing:.32em;padding-left:.32em}
+.brand span{font-size:8.5px;letter-spacing:.5em;text-transform:uppercase;margin-top:7px;opacity:.75;padding-left:.5em}
+.burger{display:none;background:none;border:0;width:28px;height:18px;position:relative;cursor:pointer;color:inherit;justify-self:end}
+.burger i{position:absolute;left:0;right:0;height:1px;background:currentColor;transition:all .4s}
+.burger i:nth-child(1){top:2px}.burger i:nth-child(2){top:9px;left:8px}.burger i:nth-child(3){top:16px}
+.drawer{position:fixed;inset:0;z-index:40;background:var(--green);color:var(--ivory);display:flex;flex-direction:column;justify-content:center;padding:0 36px;opacity:0;pointer-events:none;transition:opacity .5s var(--ease)}
+.drawer.open{opacity:1;pointer-events:auto}
+.drawer a{font-family:"Cormorant Garamond",serif;font-size:42px;font-weight:300;line-height:1.5;border-bottom:1px solid var(--gline)}
+.drawer .eyebrow{margin-top:36px}
+body.menu header{color:var(--ivory);background:transparent;box-shadow:none}
+
+/* hero */
+.hero{position:relative;height:100vh;min-height:680px;color:var(--ivory);overflow:hidden;background:#0b0f0c}
+.hero .bg{position:absolute;inset:0;transform:scale(1.08);animation:heroIn 2.6s var(--ease) forwards}
+.hero .bg img{object-position:62% 50%}
+@media (min-width:981px){.hero .bg{left:24%}.hero .bg:before{content:"";position:absolute;inset:0 auto 0 0;width:30%;background:linear-gradient(90deg,#0b0f0c,transparent);z-index:1}}
+@keyframes heroIn{to{transform:scale(1)}}
+.hero:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(8,12,10,.86) 0%,rgba(8,12,10,.55) 42%,rgba(8,12,10,.08) 75%),linear-gradient(0deg,rgba(8,12,10,.55),transparent 35%)}
+.hero .frame{position:absolute;inset:22px;z-index:2;border:1px solid rgba(216,194,152,.28);pointer-events:none}
+.hero .content{position:relative;z-index:3;height:100%;display:flex;flex-direction:column;justify-content:center}
+.hero h1{font-size:clamp(54px,8vw,124px);line-height:.96;letter-spacing:-.015em;margin:26px 0 30px}
+.hero h1 span{display:block;overflow:hidden}
+.hero h1 span i{display:block;font-style:normal;transform:translateY(105%);animation:rise 1.3s var(--ease) forwards}
+.hero h1 span:nth-child(2) i{animation-delay:.12s}
+.hero h1 span:nth-child(3) i{animation-delay:.24s;font-style:italic;color:var(--gold2)}
+@keyframes rise{to{transform:none}}
+.hero .lede{max-width:470px;font-size:18px;color:rgba(245,240,230,.82);opacity:0;animation:fade 1.4s .7s forwards}
+.hero .eyebrow{opacity:0;animation:fade 1.4s .3s forwards;color:var(--gold2)}
+.hero .ctas{display:flex;gap:14px;margin-top:44px;flex-wrap:wrap;opacity:0;animation:fade 1.4s .9s forwards}
+@keyframes fade{to{opacity:1}}
+.scrollcue{position:absolute;z-index:3;bottom:46px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:12px;font-size:9.5px;letter-spacing:.4em;text-transform:uppercase;color:rgba(245,240,230,.7)}
+.scrollcue i{width:1px;height:46px;background:linear-gradient(var(--gold2),transparent);animation:cue 2.2s infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* statement */
+.statement{padding:150px 0 140px;text-align:center}
+.seal{width:64px;height:64px;margin:0 auto 34px;color:var(--gold)}
+.statement p.big{font-family:"Cormorant Garamond",serif;font-weight:300;font-size:clamp(28px,3.3vw,44px);line-height:1.32;max-width:920px;margin:0 auto}
+.statement p.big em{color:var(--gold);font-style:italic}
+.sig{margin-top:40px;font-size:11px;letter-spacing:.36em;text-transform:uppercase;color:var(--stone)}
+
+/* disciplines */
+.disc{padding:0 0 150px}
+.disc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.dcard{display:block;position:relative}
+.dcard .ph{aspect-ratio:3/4;overflow:hidden;background:#111}
+.dcard .ph img{transition:transform 1.6s var(--ease)}
+.dcard:hover .ph img{transform:scale(1.06)}
+.dcard .num{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gold);font-size:20px;margin-top:24px}
+.dcard h3{font-size:34px;line-height:1.1;margin:6px 0 10px}
+.dcard p{font-size:15.5px;color:#4b544e;max-width:330px}
+.disc-grid .dcard:nth-child(2){margin-top:90px}
+
+/* atelier */
+.atelier{background:var(--green);color:var(--ivory);padding:150px 0;position:relative;overflow:hidden}
+.atelier .muted{color:#b8c0b8}
+.at-grid{display:grid;grid-template-columns:5fr 6fr;gap:100px;align-items:center}
+.at-img{position:relative}
+.at-img .main{aspect-ratio:2/3;overflow:hidden}
+.at-img .inset{position:absolute;width:52%;aspect-ratio:1;right:-18%;bottom:-8%;overflow:hidden;border:10px solid var(--green)}
+.svc{margin-top:40px;border-top:1px solid var(--gline)}
+.svc div{display:grid;grid-template-columns:1fr auto;padding:18px 0;border-bottom:1px solid var(--gline);align-items:baseline;gap:20px}
+.svc b{font-family:"Cormorant Garamond",serif;font-weight:400;font-size:24px}
+.svc span{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold2);text-align:right}
+
+/* band */
+.band{position:relative;height:84vh;min-height:520px;overflow:hidden;color:var(--ivory);display:flex;align-items:center;justify-content:center;text-align:center}
+.band .bg{position:absolute;inset:-12% 0;will-change:transform}
+.band:before{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(ellipse at center,rgba(8,12,10,.8) 0%,rgba(8,12,10,.6) 70%)}
+.band blockquote{position:relative;z-index:2;max-width:900px;padding:0 30px}
+.band blockquote p{font-family:"Cormorant Garamond",serif;font-weight:300;font-style:italic;font-size:clamp(32px,4.4vw,60px);line-height:1.18}
+.band cite{display:block;margin-top:34px;font-style:normal;font-size:11px;letter-spacing:.38em;text-transform:uppercase;color:var(--gold2)}
+
 /* bespoke */
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:34px;margin-top:70px}
-.step{border-top:1px solid var(--ink);padding-top:26px}
-.step .n{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:46px;color:var(--gold);line-height:1}
-.step h4{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:25px;margin:14px 0 10px}
-.step p{font-size:15.5px;color:#4a534d}
+.bespoke{padding:150px 0}
+.bs-top{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:end;margin-bottom:80px}
+.bs-body{display:grid;grid-template-columns:7fr 5fr;gap:80px;align-items:center}
+.bs-img{aspect-ratio:3/2;overflow:hidden}
+.steps{counter-reset:s}
+.step{display:grid;grid-template-columns:64px 1fr;padding:26px 0;border-top:1px solid var(--line)}
+.step:last-child{border-bottom:1px solid var(--line)}
+.step .n{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gold);font-size:30px;line-height:1.1}
+.step h4{font-size:26px;font-weight:400;line-height:1.2;margin-bottom:6px}
+.step p{font-size:15.5px;color:#4b544e}
+
 /* bridal */
-.bridal{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.ringart{display:flex;justify-content:center}
-.ringart svg{width:min(430px,90%)}
-.pillrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
-.pill{border:1px solid var(--line);padding:9px 16px;font-size:12px;letter-spacing:.16em;text-transform:uppercase}
+.bridal{background:var(--paper);display:grid;grid-template-columns:1fr 1fr;min-height:92vh}
+.bridal .ph{overflow:hidden;position:relative}
+.bridal .txt{display:flex;flex-direction:column;justify-content:center;padding:120px 9vw 120px 7vw}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
+.chips span{border:1px solid var(--line);padding:10px 18px;font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+
+/* care */
+.care{padding:150px 0}
+.care-grid{display:grid;grid-template-columns:5fr 7fr;gap:100px}
+.care-list div{display:grid;grid-template-columns:1fr auto;gap:20px;padding:22px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.care-list div:first-child{border-top:1px solid var(--line)}
+.care-list b{font-family:"Cormorant Garamond",serif;font-weight:400;font-size:26px}
+.care-list span{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--stone);text-align:right}
+
 /* voices */
-.voices{text-align:center}
-.voices .grid3{border-color:var(--line);margin-top:60px;text-align:left}
-.voices .card{border-color:var(--line)}
-.voices .card:hover{background:var(--paper)}
-.voices .card h3{font-size:28px}
-.voices .card p{color:#4a534d}
-.stars{color:var(--gold);letter-spacing:.3em;font-size:14px;margin-bottom:16px}
+.voices{background:var(--paper);padding:140px 0;text-align:center;border-top:1px solid var(--line)}
+.vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:60px;margin-top:70px;text-align:left}
+.vgrid h3{font-size:30px;font-weight:400;margin:14px 0 12px}
+.vgrid p{font-size:15.5px;color:#4b544e}
+.vgrid .d{color:var(--gold);letter-spacing:.4em;font-size:12px}
+
 /* visit */
-.visit{background:var(--ink);color:var(--ivory)}
-.hours{margin-top:30px;border-top:1px solid rgba(217,194,154,.25)}
-.hours div{display:flex;justify-content:space-between;padding:15px 0;border-bottom:1px solid rgba(217,194,154,.25);font-size:15px}
-.hours div span:first-child{letter-spacing:.2em;text-transform:uppercase;font-size:12px;color:var(--gold2)}
-.addr{font-family:"Cormorant Garamond",serif;font-size:34px;line-height:1.25;font-weight:300}
-.visit .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:40px}
-.visit .btn{border-color:var(--gold2);color:var(--ivory)}
-.visit .btn.fill{background:var(--gold);border-color:var(--gold);color:var(--ink)}
-.visit .btn:hover{background:var(--gold2);color:var(--ink)}
-.mapcard{border:1px solid rgba(217,194,154,.3);padding:50px;position:relative}
-.mapcard svg{width:100%;height:auto}
-footer{background:#0E1913;color:#8f978f;font-size:13px;padding:56px 0}
-footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}
-footer .brand svg{width:34px;height:34px}
-footer .wm b{color:var(--ivory);font-size:18px}
-.reveal{opacity:0;transform:translateY(24px);transition:opacity 1s ease,transform 1s ease}
-.reveal.in{opacity:1;transform:none}
-/* mobile */
-@media (max-width:900px){
+.visit{background:var(--ink);color:var(--ivory);display:grid;grid-template-columns:1fr 1fr}
+.visit .ph{min-height:760px;overflow:hidden}
+.visit .txt{padding:130px 7vw}
+.visit .muted{color:#aab2ab}
+.addr{font-family:"Cormorant Garamond",serif;font-weight:300;font-size:34px;line-height:1.28;margin-top:6px}
+.hours{margin-top:40px;border-top:1px solid var(--gline)}
+.hours div{display:flex;justify-content:space-between;padding:16px 0;border-bottom:1px solid var(--gline);font-size:15px}
+.hours span:first-child{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold2)}
+.visit .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:46px}
+
+footer{background:#0A120E;color:#8b938c;padding:80px 0 50px;font-size:13px}
+.ft{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;align-items:start}
+footer .brand{align-items:flex-start;color:var(--ivory)}
+footer .brand b{padding-left:0}
+footer .brand span{padding-left:0}
+footer h5{font-size:10.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold2);font-weight:500;margin-bottom:14px}
+.fbot{margin-top:60px;padding-top:26px;border-top:1px solid rgba(216,194,152,.14);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px}
+
+.rv{opacity:0;transform:translateY(34px);transition:opacity 1.3s var(--ease),transform 1.3s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.12s}.rv.d2{transition-delay:.24s}
+.mask{clip-path:inset(0 0 100% 0);transition:clip-path 1.6s var(--ease)}
+.mask.in{clip-path:inset(0 0 0 0)}
+
+@media (max-width:980px){
  body{font-size:16px}
- nav.links,.navcta{display:none}
- .burger{display:block}
- header.open{background:var(--ivory)}
- header.open nav.links{display:flex;position:absolute;top:78px;left:0;right:0;flex-direction:column;gap:0;background:var(--ivory);border-top:1px solid var(--line);padding:10px 28px 26px}
- header.open nav.links a{padding:16px 0;border-bottom:1px solid var(--line)}
- .hero{grid-template-columns:1fr;padding-top:120px;gap:10px;min-height:auto}
- .dialwrap{order:-1}
- .dial{width:72%}
- section{padding:88px 0}
- .split{grid-template-columns:1fr;gap:50px}
- .house .art{aspect-ratio:1}
- .svc-head{flex-direction:column;align-items:start;margin-bottom:46px}
- .grid3{grid-template-columns:1fr}
- .card{padding:38px 28px}
- .steps{grid-template-columns:1fr 1fr;gap:34px 22px}
- .facts b{font-size:27px}
- .mapcard{padding:26px}
- .addr{font-size:28px}
+ .wrap{padding-left:24px;padding-right:24px}
+ .nav{grid-template-columns:auto 1fr auto;height:74px}
+ .nav-l,.nav-r{display:none}
+ .brand{align-items:flex-start;grid-column:1}
+ .brand b{font-size:21px;padding-left:0}.brand span{padding-left:0}
+ .burger{display:block;grid-column:3}
+ .hero{min-height:640px;height:92vh}
+ .hero .bg img{object-position:46% 30%}
+ .hero:before{background:linear-gradient(0deg,rgba(8,12,10,.97) 0%,rgba(8,12,10,.88) 42%,rgba(8,12,10,.1) 72%,rgba(8,12,10,.35) 100%)}
+ .hero{height:100svh}
+ .hero .bg{bottom:30%}
+ .hero .frame{inset:12px}
+ .hero .content{justify-content:flex-end;padding-bottom:64px}
+ .hero .ctas .btn{flex:1;padding:16px 14px;letter-spacing:.22em}
+ .hero .ctas .btn .ar{display:none}
+ .scrollcue{display:none}
+ .statement{padding:100px 0 90px}
+ .disc{padding-bottom:100px}
+ .disc-grid{grid-template-columns:1fr;gap:56px}
+ .disc-grid .dcard:nth-child(2){margin-top:0}
+ .dcard .ph{aspect-ratio:4/5}
+ .atelier,.bespoke,.care,.voices{padding:100px 0}
+ .at-grid,.bs-top,.bs-body,.care-grid,.vgrid{grid-template-columns:1fr;gap:50px}
+ .at-img{margin-right:20%}
+ .at-img .inset{right:-28%}
+ .bs-top{margin-bottom:46px;gap:10px}
+ .bridal,.visit{grid-template-columns:1fr}
+ .bridal .ph{aspect-ratio:1}
+ .bridal .txt{padding:80px 24px}
+ .visit .ph{min-height:0;aspect-ratio:4/5}
+ .visit .txt{padding:90px 24px}
+ .addr{font-size:29px}
+ .band{height:70vh}
+ .ft{grid-template-columns:1fr}
+ .visit .ctas .btn{flex:1}
+ .svc div,.care-list div{grid-template-columns:1fr;gap:4px}
+ .svc span,.care-list span{text-align:left}
+ .svc b,.care-list b{font-size:23px}
 }
-@media (max-width:520px){.steps{grid-template-columns:1fr}.wrap{padding-left:22px;padding-right:22px}.hero .ctas .btn{flex:1;justify-content:center;padding:15px 12px;letter-spacing:.18em;white-space:nowrap}header{background:rgba(246,241,231,.96)}}
 </style>
 </head>
 <body>
 
-<svg width="0" height="0" style="position:absolute">
- <defs>
-  <symbol id="mono" viewBox="0 0 100 100">
-   <circle cx="50" cy="50" r="47" fill="none" stroke="currentColor" stroke-width="1.2"/>
-   <circle cx="50" cy="50" r="42.5" fill="none" stroke="currentColor" stroke-width=".5"/>
-   <text x="50" y="62" text-anchor="middle" font-family="Cormorant Garamond,Georgia,serif" font-size="38" font-weight="400" letter-spacing="-1" fill="currentColor">A<tspan font-style="italic" dx="-3">B</tspan></text>
-   <path d="M50 9.5l1.6 2.6L50 14.7l-1.6-2.6z" fill="#B8955A"/>
-  </symbol>
- </defs>
-</svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="seal" viewBox="0 0 100 100"><circle cx="50" cy="50" r="47" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="50" cy="50" r="42.5" fill="none" stroke="currentColor" stroke-width=".45"/><text x="50" y="61.5" text-anchor="middle" font-family="Cormorant Garamond,Georgia,serif" font-size="36" font-weight="300" fill="currentColor">A<tspan font-style="italic" dx="-2">B</tspan></text><path d="M50 9.5l1.6 2.6L50 14.7l-1.6-2.6z" fill="currentColor"/></symbol>
+</defs></svg>
 
 <header id="hdr">
  <div class="wrap nav">
-  <a href="#top" class="brand"><svg style="color:#14231C"><use href="#mono"/></svg><div class="wm"><b>A. BONNART</b><span>Fine Jewelers</span></div></a>
-  <nav class="links" id="links">
-   <a href="#house">The House</a><a href="#watches">Watches</a><a href="#bespoke">Bespoke</a><a href="#bridal">Bridal</a><a href="#visit">Visit</a>
-  </nav>
-  <a class="btn dark navcta" href="tel:+17045365525">704 536 5525</a>
-  <button class="burger" aria-label="Menu" onclick="document.getElementById('hdr').classList.toggle('open')"><i></i><i></i><i></i></button>
+  <nav class="nav-l"><a class="u" href="#atelier">Watches</a><a class="u" href="#bespoke">Bespoke</a><a class="u" href="#bridal">Bridal</a></nav>
+  <a href="#top" class="brand"><b>A. BONNART</b><span>Fine Jewelers · Charlotte</span></a>
+  <nav class="nav-r"><a class="u" href="#care">Repair</a><a class="u" href="#visit">Visit</a><a class="u" href="tel:+17045365525">704 536 5525</a></nav>
+  <button class="burger" id="burger" aria-label="Menu"><i></i><i></i><i></i></button>
  </div>
 </header>
-
-<main id="top">
-<div class="wrap hero">
- <div>
-  <div class="eyebrow">Strawberry Hill · Providence Road · Charlotte</div>
-  <h1>Kept, made,<br>and mended<br><em>by hand.</em></h1>
-  <p class="lede">A family jeweler on Providence Road. We service fine watches, design pieces from scratch, and look after the jewelry you mean to pass down.</p>
-  <div class="ctas"><a class="btn dark" href="#visit">Plan a visit</a><a class="btn ghost" href="tel:+17045365525">Call the shop</a></div>
- </div>
- <div class="dialwrap">
-  <svg class="dial" viewBox="0 0 500 500" aria-hidden="true">
-   <circle cx="250" cy="250" r="236" fill="none" stroke="#B8955A" stroke-width="1"/>
-   <circle cx="250" cy="250" r="222" fill="#FBF8F2" stroke="#14231C" stroke-width=".8"/>
-   <circle cx="250" cy="250" r="176" fill="none" stroke="#14231C" stroke-width=".4" stroke-dasharray="1 5.2"/>
-   <g id="ticks"></g>
-   <text x="250" y="168" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="25" letter-spacing="7" fill="#14231C">A. BONNART</text>
-   <text x="250" y="190" text-anchor="middle" font-family="Jost,sans-serif" font-size="8.5" letter-spacing="5" fill="#7D7568">CHARLOTTE</text>
-   <circle cx="250" cy="335" r="34" fill="none" stroke="#14231C" stroke-width=".5"/>
-   <text x="250" y="340" text-anchor="middle" font-family="Cormorant Garamond,serif" font-style="italic" font-size="15" fill="#B8955A">by hand</text>
-   <g id="hr" style="transform-origin:250px 250px"><path d="M250 250 L246 250 L250 140 L254 250Z" fill="#14231C"/></g>
-   <g id="mn" style="transform-origin:250px 250px"><path d="M250 250 L247 250 L250 72 L253 250Z" fill="#14231C"/></g>
-   <g id="sec"><line x1="250" y1="290" x2="250" y2="58" stroke="#B8955A" stroke-width="1.2"/><circle cx="250" cy="250" r="5" fill="#B8955A"/></g>
-   <circle cx="250" cy="250" r="2" fill="#FBF8F2"/>
-  </svg>
- </div>
+<div class="drawer" id="drawer">
+ <a href="#atelier">Watches</a><a href="#bespoke">Bespoke</a><a href="#bridal">Bridal</a><a href="#care">Repair &amp; Care</a><a href="#visit">Visit</a>
+ <div class="eyebrow">4219 Providence Road · <a href="tel:+17045365525" style="font:inherit;border:0;line-height:inherit">704 536 5525</a></div>
 </div>
 
-<div class="ribbon"><div>Family owned<span>◆</span>Fine watch service<span>◆</span>Bespoke design<span>◆</span>Engagement &amp; bridal<span>◆</span>Repair &amp; restoration<span>◆</span>Appraisals<span>◆</span>Family owned<span>◆</span>Fine watch service<span>◆</span>Bespoke design<span>◆</span>Engagement &amp; bridal<span>◆</span>Repair &amp; restoration<span>◆</span>Appraisals<span>◆</span></div></div>
-
-<section id="house">
- <div class="wrap split">
-  <div class="art reveal house" style="display:block"><div class="art">
-   <svg viewBox="0 0 200 200" fill="none" stroke="#14231C" stroke-width=".9">
-    <circle cx="82" cy="86" r="46"/><circle cx="82" cy="86" r="39" stroke="#B8955A"/>
-    <path d="M115 119 L160 164" stroke-width="7" stroke-linecap="round"/>
-    <path d="M115 119 L160 164" stroke="#FBF8F2" stroke-width="5" stroke-linecap="round"/>
-    <path d="M62 78 l10-12 h20 l10 12 l-20 24z" stroke="#B8955A"/>
-    <path d="M62 78 h40 M72 66 l10 12 l10-12 M82 78 v24"/>
-   </svg>
-  </div></div>
-  <div class="reveal">
-   <div class="eyebrow">The House</div>
-   <h2>A family name<br>over the <em>door.</em></h2>
-   <p class="muted">A. Bonnart is family-owned and family-run, with three generations working in the shop. You'll deal with the people doing the work. The person who takes in your watch is often the one who opens the case back.</p>
-   <p class="muted">We've been in Strawberry Hill on Providence Road for years. A lot of what comes across the counter is a parent's watch, a grandmother's stone, or a ring that needs to fit again. We treat those as if they were ours.</p>
-   <div class="facts">
-    <div><b>3</b><span>Generations</span></div>
-    <div><b>1</b><span>Shop, one counter</span></div>
-    <div><b>∞</b><span>Pieces handed down</span></div>
-   </div>
-  </div>
+<main id="top">
+<section class="hero">
+ <div class="bg"><img src="img/hero.jpg" alt="Rose gold wristwatch resting on dark fabric"></div>
+ <div class="frame"></div>
+ <div class="wrap content">
+  <div class="eyebrow">Fine Jewelers · Strawberry Hill · Charlotte</div>
+  <h1><span><i>Kept, made,</i></span><span><i>and mended</i></span><span><i>by hand.</i></span></h1>
+  <p class="lede">A family jeweler on Providence Road. Fine watch service, bespoke design, and care for the pieces you mean to pass down.</p>
+  <div class="ctas"><a class="btn gold" href="#visit">Visit the shop <span class="ar"></span></a><a class="btn line-light" href="tel:+17045365525">Call</a></div>
  </div>
+ <div class="scrollcue">Scroll<i></i></div>
 </section>
 
-<section id="watches" class="dark">
+<section class="statement">
  <div class="wrap">
-  <div class="svc-head reveal">
-   <div><div class="eyebrow">The Bench</div><h2>Fine watches, <em>serviced</em><br>and restored.</h2></div>
-   <p class="muted">Watch service is the heart of the shop. We do full mechanical overhauls, regulation, and the quick fixes that keep a daily watch running, and we're known for fast turnaround.</p>
+  <svg class="seal rv"><use href="#seal"/></svg>
+  <p class="big rv d1">Some things are worth keeping. A grandfather's watch, a stone set long before you were born, a ring that should still fit in fifty years. <em>We are the people who keep them.</em></p>
+  <div class="sig rv d2">A. Bonnart · Providence Road</div>
+ </div>
+</section>
+
+<section class="disc">
+ <div class="wrap disc-grid">
+  <a class="dcard rv" href="#atelier"><div class="ph"><img loading="lazy" src="img/movement.jpg" alt="Mechanical watch movement, macro"></div><div class="num">i.</div><h3>The Watch Atelier</h3><p>Fine mechanical watches overhauled, regulated, and restored at our bench.</p></a>
+  <a class="dcard rv d1" href="#bespoke"><div class="ph"><img loading="lazy" src="img/ring-halo.jpg" alt="Halo diamond ring" style="object-position:40% 50%"></div><div class="num">ii.</div><h3>Bespoke Design</h3><p>One-of-one pieces, drawn with you and made by hand.</p></a>
+  <a class="dcard rv d2" href="#care"><div class="ph"><img loading="lazy" src="img/craft.jpg" alt="Jeweler's hands at the bench" style="object-position:55% 50%"></div><div class="num">iii.</div><h3>Repair &amp; Restoration</h3><p>Sizing, settings, chains, and heirlooms brought back to wearable.</p></a>
+ </div>
+</section>
+
+<section class="atelier" id="atelier">
+ <div class="wrap at-grid">
+  <div class="at-img rv">
+   <div class="main mask"><img loading="lazy" src="img/watch-green.jpg" alt="Gold wristwatch on green cloth"></div>
+   <div class="inset mask"><img loading="lazy" src="img/movement.jpg" alt="" style="object-position:30% 40%"></div>
   </div>
-  <div class="grid3 reveal">
-   <div class="card">
-    <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="13"/><circle cx="24" cy="24" r="10"/><path d="M19 11 l1-6 h8 l1 6 M19 37 l1 6 h8 l1-6 M24 17v7l4 3"/></svg>
-    <h3>Watch Service</h3>
-    <p>Complete movement service on luxury Swiss and mechanical watches. We clean, lubricate, regulate, and check the timing against spec.</p>
-    <ul><li>Full overhaul &amp; regulation</li><li>Crystals, gaskets &amp; crowns</li><li>Pressure testing</li><li>Batteries</li></ul>
-   </div>
-   <div class="card">
-    <svg viewBox="0 0 48 48"><rect x="15" y="4" width="18" height="40" rx="3"/><circle cx="24" cy="24" r="7"/><path d="M15 14h18M15 34h18"/></svg>
-    <h3>Case &amp; Bracelet</h3>
-    <p>Case and bracelet refinishing that brings back the brushed and polished surfaces without rounding off the lines.</p>
-    <ul><li>Refinishing &amp; polishing</li><li>Bracelet stretch &amp; links</li><li>Clasp repair</li><li>Straps fitted</li></ul>
-   </div>
-   <div class="card">
-    <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="2"/><path d="M24 8v4M24 36v4M8 24h4M36 24h4M24 24l6-8"/></svg>
-    <h3>Pre-Owned Timepieces</h3>
-    <p>A small, hand-picked case of pre-owned luxury watches. Each one is inspected at our own bench before it goes on sale.</p>
-    <ul><li>Bench-inspected</li><li>Ask what's in the case</li></ul>
+  <div class="rv d1">
+   <div class="eyebrow">The Watch Atelier</div>
+   <h2>Time, <em>tended</em><br>properly.</h2>
+   <p class="muted">Watch service is the heart of the house. We open the case, take the movement down, clean and lubricate it, and regulate it to time. Then we check it again before it goes back on your wrist.</p>
+   <p class="muted">Clients tell us the turnaround is what brings them back.</p>
+   <div class="svc">
+    <div><b>Complete movement service</b><span>Mechanical &amp; automatic</span></div>
+    <div><b>Regulation &amp; timing</b><span>Checked to spec</span></div>
+    <div><b>Crystals, crowns &amp; gaskets</b><span>Pressure tested</span></div>
+    <div><b>Case &amp; bracelet refinishing</b><span>Lines kept sharp</span></div>
+    <div><b>Pre-owned timepieces</b><span>Bench-inspected</span></div>
    </div>
   </div>
  </div>
 </section>
 
-<section id="bespoke">
+<section class="band">
+ <div class="bg" id="par"><img loading="lazy" src="img/movement-bw.jpg" alt=""></div>
+ <blockquote class="rv"><p>Every watch that crosses the counter is somebody's story. We keep it running.</p><cite>The Watch Atelier</cite></blockquote>
+</section>
+
+<section class="bespoke" id="bespoke">
  <div class="wrap">
-  <div class="split reveal" style="align-items:end">
-   <div><div class="eyebrow">Bespoke</div><h2>Designed with you.<br><em>Made</em> here.</h2></div>
-   <p class="muted">Custom work costs less than most people expect, often about the same as something off the shelf. The difference is that it was made for one person. Bring a sketch, a photo, or a stone you already own.</p>
+  <div class="bs-top">
+   <div class="rv"><div class="eyebrow">Bespoke</div><h2>Drawn with you.<br><em>Made</em> by us.</h2></div>
+   <p class="muted rv d1">Bring a sketch, a photograph, or a stone already in the family. Custom work here often costs about what you'd pay for something off the shelf. The difference is that this one was made for you.</p>
   </div>
-  <div class="steps">
-   <div class="step reveal"><div class="n">i.</div><h4>Conversation</h4><p>Sit down at the counter and tell us what you have in mind. Bring inspiration, your budget, and any stones you'd like to reuse.</p></div>
-   <div class="step reveal"><div class="n">ii.</div><h4>Design</h4><p>We work out the design together. You'll see it and approve it before any metal is cut.</p></div>
-   <div class="step reveal"><div class="n">iii.</div><h4>The Bench</h4><p>The piece is made, set, and finished by hand, and checked at every stage.</p></div>
-   <div class="step reveal"><div class="n">iv.</div><h4>Delivery</h4><p>You pick it up at the shop, sized and polished. We're here to look after it from then on.</p></div>
-  </div>
- </div>
-</section>
-
-<section id="bridal" class="bridal">
- <div class="wrap split">
-  <div class="ringart reveal">
-   <svg viewBox="0 0 300 300" fill="none" stroke="#14231C" stroke-width="1">
-    <ellipse cx="150" cy="190" rx="78" ry="78"/><ellipse cx="150" cy="190" rx="68" ry="68" stroke="#B8955A"/>
-    <path d="M128 116 l22-34 l22 34" stroke="#B8955A"/>
-    <path d="M118 82 h64 l-32 40z"/><path d="M118 82 l14-18 h36 l14 18 M132 64 l18 18 l18-18 M150 82 v40 M118 82 l32 40 l32-40"/>
-    <circle cx="150" cy="190" r="104" stroke="#14231C" stroke-width=".3" stroke-dasharray="2 6"/>
-   </svg>
-  </div>
-  <div class="reveal">
-   <div class="eyebrow">Engagement &amp; Bridal</div>
-   <h2>The ring<br>you'll <em>never take off.</em></h2>
-   <p class="muted">You can start with a stone we source for you or one that's been in the family for decades. We'll design the setting around it and make a band that sits flush beside it.</p>
-   <div class="pillrow"><span class="pill">Custom engagement rings</span><span class="pill">Wedding bands</span><span class="pill">Heirloom re-sets</span><span class="pill">Anniversary pieces</span></div>
-   <div style="margin-top:40px"><a class="btn dark" href="#visit">Book a design visit</a></div>
+  <div class="bs-body">
+   <div class="bs-img rv mask"><img loading="lazy" src="img/ring-box.jpg" alt="Engagement ring in a box"></div>
+   <div class="steps rv d1">
+    <div class="step"><div class="n">i.</div><div><h4>Conversation</h4><p>Sit with us at the counter. Bring ideas, a budget, and any stones you'd like to reuse.</p></div></div>
+    <div class="step"><div class="n">ii.</div><div><h4>Design</h4><p>We refine it together, and you approve every detail before any metal is cut.</p></div></div>
+    <div class="step"><div class="n">iii.</div><div><h4>The Bench</h4><p>The piece is made, set, and finished by hand, and inspected at every stage.</p></div></div>
+    <div class="step"><div class="n">iv.</div><div><h4>Delivery</h4><p>It's sized and polished when you collect it, and we look after it from then on.</p></div></div>
+   </div>
   </div>
  </div>
 </section>
 
-<section id="repair">
- <div class="wrap split">
-  <div class="reveal">
+<section class="bridal" id="bridal">
+ <div class="ph mask"><img loading="lazy" src="img/ring-pear.jpg" alt="Pear-cut diamond halo ring"></div>
+ <div class="txt rv">
+  <div class="eyebrow">Engagement &amp; Bridal</div>
+  <h2>The ring you'll<br><em>never take off.</em></h2>
+  <p class="muted">We can start from a diamond we source for you or from a stone that's been in the family for generations. We design the setting around it, then make a band that sits flush beside it.</p>
+  <div class="chips"><span>Engagement rings</span><span>Wedding bands</span><span>Heirloom re-sets</span><span>Anniversary</span></div>
+  <div><a class="link" href="#visit">Book a design consultation</a></div>
+ </div>
+</section>
+
+<section class="care" id="care">
+ <div class="wrap care-grid">
+  <div class="rv">
    <div class="eyebrow">Repair &amp; Care</div>
    <h2>For the pieces<br>that get <em>worn.</em></h2>
-   <p class="muted">Jewelry that gets worn every day needs looking after. Bring it in. We'll tell you plainly what it needs, what it doesn't, and what it will cost before we start.</p>
+   <p class="muted">Jewelry you wear every day needs care. Bring it in. We'll tell you plainly what it needs, what it doesn't, and what it will cost before we start.</p>
   </div>
-  <div class="reveal">
-   <div class="hours" style="border-color:var(--line)">
-    <div style="border-color:var(--line)"><span style="color:var(--ink)">Ring sizing</span><span>Up or down, any metal</span></div>
-    <div style="border-color:var(--line)"><span style="color:var(--ink)">Prongs &amp; settings</span><span>Retipping · tightening</span></div>
-    <div style="border-color:var(--line)"><span style="color:var(--ink)">Chains &amp; clasps</span><span>Repaired at the bench</span></div>
-    <div style="border-color:var(--line)"><span style="color:var(--ink)">Cleaning &amp; inspection</span><span>Bring it by anytime</span></div>
-    <div style="border-color:var(--line)"><span style="color:var(--ink)">Appraisals</span><span>Jewelry &amp; watches</span></div>
-   </div>
+  <div class="care-list rv d1">
+   <div><b>Ring sizing</b><span>Any metal</span></div>
+   <div><b>Prongs &amp; settings</b><span>Retipping · tightening</span></div>
+   <div><b>Chains &amp; clasps</b><span>Repaired at the bench</span></div>
+   <div><b>Cleaning &amp; inspection</b><span>Bring it by</span></div>
+   <div><b>Appraisals</b><span>Jewelry &amp; watches</span></div>
+   <div><b>Watch batteries</b><span>While you wait</span></div>
   </div>
  </div>
 </section>
 
-<section class="voices" style="padding-top:40px">
+<section class="voices">
  <div class="wrap">
-  <div class="eyebrow reveal">What clients tell us</div>
-  <h2 class="reveal">Honest work,<br><em>quickly</em> returned.</h2>
-  <div class="grid3 reveal">
-   <div class="card"><div class="stars">◆ ◆ ◆ ◆ ◆</div><h3>Turnaround</h3><p>Clients most often mention how fast their watches come back. Plenty of routine service is done in days, not weeks.</p></div>
-   <div class="card"><div class="stars">◆ ◆ ◆ ◆ ◆</div><h3>Straight answers</h3><p>When you ask what something needs, we tell you. Nothing gets added to the ticket, and you won't hear a sales pitch at the counter.</p></div>
-   <div class="card"><div class="stars">◆ ◆ ◆ ◆ ◆</div><h3>Custom, fairly priced</h3><p>Pieces made for one person, often for about what a mass-produced version would cost elsewhere.</p></div>
+  <div class="eyebrow rv">What our clients say</div>
+  <h2 class="rv d1">Honest work,<br><em>quickly</em> returned.</h2>
+  <div class="vgrid">
+   <div class="rv"><div class="d">◆ ◆ ◆ ◆ ◆</div><h3>Turnaround</h3><p>The thing clients mention most is how fast their watches come back. A lot of routine service is done in days, not weeks.</p></div>
+   <div class="rv d1"><div class="d">◆ ◆ ◆ ◆ ◆</div><h3>Straight answers</h3><p>Ask what something needs and we'll tell you. You won't find extras on the ticket or a sales pitch at the counter.</p></div>
+   <div class="rv d2"><div class="d">◆ ◆ ◆ ◆ ◆</div><h3>Custom, fairly priced</h3><p>Made for one person, often for about what a mass-produced version would cost elsewhere.</p></div>
   </div>
  </div>
 </section>
 
-<section id="visit" class="visit">
- <div class="wrap split">
-  <div class="reveal">
-   <div class="eyebrow">Visit the shop</div>
-   <h2 style="color:var(--ivory)">Come by<br><em>the counter.</em></h2>
-   <p class="addr">4219 Providence Road, Suite 4<br>Charlotte, North Carolina 28211</p>
-   <p class="muted" style="margin-top:14px">In Strawberry Hill, between Myers Park and Cotswold. Walk-ins welcome. Call ahead for design consultations.</p>
-   <div class="ctas"><a class="btn fill" href="tel:+17045365525">Call 704 536 5525</a><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=A+Bonnart+Fine+Jewelers+4219+Providence+Rd+Charlotte+NC+28211">Directions</a></div>
+<section class="visit" id="visit">
+ <div class="ph mask"><img loading="lazy" src="img/boutique.jpg" alt="Jewelry display shelves in warm light"></div>
+ <div class="txt rv">
+  <div class="eyebrow">Visit the shop</div>
+  <h2 style="margin-bottom:18px">Come by<br><em>the counter.</em></h2>
+  <p class="addr">4219 Providence Road, Suite 4<br>Charlotte, North Carolina 28211</p>
+  <p class="muted" style="margin-top:16px">In Strawberry Hill, between Myers Park and Cotswold. Walk-ins are welcome. For a design consultation, call ahead.</p>
+  <div class="hours">
+   <div><span>Tuesday – Friday</span><span>10:00 – 5:30</span></div>
+   <div><span>Saturday</span><span>10:00 – 3:00</span></div>
+   <div><span>Sunday &amp; Monday</span><span>Closed</span></div>
   </div>
-  <div class="mapcard reveal">
-   <div class="eyebrow" style="margin-bottom:6px">Hours</div>
-   <div class="hours">
-    <div><span>Tuesday – Friday</span><span>10:00 – 5:30</span></div>
-    <div><span>Saturday</span><span>10:00 – 3:00</span></div>
-    <div><span>Sunday &amp; Monday</span><span>Closed</span></div>
-   </div>
-   <p class="muted" style="font-size:13.5px;margin-top:22px">Holiday hours may vary. Please call before a special trip.</p>
-  </div>
+  <div class="ctas"><a class="btn gold" href="tel:+17045365525">Call 704 536 5525</a><a class="btn line-light" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=A+Bonnart+Fine+Jewelers+4219+Providence+Rd+Charlotte+NC+28211">Directions <span class="ar"></span></a></div>
  </div>
 </section>
 </main>
 
 <footer>
  <div class="wrap">
-  <div class="brand"><svg style="color:#D9C29A"><use href="#mono"/></svg><div class="wm"><b>A. BONNART</b><span>Fine Jewelers · Charlotte</span></div></div>
-  <div>4219 Providence Rd, Ste 4 · Charlotte, NC 28211 · <a href="tel:+17045365525">704 536 5525</a></div>
-  <div>© <span id="yr"></span> A. Bonnart Fine Jewelers · <a href="brand.html" style="border-bottom:1px solid #B8955A">Brand guide</a></div>
+  <div class="ft">
+   <div><a href="#top" class="brand"><b>A. BONNART</b><span>Fine Jewelers · Charlotte</span></a><p style="margin-top:22px;max-width:300px">Family-owned. Fine watch service, bespoke design, engagement &amp; bridal, and repair.</p></div>
+   <div><h5>Visit</h5>4219 Providence Rd, Suite 4<br>Charlotte, NC 28211<br><a href="tel:+17045365525">704 536 5525</a></div>
+   <div><h5>Hours</h5>Tue – Fri · 10:00 – 5:30<br>Sat · 10:00 – 3:00<br>Sun &amp; Mon · Closed</div>
+  </div>
+  <div class="fbot"><span>© <span id="yr"></span> A. Bonnart Fine Jewelers</span><a href="brand.html" style="border-bottom:1px solid var(--gold)">Brand guide</a></div>
  </div>
 </footer>
 
 <script>
-// dial ticks + live hands
 (function(){
- var g=document.getElementById('ticks'),ns='http://www.w3.org/2000/svg';
- for(var i=0;i<60;i++){var a=i*6*Math.PI/180,big=i%5==0,r1=big?196:204,r2=212;
-  var l=document.createElementNS(ns,'line');
-  l.setAttribute('x1',250+r1*Math.sin(a));l.setAttribute('y1',250-r1*Math.cos(a));
-  l.setAttribute('x2',250+r2*Math.sin(a));l.setAttribute('y2',250-r2*Math.cos(a));
-  l.setAttribute('stroke',big?'#14231C':'#7D7568');l.setAttribute('stroke-width',big?(i%15==0?3:1.6):.6);g.appendChild(l);}
- function set(){var d=new Date(),h=d.getHours()%12,m=d.getMinutes(),s=d.getSeconds();
-  document.getElementById('hr').style.transform='rotate('+(h*30+m*.5)+'deg)';
-  document.getElementById('mn').style.transform='rotate('+(m*6+s*.1)+'deg)';
-  document.getElementById('sec').style.animationDelay='-'+s+'s';}
- set();setInterval(set,30000);
+ var h=document.getElementById('hdr'),dr=document.getElementById('drawer'),b=document.getElementById('burger');
+ function solid(){h.classList.toggle('solid',scrollY>40&&!document.body.classList.contains('menu'))}
+ addEventListener('scroll',solid,{passive:true});solid();
+ b.onclick=function(){var o=dr.classList.toggle('open');document.body.classList.toggle('menu',o);solid()};
+ dr.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){dr.classList.remove('open');document.body.classList.remove('menu');solid()})});
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+ document.querySelectorAll('.rv,.mask').forEach(function(el){io.observe(el)});
+ var p=document.getElementById('par'),band=p.parentNode,tick=false;
+ addEventListener('scroll',function(){if(tick)return;tick=true;requestAnimationFrame(function(){var r=band.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight){p.style.transform='translateY('+((r.top+r.height/2-innerHeight/2)*-.12)+'px)'}tick=false})},{passive:true});
  document.getElementById('yr').textContent=new Date().getFullYear();
- var h=document.getElementById('hdr');
- addEventListener('scroll',function(){h.classList.toggle('solid',scrollY>30)},{passive:true});
- document.querySelectorAll('#links a').forEach(function(a){a.onclick=function(){h.classList.remove('open')}});
- var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
- document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
 })();
 </script>
 </body>
